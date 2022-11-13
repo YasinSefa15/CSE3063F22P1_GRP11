@@ -9,7 +9,7 @@ public class Transcript {
     public void  calculateGPA(){
         double tempGpa=0;
         for (Course course:completedCourses){
-            double randomScore=Math.random()4;
+            double randomScore=Math.random()*4;
             tempGpa+=course.credit*randomScore;
         }
         this.gpa=tempGpa/completedCredit;

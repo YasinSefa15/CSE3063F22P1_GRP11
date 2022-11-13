@@ -1,11 +1,9 @@
 package iteration1.Models;
 
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Curriculum extends Course {
+public class Curriculum {
 
     HashMap<Integer, ArrayList<Course>> courses = new HashMap<Integer, ArrayList<Course>>();
 
@@ -18,12 +16,13 @@ public class Curriculum extends Course {
     }
 
     public boolean addCourseToSemester(Course course) {
-        return false;
-    }
-
-
-    @Override
-    public JSONObject toJson() {
-        return null;
+        if(courses.get(course.getSemester()) == null) {
+            courses.put(course.getSemester(), new ArrayList<>());
+            courses.get(course.getSemester()).add(course);
+        }
+        else {
+            courses.get(course.getSemester()).add(course);
+        }
+        return true;
     }
 }

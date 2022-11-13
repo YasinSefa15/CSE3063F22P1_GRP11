@@ -3,7 +3,9 @@ package iteration1.Controllers;
 import iteration1.Models.RegistrationError;
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
-import java.io.*;
+
+import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 public abstract class Controller {

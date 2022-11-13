@@ -1,8 +1,10 @@
 package iteration1.Models;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
-public class Transcript {
+public class Transcript extends Model{
     private double gpa;
     private int completedCredit;
     private ArrayList<Course> completedCourses;
@@ -63,5 +65,11 @@ public class Transcript {
                 }
             }
         }
+    }
+
+
+    @Override
+    public JSONObject toJson() {
+        return null;
     }
 }

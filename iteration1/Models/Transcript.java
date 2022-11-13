@@ -1,5 +1,7 @@
 package iteration1.Models;
 
+import java.util.ArrayList;
+
 public class Transcript {
     private double gpa;
     private int completedCredit;
@@ -10,7 +12,7 @@ public class Transcript {
         double tempGpa=0;
         for (Course course:completedCourses){
             double randomScore=Math.random()*4;
-            tempGpa+=course.credit*randomScore;
+            tempGpa+=course.getCredit()*randomScore;
         }
         this.gpa=tempGpa/completedCredit;
     }

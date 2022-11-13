@@ -15,6 +15,13 @@ public class Student extends Person {
     private Advisor advisor;
     private HashMap<Course, Boolean> selectedCourses;
 
+    public Student(String id, int registerDate, int semesterNo, Transcript transcript, Advisor advisor) {
+        this.id = id;
+        this.registerDate = registerDate;
+        this.semesterNo = semesterNo;
+        this.transcript = transcript;
+        this.advisor = advisor;
+    }
 
     public void generateStudentID() {
 

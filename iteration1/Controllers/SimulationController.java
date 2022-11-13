@@ -31,14 +31,19 @@ public class SimulationController extends Controller {
         studentController.setError(this.getError());
 
         Random randomizer = new Random();
-        Student student = students.get(randomizer.nextInt(students.size()));
-        Course course = null;
+        int studentsCount = students.size();
+        Student student = null;
+        for (int i = 0; i < studentsCount; i++) {
+            student = students.get(i);
+            Course course = null;
 
-        //todo : burası ile oynanır sonra.
-        while (student.getSelectedCourses().size() != 8) {
-            course = randomCourse(student);
-            studentController.registerToCourse(student, course);
+            //todo : burası ile oynanır sonra.
+            while (student.getSelectedCourses().size() != 8) {
+                course = randomCourse(student);
+                studentController.registerToCourse(student, course);
+            }
         }
+
     }
 
     public Course randomCourse(Student student) {

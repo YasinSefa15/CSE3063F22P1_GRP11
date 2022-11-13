@@ -1,6 +1,8 @@
 package iteration1.Models;
 
-public class Lab {
+import org.json.JSONObject;
+
+public class Lab extends Course {
 
     private int sectionNumber;
     private Course course;
@@ -16,5 +18,10 @@ public class Lab {
     }
     public int getSectionNumber() {
         return sectionNumber;
+    }
+
+    @Override
+    public JSONObject toJson() {
+        return null;
     }
 }

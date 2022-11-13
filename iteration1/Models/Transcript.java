@@ -32,7 +32,9 @@ public class Transcript {
     }
 
     public void setCompletedCredit(int completedCredit) {
-        this.completedCredit = completedCredit;
+        if (completedCredit>=0){
+            this.completedCredit = completedCredit;
+        }
     }
 
     public ArrayList<Course> getCompletedCourses() {
@@ -40,7 +42,13 @@ public class Transcript {
     }
 
     public void setCompletedCourses(ArrayList<Course> completedCourses) {
-        this.completedCourses = completedCourses;
+        for (int i=0; i<completedCourses.size();i++){
+            for (int j = 0; j<this.completedCourses.size();j++){
+                if (completedCourses.get(i).getCode()!=this.completedCourses.get(j).getCode()){
+                    this.completedCourses.add(completedCourses.get(i));
+                }
+            }
+        }
     }
 
     public ArrayList<Course> getFailedCourses() {
@@ -48,6 +56,12 @@ public class Transcript {
     }
 
     public void setFailedCourses(ArrayList<Course> failedCourses) {
-        this.failedCourses = failedCourses;
+        for (int i=0; i<failedCourses.size();i++){
+            for (int j = 0; j<this.failedCourses.size();j++){
+                if (failedCourses.get(i).getCode()!=this.failedCourses.get(j).getCode()){
+                    this.failedCourses.add(failedCourses.get(i));
+                }
+            }
+        }
     }
 }

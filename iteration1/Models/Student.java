@@ -91,4 +91,10 @@ public class Student extends Person {
     public JSONObject toJson() {
         return null;
     }
+
+    public void addToSelectedCourses(Course course,Boolean statu){
+        if (!selectedCourses.containsKey(course)) {
+            selectedCourses.put(course, statu);
+        }
+    }
 }

@@ -50,7 +50,7 @@ public abstract class Course extends Model{
         return registeredStudents;
     }
     public void setRegisteredStudents(ArrayList<Student> registeredStudents) {
-
+        this.registeredStudents = registeredStudents;
     }
 
 }

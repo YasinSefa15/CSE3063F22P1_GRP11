@@ -6,6 +6,7 @@ public abstract class Course extends Model{
     private String name;
     private String code;
     private int credit;
+    private  int requiredCredits;
     private int quota;
     private int semester;
     private ArrayList<Integer> preRequisiteCourses = new ArrayList<Integer>();
@@ -22,7 +23,9 @@ public abstract class Course extends Model{
     public int getCredit() {
         return credit;
     }
-
+    public int getRequiredCredits() {
+        return requiredCredits;
+    }
     public int getQuota() {
         return quota;
     }

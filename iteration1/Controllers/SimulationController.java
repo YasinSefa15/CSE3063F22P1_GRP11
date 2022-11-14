@@ -12,13 +12,13 @@ public class SimulationController extends Controller {
     ArrayList<Course> courses;
     ArrayList<Student> students;
     ArrayList<Advisor> advisors;
-    Curriculum curriculum;
+    ArrayList<Curriculum> curriculums;
 
     SimulationController(ArrayList<Course> courses, ArrayList<Student> students,
-                         Curriculum curriculum, ArrayList<Advisor> advisors) {
+                         ArrayList<Curriculum> curriculums, ArrayList<Advisor> advisors) {
         this.courses = courses;
         this.students = students;
-        this.curriculum = curriculum;
+        this.curriculums = curriculums;
         this.advisors = advisors;
     }
 
@@ -37,13 +37,12 @@ public class SimulationController extends Controller {
             student = students.get(i);
             Course course = null;
 
-            //todo : burası ile oynanır sonra.
+            //todo : can change later
             while (student.getSelectedCourses().size() != 8) {
                 course = randomCourse(student);
                 studentController.registerToCourse(student, course);
             }
         }
-
     }
 
     public Course randomCourse(Student student) {

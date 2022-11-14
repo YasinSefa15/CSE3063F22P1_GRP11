@@ -9,17 +9,19 @@ public class Student extends Person {
 
     private String id;
     private int registerDate;
+    private Boolean isGraduate;
     private int semesterNo;
     private Transcript transcript;
     private ArrayList<String> errors;
     private Advisor advisor;
     private HashMap<Course, Boolean> selectedCourses;
 
-    public Student(String name, String surname, String ssn, Character gender,String id, int registerDate, int semesterNo, Transcript transcript, Advisor advisor) {
+    public Student(String name, String surname, String ssn, Character gender,String id,Boolean isGraduate, int registerDate, int semesterNo, Transcript transcript, Advisor advisor) {
         super(name,surname,ssn,gender);
 
         this.id = id;
         this.registerDate = registerDate;
+        this.isGraduate = isGraduate;
         this.semesterNo = semesterNo;
         this.transcript = transcript;
         this.advisor = advisor;
@@ -35,6 +37,10 @@ public class Student extends Person {
 
     public int getRegisterDate() {
         return registerDate;
+    }
+
+    public Boolean getIsGraduate() {
+        return isGraduate;
     }
 
     public int getSemesterNo() {

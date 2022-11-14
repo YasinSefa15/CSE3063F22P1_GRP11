@@ -12,13 +12,11 @@ public class StudentController extends Controller {
             return false;
         }
 
-        //advisordan geçtiyse
+        //if advisor allows, register to course
         student.addToSelectedCourses(course, changeCourseStatus(student, course));
-        return false;
+        return true;
     }
 
-    //todo : uml güncellenecek
-    //transkript e gerek var mı ? student ve course gelsin yeter? buradan güncelleriz
     public boolean changeCourseStatus(Student student, Course course) {
         if ((int) (Math.round(Math.random())) == 1) {
             student.getTranscript().addToCompletedCourses(course);

@@ -1,35 +1,69 @@
 package iteration1.Controllers;
 
-import iteration1.Models.RegistrationError;
+import iteration1.Models.*;
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
 import java.util.ArrayList;
 
 public abstract class Controller {
     private RegistrationError error;
 
-    public ArrayList<JSONObject> readJSONFiles(String path){
+    public ArrayList<JSONObject> readJSONFiles(String path) {
         ArrayList<JSONObject> jsonObjects = new ArrayList<>();
 
-        String requestedPath = System.getProperty("user.dir") + "/iteration1/Data/" + path;
+        String requestedPath = System.getProperty("user.dir") + "/iteration1/Data/Input/" + path;
         String[] fileNames = new File(requestedPath).list();
 
         for (String file : fileNames) {
             try {
                 Object obj = new JSONParser().parse(new FileReader(requestedPath + "/" + file));
-                JSONObject jo = new JSONObject(obj.toString()) ;
+                JSONObject jo = new JSONObject(obj.toString());
                 jsonObjects.add(jo);
-            }catch (Exception e){
+            } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
 
         return jsonObjects;
     }
-    public boolean exportJSONFile(Object object){
+
+    public boolean exportJSONFile(Object object) {
+        String fileName = "";
+        String path = "";
+        JSONObject jsonObject = null;
+
+        switch (object.getClass().getSimpleName()) {
+            case "Student":
+                fileName = ((Student) object).getId();
+                jsonObject = ((Student) object).toJson();
+                path = "Output/Students";
+                break;
+            case "Advisor":
+                fileName = ((String)(((Advisor) object).getName() + ((Advisor) object).getSurname())).replace(" ", "");
+                jsonObject = ((Advisor) object).toJson();
+                path = "Output/Advisors";
+                break;
+            case "RegistrationError":
+                fileName = "RegistrationErrors";
+                break;
+            default:
+                return false;
+        }
+        String fullFileName = System.getProperty("user.dir") + "/iteration1/Data/" + path + "/" + fileName + ".json";
+
+        try {
+            File myObj = new File(fullFileName);
+            myObj.createNewFile();
+
+            FileWriter myWriter = new FileWriter(fullFileName);
+            myWriter.write(jsonObject.toString());
+            myWriter.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred while exporting .json file.");
+            e.printStackTrace();
+        }
         return false;
     }
 

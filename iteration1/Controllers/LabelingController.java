@@ -24,6 +24,7 @@ public class LabelingController extends Controller {
         initAdvisors();
         initCoursesAndCurriculum();
         initStudents();
+        updateAdvisorsStudents();
     }
 
     public void initCoursesAndCurriculum() {
@@ -82,6 +83,7 @@ public class LabelingController extends Controller {
                 )
         );
 
+
         students.forEach((n) -> {
             n.setSelectedCourses(new HashMap<Course, Boolean>());
         });
@@ -116,6 +118,12 @@ public class LabelingController extends Controller {
         )));
 
         return advisors;
+    }
+
+    private void updateAdvisorsStudents() {
+        students.forEach((student -> {
+            student.getAdvisor().getStudents().add(student);
+        }));
     }
 
     private Advisor chooseRandomAdvisor() {

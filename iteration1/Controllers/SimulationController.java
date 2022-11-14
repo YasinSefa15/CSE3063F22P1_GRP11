@@ -14,6 +14,8 @@ public class SimulationController extends Controller {
     ArrayList<Advisor> advisors;
     ArrayList<Curriculum> curriculums;
 
+    private ArrayList<Course> deniedCourses;
+
     SimulationController(ArrayList<Course> courses, ArrayList<Student> students,
                          ArrayList<Curriculum> curriculums, ArrayList<Advisor> advisors) {
         this.courses = courses;
@@ -24,11 +26,23 @@ public class SimulationController extends Controller {
 
     public void startSimulation() {
         registerStudentsToClasses();
+        exportObjects();
+    }
+
+    private void exportObjects() {
+        for (Advisor advisor : advisors) {
+            System.out.println(advisor.getName());
+            exportJSONFile(advisor);
+        }
+        for (Student student : students) {
+            exportJSONFile(student);
+        }
     }
 
     public void registerStudentsToClasses() {
         StudentController studentController = new StudentController();
         studentController.setError(this.getError());
+        this.deniedCourses = new ArrayList<>();
 
         Random randomizer = new Random();
         int studentsCount = students.size();
@@ -36,11 +50,15 @@ public class SimulationController extends Controller {
         for (int i = 0; i < studentsCount; i++) {
             student = students.get(i);
             Course course = null;
+            this.deniedCourses.clear();
 
             //todo : can change later
-            while (student.getSelectedCourses().size() != 8) {
+            while (student.getSelectedCourses().size() != 5) {
                 course = randomCourse(student);
-                studentController.registerToCourse(student, course);
+
+                if (!studentController.registerToCourse(student, course)) {
+                    deniedCourses.add(course);
+                }
             }
         }
     }
@@ -52,13 +70,13 @@ public class SimulationController extends Controller {
 
         while (!ableToRegister) {
             course = courses.get(randomizer.nextInt(courses.size()));
-            if (student.getTranscript().getCompletedCourses().contains(course)
-                    || student.getTranscript().getFailedCourses().contains(course)) {
+            if ((!student.getTranscript().getCompletedCourses().contains(course)
+                    || !student.getTranscript().getFailedCourses().contains(course)
+                    && !deniedCourses.contains(course))) {
                 ableToRegister = true;
             }
         }
 
         return course;
     }
-
 }

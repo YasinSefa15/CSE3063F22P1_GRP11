@@ -1,5 +1,7 @@
 package iteration1.Models;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public abstract class Course extends Model{
@@ -9,7 +11,7 @@ public abstract class Course extends Model{
     private  int requiredCredits;
     private int quota;
     private int semester;
-    private ArrayList<Integer> preRequisiteCourses = new ArrayList<Integer>();
+    private ArrayList<String> preRequisiteCourses = new ArrayList<String>();
     private int[][] weeklyHours = new int[5][8];
     private ArrayList<Student> registeredStudents = new ArrayList<Student>();
 
@@ -35,7 +37,7 @@ public abstract class Course extends Model{
         return semester;
     }
 
-    public ArrayList<Integer> getPreRequisiteCourses() {
+    public ArrayList<String> getPreRequisiteCourses() {
         return preRequisiteCourses;
     }
 

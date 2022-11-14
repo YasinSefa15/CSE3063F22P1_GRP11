@@ -3,6 +3,8 @@ package iteration1.Models;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Set;
 
 public class Advisor extends Person {
     private ArrayList<Student> students;
@@ -53,14 +55,19 @@ public class Advisor extends Person {
         return false;
     }
 
-    public boolean checkCollision(Student student, Course course) {
-        ArrayList<Course> approvedCourses = new ArrayList<>();
-        for(int i = 0; i < approvedCourses.size() - 1;i++) {
-            for(int j = i + 1; j < approvedCourses.size();j++) {
-
+    public boolean checkCollision(HashMap<Course, Boolean> selectedCourses) {
+        Set<Course> coursesOfHash = selectedCourses.keySet();
+        ArrayList<Course> courses = new ArrayList<>(coursesOfHash);
+        for(int i=0; i<courses.size(); i++){
+            ArrayList<String> temp = new ArrayList<>(courses.get(i).getWeeklyHours());
+            for (int j = i+1; j< courses.size();j++){
+                temp.retainAll(courses.get(j).getWeeklyHours());
+                if (temp.size() != 0){
+                    return false;
+                }
             }
         }
-        return false;
+        return true;
     }
 
     public boolean checkElective(Student student, Course course) {

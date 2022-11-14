@@ -9,7 +9,7 @@ import java.util.Set;
 public class Advisor extends Person {
     private ArrayList<Student> students;
 
-    public Advisor(ArrayList<Student> students, String name, String surname, String ssn, char gender) {
+    public Advisor(ArrayList<Student> students, String name, String surname, String ssn, Character gender) {
         super(name,surname,ssn,gender);
         this.students = students;
         super.setName(name);

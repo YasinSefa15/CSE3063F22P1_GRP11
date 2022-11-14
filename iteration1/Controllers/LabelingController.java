@@ -1,9 +1,6 @@
 package iteration1.Controllers;
 
-import iteration1.Models.Advisor;
-import iteration1.Models.Course;
-import iteration1.Models.Curriculum;
-import iteration1.Models.Student;
+import iteration1.Models.*;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -11,38 +8,38 @@ import java.util.ArrayList;
 public class LabelingController extends Controller {
     ArrayList<Student> students;
     ArrayList<Advisor> advisors;
+    ArrayList<Curriculum> curriculums;
+    ArrayList<Course> courses;
 
     public void execute() {
         initObjects();
-        initAdvisors();
+        SimulationController simulationController = new SimulationController(courses, students, curriculums, advisors);
+        simulationController.setError(this.getError());
+        simulationController.startSimulation();
     }
 
     public void initObjects() {
+        initAdvisors();
+        initCoursesAndCurriculum();
         initStudents();
     }
 
-    public ArrayList<Course> initCourses() {
-        return null;
+    public void initCoursesAndCurriculum() {
+
     }
 
-    public ArrayList<Student> initStudents() {
-        students = new ArrayList<>();
-        ArrayList<JSONObject> objects = readJSONFiles("Students");
-        objects.forEach((n) -> students.add(new Student(
-                n.getString("id"),
-                n.getInt("registerDate"),
-                n.getInt("semesterNo"),
-                null,
-                null
-        )));
-        return students;
+    public void initCourses() {
+
     }
 
-    public Curriculum initCurriculum() {
-        return null;
+    public void initStudents() {
     }
 
-    public ArrayList<Advisor> initAdvisors() {
+    public void initCurriculum() {
+
+    }
+
+    public void initAdvisors() {
         advisors = new ArrayList<>();
         ArrayList<JSONObject> objects = readJSONFiles("Students");
         objects.forEach((n) -> advisors.add(new Advisor(
@@ -52,6 +49,5 @@ public class LabelingController extends Controller {
                 n.getString("ssn"),
                 n.getString("gender").charAt(0)
         )));
-        return advisors;
     }
 }

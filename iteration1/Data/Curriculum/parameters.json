@@ -1,0 +1,803 @@
+{
+  "Curriculum2020": [
+    {
+      "name": "Turkish Language 1",
+      "code": "TRD121",
+      "credit": 2,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 1,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["1.1","1.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Introduction to Modern Biology",
+      "code": "MBG1201",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 1,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["4.1","4.2","3.1"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Ataturk's Principles and History 1",
+      "code": "ATA121",
+      "credit": 2,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 1,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["5.1","5.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Physics Lab 1",
+      "code": "PHYS1103",
+      "credit": 2,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 1,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["1.7","1.8"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Physics 1",
+      "code": "PHYS1001",
+      "credit": 4,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 1,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["2.1","2.2","3.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Computer Programming 1",
+      "code": "CSE1241",
+      "credit": 6,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 1,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["2.3","2.4","3.3","3.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Introduction to Computer Engineering",
+      "code": "CSE1200",
+      "credit": 4,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 1,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["2.5","2.6","3.5"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Calculus 1",
+      "code": "MATH1001",
+      "credit": 6,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 1,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["2.7","2.8","3.6"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Calculus 2",
+      "code": "MATH1002",
+      "credit": 6,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 2,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["2.1","2.2","1.1"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Physics Lab 2",
+      "code": "PHYS1104",
+      "credit": 2,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 2,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["2.3","2.4","1.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Computer Programming 2",
+      "code": "CSE1242",
+      "credit": 6,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 2,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["4.1","4.2","5.1","5.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Physics 2",
+      "code": "PHYS1002",
+      "credit": 4,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 2,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["5.3","5.4","4.3"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Non Technical Elective 1",
+      "code": "NTE1",
+      "credit": 3,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 2,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["3.3","3.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Ataturk's Principles and History 2",
+      "code": "ATA122",
+      "credit": 2,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 2,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["3.1","3.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Linear Algebra for Computer Engineers",
+      "code": "MATH2256",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 2,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["2.5","2.6","2.7"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Turkish Language 2",
+      "code": "TRD122",
+      "credit": 2,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 2,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["4.3","4.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Differential Equations",
+      "code": "MATH2055",
+      "credit": 4,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 3,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["1.1","1.2","1.3"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Engineering Economy",
+      "code": "ECON2004",
+      "credit": 4,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 3,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["3.3","3.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Electric Circuits",
+      "code": "EE2031",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 3,
+      "preRequisiteCourses:": [
+        {
+          "name": "Physics 2",
+          "code": "PHYS1002",
+          "credit": 4,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 2,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["3.1","3.2","1.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Discrete Computational Structures",
+      "code": "CSE2023",
+      "credit": 6,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 3,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["4.1","4.2","5.1","5.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Data Structures",
+      "code": "CSE2225",
+      "credit": 7,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 3,
+      "preRequisiteCourses:": [
+        {
+          "name": "Computer Programming 2",
+          "code": "CSE1242",
+          "credit": 6,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 2,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["2.1","2.2","2.3","2.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Numerical Methods",
+      "code": "MATH2059",
+      "credit": 4,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 3,
+      "preRequisiteCourses:": [
+        {
+          "name": "Calculus 1",
+          "code": "MAT1001",
+          "credit": 6,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 1,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["2.5","2.6","2.7"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Analysis of Algorithms",
+      "code": "CSE2246",
+      "credit": 6,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 4,
+      "preRequisiteCourses:": [
+        {
+          "name": "Data Structures",
+          "code": "CSE2225",
+          "credit": 7,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 3,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["1.1","1.2","2.1","2.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Principles of Programming Languages",
+      "code": "CSE2260",
+      "credit": 6,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 4,
+      "preRequisiteCourses:": [
+        {
+          "name": "Computer Programming 2",
+          "code": "CSE1242",
+          "credit": 6,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 2,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["2.3","2.4","3.1","3.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Electronics",
+      "code": "EE2032",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 4,
+      "preRequisiteCourses:": [
+        {
+          "name": "Electric Circuits",
+          "code": "EE2031",
+          "credit": 5,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 3,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["4.1","4.2","4.3"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Systems Programming",
+      "code": "CSE2138",
+      "credit": 7,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 4,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["1.4","1.5","1.6","4.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Probability and Statistics for Computer Engineers",
+      "code": "STAT2253",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 4,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["5.1","5.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Modeling and Discrete Simulation",
+      "code": "IE3081",
+      "credit": 4,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 5,
+      "preRequisiteCourses:": [
+        {
+          "name": "Probability and Statistics for Computer Engineers",
+          "code": "STAT2253",
+          "credit": 5,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 4,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["1.1","1.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Digital Logic Design",
+      "code": "CSE3215",
+      "credit": 6,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 5,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["5.1","5.2","2.1","2.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Object Oriented Software Design",
+      "code": "CSE3063",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 5,
+      "preRequisiteCourses:": [
+        {
+          "name": "Computer Programming 2",
+          "code": "CSE1242",
+          "credit": 6,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 2,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["1.3","1.4","2.3","2.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Operating Systems",
+      "code": "CSE3033",
+      "credit": 7,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 5,
+      "preRequisiteCourses:": [
+        {
+          "name": "Data Structures",
+          "code": "CSE2225",
+          "credit": 7,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 3,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["4.1","4.2","4.3","4.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Database Systems",
+      "code": "CSE3055",
+      "credit": 7,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 5,
+      "preRequisiteCourses:": [
+        {
+          "name": "Data Structures",
+          "code": "CS2225",
+          "credit": 7,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 3,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["4.5","4.6","4.7","4.8"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Software Engineering",
+      "code": "CSE3044",
+      "credit": 7,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 6,
+      "preRequisiteCourses:": [
+        {
+          "name": "Database Systems",
+          "code": "CSE3055",
+          "credit": 7,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 5,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["1.1","1.2","2.1","2.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Technical Communication and Entrepreneurship",
+      "code": "COM2276",
+      "credit": 2,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 6,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["3.7","3.8"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Formal Language and Automata Theory",
+      "code": "CSE3264",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 6,
+      "preRequisiteCourses:": [
+        {
+          "name": "Discrete Computational Structures",
+          "code": "CSE2023",
+          "credit": 6,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 3,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["2.7","2.8"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Computer Organization",
+      "code": "CSE3038",
+      "credit": 7,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 6,
+      "preRequisiteCourses:": [
+        {
+          "name": "Systems Programming",
+          "code": "CSE2138",
+          "credit": 7,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 4,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["5.1","5.2","5.3","5.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Introduction to Signals and Systems",
+      "code": "CSE3048",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 6,
+      "preRequisiteCourses:": [
+        {
+          "name": "Differential Equations",
+          "code": "MATH2055",
+          "credit": 4,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 3,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["3.1","3.2","3.3","3.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Operations Research",
+      "code": "IE3235",
+      "credit": 4,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 6,
+      "preRequisiteCourses:": [
+        {
+          "name": "Linear Algebra for Computer Engineers",
+          "code": "MATH2256",
+          "credit": 5,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 2,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["2.3","2.4","2.5","2.6"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Introduction to Machine Learning",
+      "code": "CSE4288",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 7,
+      "preRequisiteCourses:": [
+        {
+          "name": "Probability and Statistics for Computer Engineers",
+          "code": "STAT2253",
+          "credit": 5,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 4,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        },
+        {
+          "name": "Linear Algebra for Computer Engineers",
+          "code": "MATH2256",
+          "credit": 5,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 2,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["1.1","1.2","2.1","2.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Work Safety 1",
+      "code": "ISG121",
+      "credit": 2,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 7,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["5.7","5.8"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Principles of Embedded System Design",
+      "code": "CSE4219",
+      "credit": 6,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 7,
+      "preRequisiteCourses:": [
+        {
+          "name": "Computer Organization",
+          "code": "CSE3038",
+          "credit": 7,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 6,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": ["2.3","2.4","3.1","3.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "University Elective",
+      "code": "UE ",
+      "credit": 3,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 7,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["3.3","3.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Technical Elective 1",
+      "code": "TE1",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 7,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["3.5","3.6"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Computer Networks",
+      "code": "CSE4074",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 7,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["4.1","4.2","4.3","4.4"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Engineering Project 1",
+      "code": "CSE4297",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 7,
+      "preRequisiteCourses:": [],
+      "weeklyHours": [],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Engineering Project 2",
+      "code": "CSE4298",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 8,
+      "preRequisiteCourses:": [
+        {
+          "name": "Engineering Project 1",
+          "code": "CSE4297",
+          "credit": 5,
+          "requiredCredits": 0,
+          "quota": 500,
+          "semester": 7,
+          "preRequisiteCourses": [],
+          "weeklyHours": [],
+          "registeredStudents": 0
+        }
+      ],
+      "weeklyHours": [],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Technical Elective 2",
+      "code": "TE2",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 8,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["4.7","4.8"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Technical Elective 3",
+      "code": "TE3",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 8,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["5.7","5.8"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Technical Elective 4",
+      "code": "TE4",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 8,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["3.7","3.8"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Faculty Technical Elective",
+      "code": "FTE",
+      "credit": 5,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 8,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["1.1","1.2"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Work Safety 2",
+      "code": "ISG122",
+      "credit": 2,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 8,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["2.7","2.8"],
+      "registeredStudents": 0
+    },
+    {
+      "name": "Non Technical Elective 2",
+      "code": "NTE2",
+      "credit": 3,
+      "requiredCredits": 0,
+      "quota": 500,
+      "semester": 8,
+      "preRequisiteCourses:": [],
+      "weeklyHours": ["3.3","3.4"],
+      "registeredStudents": 0
+    }
+  ]
+}

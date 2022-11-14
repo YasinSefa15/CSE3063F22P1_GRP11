@@ -10,6 +10,13 @@ public class Transcript extends Model{
     private ArrayList<Course> completedCourses;
     private  ArrayList<Course> failedCourses;
 
+    public Transcript(double gpa, int completedCredit, ArrayList<Course> completedCourses, ArrayList<Course> failedCourses) {
+        this.gpa = gpa;
+        this.completedCredit = completedCredit;
+        this.completedCourses = completedCourses;
+        this.failedCourses = failedCourses;
+    }
+
     public void  calculateGPA(){
         double tempGpa=0;
         for (Course course:completedCourses){

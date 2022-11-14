@@ -30,17 +30,20 @@ public class Advisor extends Person {
     }
     public String checkPreRequisite(Student student, Course course) {
         ArrayList<Course> tempCompletedCourse = student.getTranscript().getCompletedCourses();
-        for (int i=0; i<tempCompletedCourse.size();i++){
-            for (int j = 0; j<course.getPreRequisiteCourses().size();j++){
-                if (tempCompletedCourse.get(i).getCode()!=course.getPreRequisiteCourses().get(j).toString()){
-                    return "You cannot enroll in this course because you have not completed the prerequisite course.";
+        boolean error = false;
+        for (int i=0; i<course.getPreRequisiteCourses().size();i++){
+            for (int j = 0; j<tempCompletedCourse.size();j++){
+                if (course.getPreRequisiteCourses().get(i)!=tempCompletedCourse.get(j).getCode()){
+                    error = true;
                 }
                 else {
-                    return  "You enrolled in this course successfully";
+                    error = false;
+                    break;
                 }
             }
         }
-        return "There is no pre-requisite course";
+        if(error){return "You cannot enroll in this course because you have not completed the prerequisite course.";}
+        return "";
     }
 
     public boolean checkCredit(Student student, Course course) {

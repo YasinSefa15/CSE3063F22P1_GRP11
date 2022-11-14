@@ -15,7 +15,9 @@ public class Student extends Person {
     private Advisor advisor;
     private HashMap<Course, Boolean> selectedCourses;
 
-    public Student(String id, int registerDate, int semesterNo, Transcript transcript, Advisor advisor) {
+    public Student(String name, String surname, String ssn, Character gender,String id, int registerDate, int semesterNo, Transcript transcript, Advisor advisor) {
+        super(name,surname,ssn,gender);
+
         this.id = id;
         this.registerDate = registerDate;
         this.semesterNo = semesterNo;

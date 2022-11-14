@@ -6,6 +6,13 @@ public abstract class Person extends Model {
     private String ssn;
     private Character gender;
 
+    public Person(String name, String surname, String ssn, Character gender) {
+        this.name = name;
+        this.surname = surname;
+        this.ssn = ssn;
+        this.gender = gender;
+    }
+
     public String getName() {
         return name;
     }

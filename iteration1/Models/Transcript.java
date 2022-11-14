@@ -73,6 +73,11 @@ public class Transcript extends Model{
         }
     }
 
+    public void addToFailedCourses(Course course){
+        if (!failedCourses.contains(course)){
+            failedCourses.add(course);
+        }
+    }
     @Override
     public JSONObject toJson() {
         return null;

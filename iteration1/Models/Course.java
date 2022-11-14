@@ -12,7 +12,7 @@ public abstract class Course extends Model{
     private int quota;
     private int semester;
     private ArrayList<String> preRequisiteCourses = new ArrayList<String>();
-    private int[][] weeklyHours = new int[5][8];
+    private ArrayList<String> weeklyHours = new ArrayList<String>();
     private ArrayList<Student> registeredStudents = new ArrayList<Student>();
 
     public String getName() {
@@ -40,12 +40,10 @@ public abstract class Course extends Model{
     public ArrayList<String> getPreRequisiteCourses() {
         return preRequisiteCourses;
     }
-
-    public int[][] getWeeklyHours() {
+    public ArrayList<String> getWeeklyHours() {
         return weeklyHours;
     }
-
-    public void setWeeklyHours(int[][] weeklyHours) {
+    public void setWeeklyHours(ArrayList<String> weeklyHours) {
         this.weeklyHours = weeklyHours;
     }
     public ArrayList<Student> getRegisteredStudents() {

@@ -1,0 +1,220 @@
+{
+    "Student": {
+        "name": "Ali",
+        "surname": "Erdoğan",
+        "ssn": "12391937191",
+        "gender": "m",
+        "id": "150120014",
+        "registerDate": "2020",
+        "isGraduate": "false",
+        "semesterNo": "4",
+        "Transcript": {
+            "gpa": "2.4",
+            "completedCredit": "62",
+            "completedCourses": [
+                {
+                    "name": "Ataturk's Principles and History 1",
+                    "code": "ATA121",
+                    "credit": "2",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "1",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Introduction to Modern Biology",
+                    "code": "MBG1201",
+                    "credit": "5",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "1",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Introduction to Computer Engineering",
+                    "code": "CSE1200",
+                    "credit": "4",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "1",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Computer Programming 1",
+                    "code": "CSE1241",
+                    "credit": "6",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "1",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Calculus 1",
+                    "code": "MATH1001",
+                    "credit": "6",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "1",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Physics 1",
+                    "code": "PHYS1101",
+                    "credit": "4",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "1",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Turkish Language 1",
+                    "code": "TRD121",
+                    "credit": "2",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "1",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Calculus 2",
+                    "code": "MATH1001",
+                    "credit": "6",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "2",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Physics Lab 2",
+                    "code": "PHYS1104",
+                    "credit": "2",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "2",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Computer Programming 2",
+                    "code": "CSE1242",
+                    "credit": "6",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "2",
+                    "preRequisiteCourses": [
+                        {
+                            "name": "Computer Programming 1",
+                            "code": "CSE1241",
+                            "credit": "6",
+                            "requiredCredits": "0",
+                            "quota": "0",
+                            "semester": "1",
+                            "preRequisiteCourses": [],
+                            "weeklyHours": [],
+                            "": []
+                        }
+                    ],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Linear Algebra for Computer Engineers",
+                    "code": "MATH2256",
+                    "credit": "5",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "2",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Numerical Methods",
+                    "code": "PHYS1102",
+                    "credit": "4",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "3",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Discrete Computational Structures",
+                    "code": "CSE2023",
+                    "credit": "6",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "3",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Differential Equations",
+                    "code": "MATH2055",
+                    "credit": "4",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "3",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                }
+            ],
+            "failedCourses": [
+                {
+                    "name": "Physics 2",
+                    "code": "PHYS1102",
+                    "credit": "4",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "2",
+                    "preRequisiteCourses": [],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                },
+                {
+                    "name": "Data Structures",
+                    "code": "CSE2225",
+                    "credit": "7",
+                    "requiredCredits": "0",
+                    "quota": "0",
+                    "semester": "3",
+                    "preRequisiteCourses": [
+                        {
+                            "name": "Computer Programming 2",
+                            "code": "CSE1242",
+                            "credit": "6",
+                            "requiredCredits": "0",
+                            "quota": "0",
+                            "semester": "2",
+                            "preRequisiteCourses": [],
+                            "weeklyHours": [],
+                            "registeredStudents": []
+                        }
+                    ],
+                    "weeklyHours": [],
+                    "registeredStudents": []
+                }
+            ]
+        }
+    }
+}

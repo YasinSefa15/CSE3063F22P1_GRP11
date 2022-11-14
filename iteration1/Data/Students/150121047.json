@@ -180,5 +180,13 @@
         "registeredStudents": []
       }
     ]
-  }
+  },
+  "Advisor": {
+    "name": "Ali Haydar",
+    "surname": "Özer",
+    "ssn": "28391371238",
+    "gender": "m",
+    "students": []
+  },
+  "selectedCourses": []
 }

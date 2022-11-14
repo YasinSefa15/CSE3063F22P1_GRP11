@@ -214,5 +214,14 @@
         "registeredStudents": []
       }
     ]
-  }
+  },
+  "errors": [],
+  "Advisor": {
+    "name": "Borahan",
+    "surname": "Tümer",
+    "ssn": "28193183282",
+    "gender": "m",
+    "students": []
+  },
+  "selectedCourses": []
 }

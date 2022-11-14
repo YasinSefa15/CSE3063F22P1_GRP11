@@ -91,5 +91,14 @@
         "registeredStudents": []
       }
     ]
-  }
+  },
+  "errors": [],
+  "Advisor": {
+    "name": "Murat Can",
+    "surname": "Ganiz",
+    "ssn": "69459748938",
+    "gender": "m",
+    "students": []
+  },
+  "selectedCourses": []
 }

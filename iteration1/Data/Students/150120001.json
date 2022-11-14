@@ -371,5 +371,14 @@
       }
     ],
     "failedCourses": []
-  }
+  },
+  "errors": [],
+  "Advisor": {
+    "name": "Borahan",
+    "surname": "Tumer",
+    "ssn": "28193183282",
+    "gender": "m",
+    "students": []
+  },
+  "selectedCourses": []
 }

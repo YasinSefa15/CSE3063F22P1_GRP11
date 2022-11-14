@@ -3,9 +3,10 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class Mandotary extends Course {
+public class Mandatory extends Course {
     private ArrayList<Lab> lab = new ArrayList<>();
 
+    public Mandatory(){}
     public void assignQuota(){
 
     }

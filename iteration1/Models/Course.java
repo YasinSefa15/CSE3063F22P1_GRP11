@@ -43,6 +43,27 @@ public abstract class Course extends Model{
     public ArrayList<String> getWeeklyHours() {
         return weeklyHours;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setCode(String code) {
+        this.code = code;
+    }
+    public void setCredit(int credit) {
+        this.credit = credit;
+    }
+    public void setRequiredCredits(int requiredCredits) {
+        this.requiredCredits = requiredCredits;
+    }
+    public void setQuota(int quota) {
+        this.quota = quota;
+    }
+    public void setSemester(int semester) {
+        this.semester = semester;
+    }
+    public void setPreRequisiteCourses(ArrayList<String> preRequisiteCourses) {
+        this.preRequisiteCourses = preRequisiteCourses;
+    }
     public void setWeeklyHours(ArrayList<String> weeklyHours) {
         this.weeklyHours = weeklyHours;
     }

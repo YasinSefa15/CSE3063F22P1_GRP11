@@ -123,7 +123,8 @@ public class LabelingController extends Controller {
                 n.getString("name"),
                 n.getString("surname"),
                 n.getString("ssn"),
-                n.getString("gender").charAt(0)
+                n.getString("gender").charAt(0),
+                null
         )));
 
         return advisors;

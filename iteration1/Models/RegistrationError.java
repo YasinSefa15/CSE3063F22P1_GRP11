@@ -21,7 +21,7 @@ public class RegistrationError extends Model {
                 break;
 
             case 1003:  //Quota error       data[]= "CSE2023";
-                message:"The advisor didn't approve "+data[0] +" because course's quota is full";
+                message="The advisor didn't approve "+data[0]+" because course's quota is full";
                 break;
 
             case 1004: //prereq error       data[]= "CSE2225 ","CSE1242";

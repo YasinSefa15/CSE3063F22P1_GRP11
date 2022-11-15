@@ -107,9 +107,12 @@ public class Student extends Person {
         jsonObject.put("registerDate",getRegisterDate());
         jsonObject.put("semesterNo",getSemesterNo());
         jsonObject.put("Transcript",getTranscript().toJson());
-        jsonObject.put("Advisor Name",advisor.getName());
-        jsonObject.put("Advisor Surname ",advisor.getSurname());
-        jsonObject.put("Advisor Ssn", advisor.getSsn());
+        JSONObject advisorjson = new JSONObject();
+        advisorjson.put("name",advisor.getName());
+        advisorjson.put("surname",advisor.getSurname());
+        advisorjson.put("ssn",advisor.getSsn());
+
+        jsonObject.put("Advisor",advisorjson);
 
         return jsonObject;
     }

@@ -1,5 +1,6 @@
 package iteration1.Models;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -12,10 +13,6 @@ public class Advisor extends Person {
     public Advisor(ArrayList<Student> students, String name, String surname, String ssn, Character gender) {
         super(name,surname,ssn,gender);
         this.students = students;
-        super.setName(name);
-        super.setSurname(surname);
-        super.setSsn(ssn);
-        super.setGender(gender);
     }
 
     public boolean courseAvailability(Student student, Course course) {
@@ -97,11 +94,23 @@ public class Advisor extends Person {
         }
     }
 
-
+    public JSONArray convertArraylistToJsonArray(ArrayList<Student> arrayList){
+        JSONArray jsonArray=new JSONArray();
+        for (int i=0;i<arrayList.size();i++){
+            jsonArray.put(arrayList.get(i));
+        }
+        return jsonArray;
+    }
 
     @Override
     public JSONObject toJson() {
-        return null;
+        JSONObject jsonObject=new JSONObject();
+        jsonObject.put("students",convertArraylistToJsonArray(getStudents()));
+        jsonObject.put("name",getName());
+        jsonObject.put("surname",getSurname());
+        jsonObject.put("ssn",getSsn());
+        jsonObject.put("gender",getGender());
+        return jsonObject;
     }
 }
 

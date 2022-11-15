@@ -97,7 +97,19 @@ public class Student extends Person {
 
     @Override
     public JSONObject toJson() {
-        return null;
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("name",getName());
+        jsonObject.put("surname",getSurname());
+        jsonObject.put("ssn",getSsn());
+        jsonObject.put("gender",getGender());
+        jsonObject.put("id",getId());
+        jsonObject.put("isGraduate",getIsGraduate());
+        jsonObject.put("registerDate",getRegisterDate());
+        jsonObject.put("semesterNo",getSemesterNo());
+        jsonObject.put("Transcript",getTranscript().toJson());
+        jsonObject.put("Advisor",getAdvisor().toJson());
+
+        return jsonObject;
     }
 
     public void addToSelectedCourses(Course course,Boolean statu){

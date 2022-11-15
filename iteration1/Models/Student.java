@@ -12,6 +12,7 @@ public class Student extends Person {
     private Boolean isGraduate;
     private int semesterNo;
     private Transcript transcript;
+
     private ArrayList<String> errors;
     private Advisor advisor;
     private HashMap<Course, Boolean> selectedCourses;
@@ -74,7 +75,9 @@ public class Student extends Person {
     public void setSelectedCourses(HashMap<Course, Boolean> selectedCourses) {
         this.selectedCourses = selectedCourses;
     }
-
+    public void setErrors(ArrayList<String> errors) {
+        this.errors = errors;
+    }
     @Override
     public String getName() {
         return super.getName();

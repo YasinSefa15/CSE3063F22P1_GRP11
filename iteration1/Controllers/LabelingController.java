@@ -46,8 +46,8 @@ public class LabelingController extends Controller {
                         course.getInt("requiredCredits"),
                         course.getInt("quota"),
                         course.getInt("semester"),
-                        null,
-                        null,
+                        createCoursesList(course.getJSONArray("preRequisiteCourses:")),
+                        createWeeklyHoursList(course.getJSONArray("weeklyHours")),
                         null,
                         null
                 );
@@ -57,6 +57,15 @@ public class LabelingController extends Controller {
             curriculums.add(newCurriculum);
         }
     }
+
+    private ArrayList<String> createWeeklyHoursList(JSONArray weeklyHours) {
+        ArrayList<String> weeklyHoursList = new ArrayList<>();
+        for (int i = 0; i < weeklyHours.length(); i++) {
+            weeklyHoursList.add(weeklyHours.getString(i));
+        }
+        return weeklyHoursList;
+    }
+
 
     public void initStudents() {
         students = new ArrayList<>();

@@ -11,7 +11,7 @@ public abstract class Course extends Model{
     private  int requiredCredits;
     private int quota;
     private int semester;
-    private ArrayList<String> preRequisiteCourses = new ArrayList<String>();
+    private ArrayList<Course> preRequisiteCourses = new ArrayList<Course>();
     private ArrayList<String> weeklyHours = new ArrayList<String>();
     private ArrayList<Student> registeredStudents = new ArrayList<Student>();
 
@@ -37,7 +37,7 @@ public abstract class Course extends Model{
         return semester;
     }
 
-    public ArrayList<String> getPreRequisiteCourses() {
+    public ArrayList<Course> getPreRequisiteCourses() {
         return preRequisiteCourses;
     }
     public ArrayList<String> getWeeklyHours() {
@@ -61,7 +61,7 @@ public abstract class Course extends Model{
     public void setSemester(int semester) {
         this.semester = semester;
     }
-    public void setPreRequisiteCourses(ArrayList<String> preRequisiteCourses) {
+    public void setPreRequisiteCourses(ArrayList<Course> preRequisiteCourses) {
         this.preRequisiteCourses = preRequisiteCourses;
     }
     public void setWeeklyHours(ArrayList<String> weeklyHours) {

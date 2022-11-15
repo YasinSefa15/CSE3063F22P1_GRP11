@@ -36,13 +36,14 @@ public class Advisor extends Person {
         boolean error = false;
         for (int i=0; i<course.getPreRequisiteCourses().size();i++){
             for (int j = 0; j<tempCompletedCourse.size();j++){
-                if (course.getPreRequisiteCourses().get(i)!=tempCompletedCourse.get(j).getCode()){
+                //TO-DO : check if the course is in the completed courses
+                /*if (course.getPreRequisiteCourses().get(i)!=tempCompletedCourse.get(j).getCode()){
                     error = true;
                 }
                 else {
-                    error = false;
+                error = false;
                     break;
-                }
+                }*/
             }
         }
         if(error){return "You cannot enroll in this course because you have not completed the prerequisite course.";}

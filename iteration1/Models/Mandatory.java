@@ -7,7 +7,7 @@ public class Mandatory extends Course {
     private ArrayList<Lab> lab = new ArrayList<>();
 
     public Mandatory(String name, String code, int credit, int requiredCredits, int quota, int semester,
-                     ArrayList<String> preRequisiteCourses, ArrayList<String> weeklyHours,
+                     ArrayList<Course> preRequisiteCourses, ArrayList<String> weeklyHours,
                      ArrayList<Student> registeredStudents, ArrayList<Lab> lab){
         this.setName(name);
         this.setCode(code);

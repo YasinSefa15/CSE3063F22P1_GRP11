@@ -9,13 +9,40 @@ import java.util.Set;
 
 public class Advisor extends Person {
     private ArrayList<Student> students;
+    private RegistrationError error;
 
-    public Advisor(ArrayList<Student> students, String name, String surname, String ssn, Character gender) {
+    public Advisor(ArrayList<Student> students, String name, String surname, String ssn, Character gender, RegistrationError error) {
         super(name,surname,ssn,gender);
         this.students = students;
+        this.error = error;
     }
 
     public boolean courseAvailability(Student student, Course course) {
+       if (!checkSemester(student, course)) {
+           //1000
+       }
+       if(!checkQuota(course)) {
+           //1001
+       }
+        if(!checkPreRequisite(student, course)) {
+            //1002
+        }
+       if(!checkCredit(student, course)) {
+           //1003
+       }
+       if(!checkCollision(student)) {
+           //1004
+       }
+       if(!checkElective(student, course)) {
+           //1005
+       }
+       if(!FTETakeable(student, course)) {
+           //1006
+       }
+       return true;
+    }
+
+    public boolean checkSemester(Student student, Course course) {
         if(course.getSemester() == student.getSemesterNo()) {
             return true;
         }
@@ -28,23 +55,22 @@ public class Advisor extends Person {
         }
         return false;
     }
-    public String checkPreRequisite(Student student, Course course) {
+    public boolean checkPreRequisite(Student student, Course course) {
         ArrayList<Course> tempCompletedCourse = student.getTranscript().getCompletedCourses();
-        boolean error = false;
+        boolean availability = true;
         for (int i=0; i<course.getPreRequisiteCourses().size();i++){
             for (int j = 0; j<tempCompletedCourse.size();j++){
                 //TO-DO : check if the course is in the completed courses
                 if (course.getPreRequisiteCourses().get(i).getCode()!=tempCompletedCourse.get(j).getCode()){
-                    error = true;
+                    availability = false;
                 }
                 else {
-                error = false;
+                    availability = true;
                     break;
                 }
             }
         }
-        if(error){return "You cannot enroll in this course because you have not completed the prerequisite course.";}
-        return "";
+        return availability;
     }
 
     public boolean checkCredit(Student student, Course course) {
@@ -54,8 +80,8 @@ public class Advisor extends Person {
         return false;
     }
 
-    public boolean checkCollision(HashMap<Course, Boolean> selectedCourses) {
-        Set<Course> coursesOfHash = selectedCourses.keySet();
+    public boolean checkCollision(Student student) {
+        Set<Course> coursesOfHash = student.getSelectedCourses().keySet();
         ArrayList<Course> courses = new ArrayList<>(coursesOfHash);
         for(int i=0; i<courses.size(); i++){
             ArrayList<String> temp = new ArrayList<>(courses.get(i).getWeeklyHours());
@@ -70,7 +96,7 @@ public class Advisor extends Person {
     }
 
     public boolean checkElective(Student student, Course course) {
-        return false;
+        return true;
     }
 
     public boolean FTETakeable(Student student, Course course) {

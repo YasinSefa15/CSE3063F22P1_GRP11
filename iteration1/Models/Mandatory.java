@@ -28,7 +28,5 @@ public class Mandatory extends Course {
     }
 
     @Override
-    public JSONObject toJson() {
-        return null;
-    }
+    public JSONObject toJson() {return null;}
 }

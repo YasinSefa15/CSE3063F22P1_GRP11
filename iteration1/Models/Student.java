@@ -107,10 +107,13 @@ public class Student extends Person {
         jsonObject.put("registerDate",getRegisterDate());
         jsonObject.put("semesterNo",getSemesterNo());
         jsonObject.put("Transcript",getTranscript().toJson());
-        jsonObject.put("Advisor",getAdvisor().toJson());
+        jsonObject.put("Advisor Name",advisor.getName());
+        jsonObject.put("Advisor Surname ",advisor.getSurname());
+        jsonObject.put("Advisor Ssn", advisor.getSsn());
 
         return jsonObject;
     }
+
 
     public void addToSelectedCourses(Course course,Boolean statu){
         if (!selectedCourses.containsKey(course)) {

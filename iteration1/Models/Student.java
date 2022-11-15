@@ -75,8 +75,8 @@ public class Student extends Person {
     public void setSelectedCourses(HashMap<Course, Boolean> selectedCourses) {
         this.selectedCourses = selectedCourses;
     }
-    public void setErrors(ArrayList<String> errors) {
-        this.errors = errors;
+    public void addError(String errorMessage) {
+        this.errors.add(errorMessage);
     }
     @Override
     public String getName() {

@@ -19,19 +19,19 @@ public class Advisor extends Person {
 
     public boolean courseAvailability(Student student, Course course) {
        if (!checkSemester(student, course)) {
-           //1000
+          student.addError(this.error.reportError(1001,new String[]{course.getName(),Integer.toString(course.getSemester()), Integer.toString(student.getSemesterNo())}));
+       }
+       if(!checkCredit(student, course)) {
+           student.addError(this.error.reportError(1002,new String[]{course.getName(),Integer.toString(student.getTranscript().getCompletedCredit())}));
        }
        if(!checkQuota(course)) {
-           //1001
+           student.addError(this.error.reportError(1003,new String[]{course.getName()}));
        }
-        if(!checkPreRequisite(student, course)) {
-            //1002
-        }
-       if(!checkCredit(student, course)) {
-           //1003
+       if(!checkPreRequisite(student, course)) {
+           student.addError(this.error.reportError(1004,new String[]{course.getName(), "data"}));
        }
        if(!checkCollision(student)) {
-           //1004
+           student.addError(this.error.reportError(1005,new String[]{course.getName(),"2","data"}));
        }
        if(!checkElective(student, course)) {
            //1005

@@ -1,7 +1,9 @@
 package iteration1.Models;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class Transcript extends Model{
@@ -85,8 +87,22 @@ public class Transcript extends Model{
             failedCourses.add(course);
         }
     }
+
+    public JSONArray convertArraylistToJsonArray(ArrayList<Course> arrayList){
+        JSONArray jsonArray=new JSONArray();
+        for (int i=0;i<arrayList.size();i++){
+            jsonArray.put(arrayList.get(i));
+        }
+        return jsonArray;
+    }
+
     @Override
     public JSONObject toJson() {
-        return null;
+        JSONObject jsonObject=new JSONObject();
+        jsonObject.put("gpa",gpa);
+        jsonObject.put("completedCredit",completedCredit);
+        jsonObject.put("completedCourses",convertArraylistToJsonArray(completedCourses));
+        jsonObject.put("failedCourses",convertArraylistToJsonArray(failedCourses));
+        return  jsonObject;
     }
 }

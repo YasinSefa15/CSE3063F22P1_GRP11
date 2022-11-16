@@ -27,11 +27,14 @@ public class Advisor extends Person {
        if(!checkQuota(course)) {
            student.addError(this.error.reportError(1003,new String[]{course.getName()}));
        }
-       if(!checkPreRequisite(student, course)) {
-           student.addError(this.error.reportError(1004,new String[]{course.getName(), "data"}));
+       Object[] tempReturn = checkPreRequisite(student, course);
+       if(!(boolean)tempReturn[0]) {
+           student.addError(this.error.reportError(1004,new String[]{course.getName(),(String)tempReturn[1]}));
        }
-       if(!checkCollision(student)) {
-           student.addError(this.error.reportError(1005,new String[]{course.getName(),"2","data"}));
+       Object[] tempReturn2 = checkCollision(student);
+       if(!(boolean)tempReturn2[0]) {
+           student.addError(this.error.reportError(1005,new String[]{(String)tempReturn2[1],(String)tempReturn2[2],
+                   (String)tempReturn2[3]}));
        }
        if(!checkElective(student, course)) {
            //1005
@@ -55,22 +58,27 @@ public class Advisor extends Person {
         }
         return false;
     }
-    public boolean checkPreRequisite(Student student, Course course) {
+    public Object[] checkPreRequisite(Student student, Course course) {
         ArrayList<Course> tempCompletedCourse = student.getTranscript().getCompletedCourses();
         boolean availability = true;
+        Object[] errorInfo = new Object[2];
         for (int i=0; i<course.getPreRequisiteCourses().size();i++){
             for (int j = 0; j<tempCompletedCourse.size();j++){
                 //TO-DO : check if the course is in the completed courses
                 if (course.getPreRequisiteCourses().get(i).getCode()!=tempCompletedCourse.get(j).getCode()){
                     availability = false;
+                    errorInfo[1] = course.getPreRequisiteCourses().get(i).getCode();
                 }
                 else {
                     availability = true;
+                    errorInfo[1] = "";
                     break;
                 }
             }
+            if(!availability){break;}
         }
-        return availability;
+        errorInfo[0] = availability;
+        return errorInfo;
     }
 
     public boolean checkCredit(Student student, Course course) {
@@ -80,19 +88,28 @@ public class Advisor extends Person {
         return false;
     }
 
-    public boolean checkCollision(Student student) {
+    public Object[] checkCollision(Student student) {
         Set<Course> coursesOfHash = student.getSelectedCourses().keySet();
         ArrayList<Course> courses = new ArrayList<>(coursesOfHash);
+        Object[] errorInfo = new Object[4];
+        errorInfo[0] = true;
+        errorInfo[1] = "";
+        errorInfo[2] = "";
+        errorInfo[3] = "";
         for(int i=0; i<courses.size(); i++){
             ArrayList<String> temp = new ArrayList<>(courses.get(i).getWeeklyHours());
             for (int j = i+1; j< courses.size();j++){
                 temp.retainAll(courses.get(j).getWeeklyHours());
                 if (temp.size() != 0){
-                    return false;
+                    errorInfo[0] = false;
+                    errorInfo[1] = courses.get(i).getName();
+                    errorInfo[2] = courses.get(j).getName();
+                    errorInfo[3] = Integer.toString(temp.size());
+                    return errorInfo;
                 }
             }
         }
-        return true;
+        return errorInfo;
     }
 
     public boolean checkElective(Student student, Course course) {

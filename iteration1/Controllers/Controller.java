@@ -33,17 +33,20 @@ public abstract class Controller {
         String fileName = "";
         String path = "";
         JSONObject jsonObject = null;
+        String content = "";
 
         switch (object.getClass().getSimpleName()) {
             case "Student":
                 fileName = ((Student) object).getId();
                 jsonObject = ((Student) object).toJson();
                 path = "Output/Students";
+                content = jsonObject.toString();
                 break;
             case "Advisor":
                 fileName = ((String)(((Advisor) object).getName() + ((Advisor) object).getSurname())).replace(" ", "");
                 jsonObject = ((Advisor) object).toJson();
                 path = "Output/Advisors";
+                content = jsonObject.toString();
                 break;
             case "RegistrationError":
                 fileName = "RegistrationErrors";
@@ -58,7 +61,7 @@ public abstract class Controller {
             myObj.createNewFile();
 
             FileWriter myWriter = new FileWriter(fullFileName);
-            myWriter.write(jsonObject.toString());
+            myWriter.write(content);
             myWriter.close();
         } catch (IOException e) {
             System.out.println("An error occurred while exporting .json file.");

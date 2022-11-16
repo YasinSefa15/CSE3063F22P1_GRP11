@@ -31,12 +31,14 @@ public class SimulationController extends Controller {
 
     private void exportObjects() {
         for (Advisor advisor : advisors) {
-            System.out.println(advisor.getName());
             exportJSONFile(advisor);
         }
         for (Student student : students) {
             exportJSONFile(student);
         }
+
+        //todo : will be fixed
+        exportJSONFile(this.getError());
     }
 
     public void registerStudentsToClasses() {

@@ -46,9 +46,9 @@ public class LabelingController extends Controller {
                         course.getInt("requiredCredits"),
                         course.getInt("quota"),
                         course.getInt("semester"),
-                        createCoursesList(course.getJSONArray("preRequisiteCourses:")),
+                        createCoursesList(course.getJSONArray("preRequisiteCourses")),
                         createWeeklyHoursList(course.getJSONArray("weeklyHours")),
-                        null,
+                        new ArrayList<>(),
                         null
                 );
                 newCurriculum.addCourseToSemester(newCourse);
@@ -70,26 +70,31 @@ public class LabelingController extends Controller {
     public void initStudents() {
         students = new ArrayList<>();
         ArrayList<JSONObject> objects = readJSONFiles("Students");
-        objects.forEach((n) ->
-                students.add(
-                        new Student(
-                                n.getString("name"),
-                                n.getString("surname"),
-                                n.getString("ssn"),
-                                n.getString("gender").charAt(0),
-                                n.getString("id"),
-                                n.getBoolean("isGraduate"),
-                                n.getInt("registerDate"),
-                                n.getInt("semesterNo"),
-                                new Transcript(
-                                        n.getJSONObject("Transcript").getDouble("gpa"),
-                                        n.getJSONObject("Transcript").getInt("completedCredit"),
-                                        createCoursesList(n.getJSONObject("Transcript").getJSONArray("completedCourses")),
-                                        createCoursesList(n.getJSONObject("Transcript").getJSONArray("failedCourses"))
-                                ),
-                                chooseRandomAdvisor()
-                        )
-                )
+
+        objects.forEach((n) -> {
+                    Student newStudent = new Student(
+                            n.getString("name"),
+                            n.getString("surname"),
+                            n.getString("ssn"),
+                            n.getString("gender").charAt(0),
+                            n.getString("id"),
+                            n.getBoolean("isGraduate"),
+                            n.getInt("registerDate"),
+                            n.getInt("semesterNo"),
+                            new Transcript(
+                                    n.getJSONObject("Transcript").getDouble("gpa"),
+                                    n.getJSONObject("Transcript").getInt("completedCredit"),
+                                    createCoursesList(n.getJSONObject("Transcript").getJSONArray("completedCourses")),
+                                    createCoursesList(n.getJSONObject("Transcript").getJSONArray("failedCourses"))
+                            ),
+                            chooseRandomAdvisor()
+                    );
+                    students.add(
+                            newStudent
+                    );
+
+                    newStudent.getAdvisor().getStudents().add(newStudent);
+                }
         );
 
 
@@ -108,7 +113,18 @@ public class LabelingController extends Controller {
                     this.courses.stream()
                             .filter(course -> course.getCode().equals(finalJsonObject.getString("code")))
                             .findFirst()
-                            .orElse(null)
+                            .orElse(new Mandatory(
+                                    finalJsonObject.getString("name"),
+                                    finalJsonObject.getString("code"),
+                                    finalJsonObject.getInt("credit"),
+                                    finalJsonObject.getInt("requiredCredits"),
+                                    finalJsonObject.getInt("quota"),
+                                    finalJsonObject.getInt("semester"),
+                                    createCoursesList(finalJsonObject.getJSONArray("preRequisiteCourses")),
+                                    createWeeklyHoursList(finalJsonObject.getJSONArray("weeklyHours")),
+                                    new ArrayList<>(),
+                                    null
+                            ))
             );
         }
 
@@ -124,7 +140,7 @@ public class LabelingController extends Controller {
                 n.getString("surname"),
                 n.getString("ssn"),
                 n.getString("gender").charAt(0),
-                null
+                this.getError()
         )));
 
         return advisors;

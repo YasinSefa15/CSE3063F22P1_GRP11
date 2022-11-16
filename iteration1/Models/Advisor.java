@@ -123,7 +123,7 @@ public class Advisor extends Person {
     public JSONArray convertArraylistToJsonArray(ArrayList<Student> arrayList){
         JSONArray jsonArray=new JSONArray();
         for (int i=0;i<arrayList.size();i++){
-            jsonArray.put(arrayList.get(i));
+            jsonArray.put(arrayList.get(i).getName() + " " + arrayList.get(i).getSurname());
         }
         return jsonArray;
     }

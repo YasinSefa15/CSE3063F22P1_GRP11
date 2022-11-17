@@ -20,9 +20,7 @@ public class Mandatory extends Course {
         this.setRegisteredStudents(registeredStudents);
         this.lab = lab;
     }
-    public void assignQuota(){
 
-    }
     public ArrayList<Lab> getLab() {
         return lab;
     }

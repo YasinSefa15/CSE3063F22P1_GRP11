@@ -43,13 +43,15 @@ public abstract class Controller {
                 content = jsonObject.toString();
                 break;
             case "Advisor":
-                fileName = ((String)(((Advisor) object).getName() + ((Advisor) object).getSurname())).replace(" ", "");
+                fileName = (((Advisor) object).getName() + ((Advisor) object).getSurname()).replace(" ", "");
                 jsonObject = ((Advisor) object).toJson();
                 path = "Output/Advisors";
                 content = jsonObject.toString();
                 break;
             case "RegistrationError":
                 fileName = "RegistrationErrors";
+                jsonObject = ((RegistrationError) object).toJson();
+                content = jsonObject.toString();
                 break;
             default:
                 return false;

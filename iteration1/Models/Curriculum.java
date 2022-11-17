@@ -5,14 +5,10 @@ import java.util.HashMap;
 
 public class Curriculum {
 
-    HashMap<Integer, ArrayList<Course>> courses = new HashMap<Integer, ArrayList<Course>>();
+    private HashMap<Integer, ArrayList<Course>> courses = new HashMap<Integer, ArrayList<Course>>();
 
     public HashMap<Integer, ArrayList<Course>> getCourses() {
         return courses;
-    }
-
-    public void setCourses(HashMap<Integer, ArrayList<Course>> courses) {
-        this.courses = courses;
     }
 
     public boolean addCourseToSemester(Course course) {

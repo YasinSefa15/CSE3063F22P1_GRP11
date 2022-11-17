@@ -29,10 +29,6 @@ public class Student extends Person {
         this.errors = new ArrayList<>();
     }
 
-    public void generateStudentID() {
-
-    }
-
     public String getId() {
         return id;
     }
@@ -124,9 +120,9 @@ public class Student extends Person {
     }
 
 
-    public void addToSelectedCourses(Course course, Boolean statu) {
+    public void addToSelectedCourses(Course course, Boolean status) {
         if (!selectedCourses.containsKey(course)) {
-            selectedCourses.put(course, statu);
+            selectedCourses.put(course, status);
         }
     }
 }

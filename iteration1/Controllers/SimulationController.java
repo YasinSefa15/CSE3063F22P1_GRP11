@@ -34,6 +34,7 @@ public class SimulationController extends Controller {
             exportJSONFile(advisor);
         }
         for (Student student : students) {
+            student.getTranscript().calculateGPA();
             exportJSONFile(student);
         }
 

@@ -1,5 +1,6 @@
 package iteration1.Models;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -48,7 +49,8 @@ public class RegistrationError extends Model {
 
     @Override
     public JSONObject toJson() {
-
-        return null;
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("errors", new JSONArray());
+        return jsonObject;
     }
 }

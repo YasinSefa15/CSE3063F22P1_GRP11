@@ -8,10 +8,8 @@ import java.util.*;
 public class RegistrationError extends Model {
 
     private HashMap<Integer, String> errorType=new HashMap<>();
-    private HashMap<Integer, String[]> errorInfo;   //1001 : "CSE2023", "CSE3033", "CSE2023", "CSE4040"
-
-    ArrayList<String> errorList = new ArrayList<String>();
-    ArrayList<String> allErrorMessages = new ArrayList<>();
+    private ArrayList<String> errorList = new ArrayList<String>();
+    private ArrayList<String> allErrorMessages = new ArrayList<>();
     private int noOfLastErrorType = 1006;
 
     public RegistrationError(){
@@ -19,14 +17,12 @@ public class RegistrationError extends Model {
         errorType.put(1002, "lack of credits");
         errorType.put(1003, "lack of quota");
         errorType.put(1004, "did not meet the prerequisite");
-        errorType.put(1005, "course collusion");
+        errorType.put(1005, "course collision");
         errorType.put(1006, "elective error");
-
     }
-
     public String reportError(int errorCode, String[] data) {
         String message = "";
-     //   errorInfo=new HashMap<Integer,String[]>();
+
         switch (errorCode) {
             case 1001:  //Semester error     data[]= "CSE2225 ","4", "2"
                 message = "The advisor didn't approve " + data[0] + " because course's semester is " + data[1] + " while student's is " + data[2];
@@ -63,21 +59,12 @@ public class RegistrationError extends Model {
         return message;
     }
 
-  /*  public void createErrorList(Integer code){
-        String s=code.toString();
-
-
-    }*/
-
     public void storeErrorInfo(Integer errorCode, String data) {
-        String temp = errorCode.toString() + "," + data;      //1001|CSE2023
+        String temp = errorCode.toString() + "," + data;
         errorList.add(temp);
-
     }
 
     public void writeAllErrors(ArrayList<String> list) {
-   //     int[] numberOfErrors = new int[noOfLastErrorType - 1000];
-        int tempCounter;
         int i;
         for (i =0; i < (noOfLastErrorType - 1000); i++) {
             ArrayList<String> courseList = new ArrayList<String>();
@@ -93,26 +80,25 @@ public class RegistrationError extends Model {
             writeNumberOfErrors(temp,courseList,(i+1001));
             courseList.clear();
         }
-
     }
 
     private void writeNumberOfErrors(ArrayList<String> list, ArrayList<String> courseList, int errorCode) {
         int count=0;
-        String currentError="";
+        String currentCourse="";
         for (int i = 0; i < list.size(); i++) {
-            currentError = list.get(i);
-            count = 0;
+            currentCourse = list.get(i);
             for(int j = 0; j<courseList.size(); j++){
-                if (courseList.get(j) == currentError)
+                if (Objects.equals(courseList.get(j), currentCourse)){
                     count++;
+                }
             }
+            if(count!=0) {
+                String message = count + " students could not register " + currentCourse + " because of " + errorType.get(errorCode) + "!";
+                allErrorMessages.add(message);
+            }
+            count=0;
         }
-        if(count!=0)
-        System.out.println(count + " students could not register " + currentError + " because of " + errorType.get(errorCode) + "!");
-        String message=count + " students could not register " + currentError + " because of " + errorType.get(errorCode) + "!";
-        allErrorMessages.add(message);
     }
-
     @Override
     public JSONObject toJson() {
         writeAllErrors(errorList);

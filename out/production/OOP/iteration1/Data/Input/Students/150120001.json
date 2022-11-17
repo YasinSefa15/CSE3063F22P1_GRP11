@@ -123,7 +123,7 @@
       },
       {
         "name": "Calculus 2",
-        "code": "MATH1001",
+        "code": "MATH1002",
         "credit": "6",
         "requiredCredits": "0",
         "quota": "0",
@@ -190,7 +190,7 @@
       },
       {
         "name": "Numerical Methods",
-        "code": "PHYS1102",
+        "code": "MATH2059",
         "credit": "4",
         "requiredCredits": "0",
         "quota": "0",

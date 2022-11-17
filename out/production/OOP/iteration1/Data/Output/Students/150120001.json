@@ -1,0 +1,59 @@
+{
+  "isGraduate": false,
+  "Transcript": {
+    "completedCourses": [
+      "Ataturk's Principles and History 1",
+      "Introduction to Modern Biology",
+      "Introduction to Computer Engineering",
+      "Computer Programming 1",
+      "Calculus 1",
+      "Physics 1",
+      "Turkish Language 1",
+      "Ataturk's Principles and History 2",
+      "Turkish Language 2",
+      "Non Technical Elective 1",
+      "Calculus 1",
+      "Physics Lab 2",
+      "Computer Programming 2",
+      "Linear Algebra for Computer Engineers",
+      "Physics 2",
+      "Physics 2",
+      "Discrete Computational Structures",
+      "Electric Circuits",
+      "Engineering Economy",
+      "Differential Equations",
+      "Data Structures",
+      "Analysis of Algorithms",
+      "Principles of Programming Languages",
+      "Electronics",
+      "Systems Programming",
+      "Probability and Statistics for Computer Engineers",
+      "Computer Networks"
+    ],
+    "gpa": 3.8,
+    "completedCredit": 131,
+    "failedCourses": [
+      "Ataturk's Principles and History 1",
+      "Computer Organization"
+    ]
+  },
+  "gender": "f",
+  "surname": "Haşat",
+  "name": "Selin",
+  "Advisor": {
+    "surname": "Boz",
+    "name": "Betül",
+    "ssn": "93827382192"
+  },
+  "id": "150120001",
+  "semesterNo": 5,
+  "errors": [
+    "The advisor didn't approve Ataturk's Principles and History 1 because course's semestr is 1while student's is 5",
+    "The advisor didn't approve Computer Networks because course's semestr is 7while student's is 5",
+    "The advisor didn't approve Computer Organization because course's semestr is 6while student's is 5",
+    "The advisor didn't approve Non Technical Elective 1 because course's semestr is 2while student's is 5",
+    "The advisor didn't approve Calculus 1 because course's semestr is 1while student's is 5"
+  ],
+  "ssn": "12391937865",
+  "registerDate": 2020
+}

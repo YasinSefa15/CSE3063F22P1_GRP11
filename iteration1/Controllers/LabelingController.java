@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class LabelingController extends Controller {
-    ArrayList<Student> students;
-    ArrayList<Advisor> advisors;
-    ArrayList<Curriculum> curriculums;
-    ArrayList<Course> courses;
+    private ArrayList<Student> students;
+    private ArrayList<Advisor> advisors;
+    private ArrayList<Curriculum> curriculums;
+    private ArrayList<Course> courses;
 
     public void execute() {
         initObjects();

@@ -59,6 +59,15 @@ public abstract class Controller {
         String fullFileName = System.getProperty("user.dir") + "/iteration1/Data/" + path + "/" + fileName + ".json";
 
         try {
+            File directory = new File(String.valueOf(System.getProperty("user.dir") + "/iteration1/Data/" + path));
+
+            if (!directory.exists()) {
+                directory.mkdirs();
+            }
+            //System.exit(1);
+            if (!directory.exists()) {
+                directory.mkdir();
+            }
             File myObj = new File(fullFileName);
             myObj.createNewFile();
 

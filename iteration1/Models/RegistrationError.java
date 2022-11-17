@@ -1,5 +1,6 @@
 package iteration1.Models;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.*;
@@ -10,7 +11,7 @@ public class RegistrationError extends Model {
     private HashMap<Integer, String[]> errorInfo;   //1001 : "CSE2023", "CSE3033", "CSE2023", "CSE4040"
 
     ArrayList<String> errorList = new ArrayList<String>();
-    ArrayList<String> allErrorMessages=new ArrayList<>();
+    ArrayList<String> allErrorMessages = new ArrayList<>();
     private int noOfLastErrorType = 1006;
 
     public RegistrationError(){
@@ -116,7 +117,8 @@ public class RegistrationError extends Model {
     public JSONObject toJson() {
         writeAllErrors(errorList);
         JSONObject jsonObject =new JSONObject();
-
+        JSONArray jsonArray = new JSONArray(allErrorMessages);
+        jsonObject.put("totalErrors",jsonArray);
         return jsonObject;
     }
 }

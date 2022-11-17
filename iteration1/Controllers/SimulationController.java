@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class SimulationController extends Controller {
-    ArrayList<Course> courses;
-    ArrayList<Student> students;
-    ArrayList<Advisor> advisors;
-    ArrayList<Curriculum> curriculums;
+    private ArrayList<Course> courses;
+    private ArrayList<Student> students;
+    private ArrayList<Advisor> advisors;
+    private ArrayList<Curriculum> curriculums;
 
     private ArrayList<Course> deniedCourses;
 

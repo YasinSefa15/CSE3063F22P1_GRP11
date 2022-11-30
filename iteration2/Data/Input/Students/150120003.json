@@ -1,15 +1,15 @@
 {
-  "name": "Emrecan",
-  "surname": "Zengin",
-  "ssn": "39916782148",
-  "gender": "m",
-  "id": "150121088",
-  "registerDate": "2021",
+  "name": "Buse",
+  "surname": "Yılmaz",
+  "ssn": "22391648194",
+  "gender": "f",
+  "id": "150120003",
+  "registerDate": "2020",
   "isGraduate": "false",
   "semesterNo": "4",
   "Transcript": {
-    "gpa": "2.42",
-    "completedCredit": "60",
+    "gpa": "2.82",
+    "completedCredit": "87",
     "completedCourses": [
       {
         "name": "Ataturk's Principles and History 1",
@@ -111,74 +111,6 @@
         "registeredStudents": []
       },
       {
-        "name": "Calculus 1",
-        "code": "MATH1001",
-        "credit": "6",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "2",
-        "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
-        "name": "Linear Algebra for Computer Engineers",
-        "code": "MATH2256",
-        "credit": "5",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "2",
-        "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
-        "name": "Turkish Language 2",
-        "code": "TRD122",
-        "credit": "2",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "1",
-        "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
-        "name": "Discrete Computational Structure",
-        "code": "CSE2023",
-        "credit": "6",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "3",
-        "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
-        "name": "Engineering Economy",
-        "code": "ECON2004",
-        "credit": "4",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "3",
-        "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
-        "name": "Differential Equations",
-        "code": "MATH2055",
-        "credit": "4",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "3",
-        "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      }
-    ],
-    "failedCourses": [
-      {
         "name": "Computer Programming 2",
         "code": "CSE1242",
         "credit": "6",
@@ -202,12 +134,123 @@
         "registeredStudents": []
       },
       {
+        "name": "Calculus 2",
+        "code": "MATH1002",
+        "credit": "6",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Linear Algebra for Computer Engineers",
+        "code": "MATH2256",
+        "credit": "5",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
         "name": "Physics 2",
         "code": "PHYS1102",
         "credit": "4",
         "requiredCredits": "0",
         "quota": "0",
         "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Physics Lab 2",
+        "code": "PHYS1104",
+        "credit": "2",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Turkish Language 2",
+        "code": "TRD122",
+        "credit": "2",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Non Technical Elective 1",
+        "code": "NTE1",
+        "credit": "3",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Discrete Computational Structures",
+        "code": "CSE2023",
+        "credit": "6",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Data Structures",
+        "code": "CSE2225",
+        "credit": "7",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [
+          {
+            "name": "Computer Programming 2",
+            "code": "CSE1242",
+            "credit": "6",
+            "requiredCredits": "0",
+            "quota": "0",
+            "semester": "2",
+            "preRequisiteCourses": [],
+            "weeklyHours": [],
+            "registeredStudents": []
+          }
+        ],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Engineering Economy",
+        "code": "ECON2004",
+        "credit": "4",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Electric Circuits",
+        "code": "EE2031",
+        "credit": "5",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
         "preRequisiteCourses": [],
         "weeklyHours": [],
         "registeredStudents": []
@@ -232,6 +275,19 @@
             "registeredStudents": []
           }
         ],
+        "weeklyHours": [],
+        "registeredStudents": []
+      }
+    ],
+    "failedCourses": [
+      {
+        "name": "Differential Equations",
+        "code": "MATH2055",
+        "credit": "4",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [],
         "weeklyHours": [],
         "registeredStudents": []
       }

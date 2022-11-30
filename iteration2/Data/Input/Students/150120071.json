@@ -1,0 +1,177 @@
+{
+  "name": "Özge",
+  "surname": "Yılmaz",
+  "ssn": "85610468141",
+  "gender": "f",
+  "id": "150120071",
+  "registerDate": "2020",
+  "isGraduate": "false",
+  "semesterNo": "4",
+  "Transcript": {
+    "gpa": "2.65",
+    "completedCredit": "79",
+    "completedCourses": [
+      {
+        "name": "Computer Programming I",
+        "code": "CSE1241",
+        "credit": "6",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "1",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Linear Algebra for Computer Engineers",
+        "code": "MATH2256",
+        "credit": "5",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Computer Programming 2",
+        "code": "CSE1242 ",
+        "credit": "6",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [
+          {
+            "name": "Computer Programming 1",
+            "code": "CSE1241",
+            "credit": "6",
+            "requiredCredits": "0",
+            "quota": "0",
+            "semester": "1",
+            "preRequisiteCourses": [],
+            "weeklyHours": [],
+            "registeredStudents": []
+          }
+        ],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Numerical Methods",
+        "code": "MATH2059",
+        "credit": "4",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [
+          {
+            "name": "Calculus I",
+            "code": "MATH1001",
+            "credit": "6",
+            "requiredCredits": "0",
+            "quota": "0",
+            "semester": "1",
+            "preRequisiteCourses": [],
+            "weeklyHours": [],
+            "registeredStudents": []
+          }
+        ],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Discrete Computational Structures",
+        "code": "CSE2023",
+        "credit": "6",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Differential Equations",
+        "code": "MATH2055",
+        "credit": "4",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Engineering Economy",
+        "code": "ECON2004",
+        "credit": "6",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Physics 2",
+        "code": "PHYS1102",
+        "credit": "4",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      }
+    ],
+    "failedCourses": [
+      {
+        "name": "Data Structures",
+        "code": "CSE2225",
+        "credit": "7",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [
+          {
+            "name": "Computer Programming 2",
+            "code": "CSE1242 ",
+            "credit": "6",
+            "requiredCredits": "0",
+            "quota": "0",
+            "semester": "2",
+            "preRequisiteCourses": [],
+            "weeklyHours": [],
+            "registeredStudents": []
+          }
+        ],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Electric Circuits",
+        "code": "EE2031",
+        "credit": "5",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [
+          {
+            "name": "Physics 2",
+            "code": "PHYS1102",
+            "credit": "4",
+            "requiredCredits": "0",
+            "quota": "0",
+            "semester": "2",
+            "preRequisiteCourses": [],
+            "weeklyHours": [],
+            "registeredStudents": []
+          }
+        ],
+        "weeklyHours": [],
+        "registeredStudents": []
+      }
+    ]
+  }
+}
+

@@ -1,15 +1,15 @@
 {
-  "name": "Emrecan",
-  "surname": "Zengin",
-  "ssn": "39916782148",
-  "gender": "m",
-  "id": "150121088",
-  "registerDate": "2021",
+  "name": "Simge",
+  "surname": "Bilgili",
+  "ssn": "37538167914",
+  "gender": "f",
+  "id": "150121012",
+  "registerDate": "2020",
   "isGraduate": "false",
-  "semesterNo": "4",
+  "semesterNo": "5",
   "Transcript": {
-    "gpa": "2.42",
-    "completedCredit": "60",
+    "gpa": "2.63",
+    "completedCredit": "89",
     "completedCourses": [
       {
         "name": "Ataturk's Principles and History 1",
@@ -56,6 +56,17 @@
         "registeredStudents": []
       },
       {
+        "name": "Physic Lab 1",
+        "code": "PHYS1103",
+        "credit": "2",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "1",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
         "name": "Calculus 1",
         "code": "MATH1001",
         "credit": "6",
@@ -78,17 +89,6 @@
         "registeredStudents": []
       },
       {
-        "name": "Physics Lab 1",
-        "code": "PHYS1103",
-        "credit": "2",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "1",
-        "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
         "name": "Turkish Language 1",
         "code": "TRD121",
         "credit": "2",
@@ -100,8 +100,19 @@
         "registeredStudents": []
       },
       {
-        "name": "Ataturk's Principles and History 2",
-        "code": "ATA122",
+        "name": "Calculus 2",
+        "code": "MATH1002",
+        "credit": "6",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Physic Lab 2",
+        "code": "PHYS1104",
         "credit": "2",
         "requiredCredits": "0",
         "quota": "0",
@@ -111,9 +122,31 @@
         "registeredStudents": []
       },
       {
-        "name": "Calculus 1",
-        "code": "MATH1001",
-        "credit": "6",
+        "name": "Physic 2",
+        "code": "PHYS1102",
+        "credit": "4",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Non Technical Elective 1",
+        "code": "NTE1",
+        "credit": "2",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Ataturk's Principles and History 2",
+        "code": "ATA122",
+        "credit": "2",
         "requiredCredits": "0",
         "quota": "0",
         "semester": "2",
@@ -138,19 +171,65 @@
         "credit": "2",
         "requiredCredits": "0",
         "quota": "0",
-        "semester": "1",
+        "semester": "2",
         "preRequisiteCourses": [],
         "weeklyHours": [],
         "registeredStudents": []
       },
       {
-        "name": "Discrete Computational Structure",
+        "name": "Numerical Methods",
+        "code": "MATH2059",
+        "credit": "4",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [
+          {
+            "name": "Calculus 1",
+            "code": "MATH1001",
+            "credit": "6",
+            "requiredCredits": "0",
+            "quota": "0",
+            "semester": "1",
+            "preRequisiteCourses": [],
+            "weeklyHours": [],
+            "registeredStudents": []
+          }
+        ],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Discrete Computational Structures",
         "code": "CSE2023",
         "credit": "6",
         "requiredCredits": "0",
         "quota": "0",
         "semester": "3",
         "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Electric Circuits",
+        "code": "EE2031",
+        "credit": "5",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "3",
+        "preRequisiteCourses": [
+          {
+            "name": "Physic 2",
+            "code": "PHYS1102",
+            "credit": "4",
+            "requiredCredits": "0",
+            "quota": "0",
+            "semester": "2",
+            "preRequisiteCourses": [],
+            "weeklyHours": [],
+            "registeredStudents": []
+          }
+        ],
         "weeklyHours": [],
         "registeredStudents": []
       },
@@ -172,6 +251,40 @@
         "requiredCredits": "0",
         "quota": "0",
         "semester": "3",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Electronics",
+        "code": "EE2032",
+        "credit": "5",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "4",
+        "preRequisiteCourses": [
+          {
+            "name": "Electric Circuits",
+            "code": "EE2031",
+            "credit": "5",
+            "requiredCredits": "0",
+            "quota": "0",
+            "semester": "3",
+            "preRequisiteCourses": [],
+            "weeklyHours": [],
+            "registeredStudents": []
+          }
+        ],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Systems Programming",
+        "code": "CSE2138",
+        "credit": "7",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "4",
         "preRequisiteCourses": [],
         "weeklyHours": [],
         "registeredStudents": []
@@ -202,36 +315,13 @@
         "registeredStudents": []
       },
       {
-        "name": "Physics 2",
-        "code": "PHYS1102",
-        "credit": "4",
+        "name": "Probability and Statistics for Computer Engineers",
+        "code": "STAT2253",
+        "credit": "5",
         "requiredCredits": "0",
         "quota": "0",
-        "semester": "2",
+        "semester": "4",
         "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
-        "name": "Numerical Methods",
-        "code": "MATH2059",
-        "credit": "4",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "3",
-        "preRequisiteCourses": [
-          {
-            "name": "Calculus 1",
-            "code": "MATH1001",
-            "credit": "6",
-            "requiredCredits": "0",
-            "quota": "0",
-            "semester": "1",
-            "preRequisiteCourses": [],
-            "weeklyHours": [],
-            "registeredStudents": []
-          }
-        ],
         "weeklyHours": [],
         "registeredStudents": []
       }

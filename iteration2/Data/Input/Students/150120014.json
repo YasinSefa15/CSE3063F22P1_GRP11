@@ -1,15 +1,15 @@
 {
-  "name": "Emrecan",
-  "surname": "Zengin",
-  "ssn": "39916782148",
+  "name": "Ali",
+  "surname": "Erdoğan",
+  "ssn": "12391937191",
   "gender": "m",
-  "id": "150121088",
-  "registerDate": "2021",
+  "id": "150120014",
+  "registerDate": "2020",
   "isGraduate": "false",
   "semesterNo": "4",
   "Transcript": {
-    "gpa": "2.42",
-    "completedCredit": "60",
+    "gpa": "2.4",
+    "completedCredit": "62",
     "completedCourses": [
       {
         "name": "Ataturk's Principles and History 1",
@@ -78,17 +78,6 @@
         "registeredStudents": []
       },
       {
-        "name": "Physics Lab 1",
-        "code": "PHYS1103",
-        "credit": "2",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "1",
-        "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
         "name": "Turkish Language 1",
         "code": "TRD121",
         "credit": "2",
@@ -100,8 +89,19 @@
         "registeredStudents": []
       },
       {
-        "name": "Ataturk's Principles and History 2",
-        "code": "ATA122",
+        "name": "Calculus 2",
+        "code": "MATH1002",
+        "credit": "6",
+        "requiredCredits": "0",
+        "quota": "0",
+        "semester": "2",
+        "preRequisiteCourses": [],
+        "weeklyHours": [],
+        "registeredStudents": []
+      },
+      {
+        "name": "Physics Lab 2",
+        "code": "PHYS1104",
         "credit": "2",
         "requiredCredits": "0",
         "quota": "0",
@@ -111,13 +111,25 @@
         "registeredStudents": []
       },
       {
-        "name": "Calculus 1",
-        "code": "MATH1001",
+        "name": "Computer Programming 2",
+        "code": "CSE1242",
         "credit": "6",
         "requiredCredits": "0",
         "quota": "0",
         "semester": "2",
-        "preRequisiteCourses": [],
+        "preRequisiteCourses": [
+          {
+            "name": "Computer Programming 1",
+            "code": "CSE1241",
+            "credit": "6",
+            "requiredCredits": "0",
+            "quota": "0",
+            "semester": "1",
+            "preRequisiteCourses": [],
+            "weeklyHours": [],
+            "": []
+          }
+        ],
         "weeklyHours": [],
         "registeredStudents": []
       },
@@ -133,20 +145,9 @@
         "registeredStudents": []
       },
       {
-        "name": "Turkish Language 2",
-        "code": "TRD122",
-        "credit": "2",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "1",
-        "preRequisiteCourses": [],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
-        "name": "Discrete Computational Structure",
-        "code": "CSE2023",
-        "credit": "6",
+        "name": "Numerical Methods",
+        "code": "MATH2059",
+        "credit": "4",
         "requiredCredits": "0",
         "quota": "0",
         "semester": "3",
@@ -155,9 +156,9 @@
         "registeredStudents": []
       },
       {
-        "name": "Engineering Economy",
-        "code": "ECON2004",
-        "credit": "4",
+        "name": "Discrete Computational Structures",
+        "code": "CSE2023",
+        "credit": "6",
         "requiredCredits": "0",
         "quota": "0",
         "semester": "3",
@@ -179,29 +180,6 @@
     ],
     "failedCourses": [
       {
-        "name": "Computer Programming 2",
-        "code": "CSE1242",
-        "credit": "6",
-        "requiredCredits": "0",
-        "quota": "0",
-        "semester": "2",
-        "preRequisiteCourses": [
-          {
-            "name": "Computer Programming 1",
-            "code": "CSE1241",
-            "credit": "6",
-            "requiredCredits": "0",
-            "quota": "0",
-            "semester": "1",
-            "preRequisiteCourses": [],
-            "weeklyHours": [],
-            "registeredStudents": []
-          }
-        ],
-        "weeklyHours": [],
-        "registeredStudents": []
-      },
-      {
         "name": "Physics 2",
         "code": "PHYS1102",
         "credit": "4",
@@ -213,20 +191,20 @@
         "registeredStudents": []
       },
       {
-        "name": "Numerical Methods",
-        "code": "MATH2059",
-        "credit": "4",
+        "name": "Data Structures",
+        "code": "CSE2225",
+        "credit": "7",
         "requiredCredits": "0",
         "quota": "0",
         "semester": "3",
         "preRequisiteCourses": [
           {
-            "name": "Calculus 1",
-            "code": "MATH1001",
+            "name": "Computer Programming 2",
+            "code": "CSE1242",
             "credit": "6",
             "requiredCredits": "0",
             "quota": "0",
-            "semester": "1",
+            "semester": "2",
             "preRequisiteCourses": [],
             "weeklyHours": [],
             "registeredStudents": []

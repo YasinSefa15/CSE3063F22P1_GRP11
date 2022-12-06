@@ -38,7 +38,6 @@ public class SimulationController extends Controller {
             exportJSONFile(student);
         }
 
-        //todo : will be fixed
         exportJSONFile(this.getError());
     }
 

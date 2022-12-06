@@ -8,6 +8,7 @@ class SimulationControllerTest {
 
     @Test
     void testRandomCourse() {
-       assertEquals(1,1);
+
+        assertEquals(1,1);
     }
 }

@@ -4,6 +4,7 @@ import iteration2.Models.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -15,10 +16,19 @@ public class LabelingController extends Controller {
 
     public LabelingController(RegistrationError error) {
         super.setError(error);
+        initDirectories();
         initObjects();
         RandomizationController randomizationController = new RandomizationController(new RegistrationError());
         students.addAll(randomizationController.generateRandomInputs(courses, chooseRandomAdvisor()));
 
+    }
+
+    private void initDirectories() {
+        File directory = new File(String.valueOf(System.getProperty("user.dir") + "/iteration2/Data/Input/Students"));
+
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
     }
 
     public void execute() {

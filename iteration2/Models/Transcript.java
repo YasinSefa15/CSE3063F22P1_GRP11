@@ -90,7 +90,7 @@ public class Transcript extends Model{
     public JSONArray convertArraylistToJsonArray(ArrayList<Course> arrayList){
         JSONArray jsonArray=new JSONArray();
         for (int i=0;i<arrayList.size();i++){
-            jsonArray.put(arrayList.get(i).getName());
+            jsonArray.put(arrayList.get(i).toJson());
         }
         return jsonArray;
     }

@@ -1,4 +1,5 @@
 package iteration2.Models;
+
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -8,7 +9,7 @@ public class Mandatory extends Course {
 
     public Mandatory(String name, String code, int credit, int requiredCredits, int quota, int semester,
                      ArrayList<Course> preRequisiteCourses, ArrayList<String> weeklyHours,
-                     ArrayList<Student> registeredStudents, ArrayList<Lab> lab){
+                     ArrayList<Student> registeredStudents, ArrayList<Lab> lab) {
         this.setName(name);
         this.setCode(code);
         this.setCredit(credit);
@@ -26,5 +27,7 @@ public class Mandatory extends Course {
     }
 
     @Override
-    public JSONObject toJson() {return null;}
+    public JSONObject toJson() {
+        return super.toJson();
+    }
 }

@@ -1,9 +1,11 @@
 package iteration2.Controllers;
 
-import iteration2.Models.RegistrationError;
-import iteration2.Models.Student;
+import iteration2.Models.*;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class RandomizationController extends Controller {
 
@@ -14,15 +16,16 @@ public class RandomizationController extends Controller {
         super.setError(error);
     }
 
-    public void generateRandomInputs() {
-        generateStudents(400 + (int) (Math.random() * 100));
+    public ArrayList<Student> generateRandomInputs(ArrayList<Course> courses, Advisor advisor) {
+        return generateStudents(400 + (int) (Math.random() * 100), courses, advisor);
     }
 
-    public void generateStudents(int count) {
+    public ArrayList<Student> generateStudents(int count, ArrayList<Course> courses, Advisor advisor) {
         String requestedPath = System.getProperty("user.dir") + "/iteration2/Data/Input/Students";
         String[] fileNames = new File(requestedPath).list();
 
         int availableStudents = fileNames.length;
+        ArrayList<Student> students = new ArrayList<>();
         int semester = 1;
         String ssn = "";
 
@@ -38,28 +41,90 @@ public class RandomizationController extends Controller {
 
             ssn = String.valueOf((long) (Math.random() * 1000000000));
             ssn += String.valueOf((int) (Math.random() * 100));
-
-            Student student = new Student(
+            students.add(new Student(
                     firstNames[(int) (Math.random() * firstNames.length)],
                     lastNames[(int) (Math.random() * lastNames.length)],
                     ssn,
-                    'm',
-                    "x",
+                    (int) (Math.random() * 2) == 1 ? 'm' : 'f',
+                    "1501" + String.valueOf(2022 - (semester / 2)).substring(1, 3).concat(String.valueOf((int) (Math.random() * 899 + 100 ))),
                     semester == 4 && (int) (Math.random() * 2) == 1,
                     2022 - (semester / 2),
                     semester,
-                    null,
-                    null
-            );
+                    generateTranscript(semester, courses),
+                    advisor
+            ));
 
+            students.forEach((n) -> {
+                n.setSelectedCourses(new HashMap<Course, Boolean>());
+            });
+
+            exportJSONFile(students.get(students.size() - 1));
         }
 
         System.out.println("Generated new " + (count - availableStudents) + " students." +
                 " There has been " + availableStudents + " available students before the execution.");
+
+        return students;
+    }
+
+
+    public Transcript generateTranscript(int semester, ArrayList<Course> courses) {
+        Transcript transcript = new Transcript(
+                0,
+                0,
+                new ArrayList<>(),
+                new ArrayList<>()
+        );
+
+        boolean provides = true;
+
+        for (Course course : courses) {
+            if (course.getSemester() <= semester) {
+                //Student passed the course
+                if ((int) (Math.random() * 2) == 1) {
+                    provides = true;
+                    for (Course prerequisite : course.getPreRequisiteCourses()) {
+                        if (!transcript.getCompletedCourses().contains(prerequisite)) {
+                            provides = false;
+                            break;
+                        }
+                    }
+
+                    if (provides) {
+                        transcript.addToCompletedCourses(course);
+                        transcript.setCompletedCredit(transcript.getCompletedCredit() + course.getCredit());
+                    }
+
+                } else { //Student failed the course
+                    transcript.addToFailedCourses(course);
+                }
+            }
+        }
+
+        transcript.calculateGPA();
+
+        return transcript;
     }
 
     @Override
     public boolean exportJSONFile(Object object) {
-        return super.exportJSONFile(object);
+        String content = (((Student) object).toJson()).toString();
+
+        String fullFileName = System.getProperty("user.dir") + "/iteration2/Data/Input/Students/"
+                + ((Student) object).getId() + ".json";
+
+        try {
+            File myObj = new File(fullFileName);
+            myObj.createNewFile();
+
+            FileWriter myWriter = new FileWriter(fullFileName);
+            myWriter.write(content);
+            myWriter.close();
+        } catch (Exception e) {
+            System.out.println("An error occurred while exporting random .json file data.");
+            e.printStackTrace();
+        }
+
+        return true;
     }
 }

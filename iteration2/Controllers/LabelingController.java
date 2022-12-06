@@ -13,8 +13,15 @@ public class LabelingController extends Controller {
     private ArrayList<Curriculum> curriculums;
     private ArrayList<Course> courses;
 
-    public void execute() {
+    public LabelingController(RegistrationError error) {
+        super.setError(error);
         initObjects();
+        RandomizationController randomizationController = new RandomizationController(new RegistrationError());
+        students.addAll(randomizationController.generateRandomInputs(courses, chooseRandomAdvisor()));
+
+    }
+
+    public void execute() {
         SimulationController simulationController = new SimulationController(courses, students, curriculums, advisors);
         simulationController.setError(this.getError());
         simulationController.startSimulation();
@@ -51,6 +58,7 @@ public class LabelingController extends Controller {
                         null
                 );
                 newCurriculum.addCourseToSemester(newCourse);
+
                 this.courses.add(newCourse);
             }
             curriculums.add(newCurriculum);
@@ -145,7 +153,7 @@ public class LabelingController extends Controller {
         return advisors;
     }
 
-    private Advisor chooseRandomAdvisor() {
+    public Advisor chooseRandomAdvisor() {
         int studentCount = students.size();
         for (Advisor advisor : advisors) {
             if (advisor.getStudents().size() <= studentCount / advisors.size()) {
@@ -155,5 +163,4 @@ public class LabelingController extends Controller {
 
         return advisors.get(0);
     }
-
 }

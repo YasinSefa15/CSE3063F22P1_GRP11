@@ -46,15 +46,14 @@ public class SimulationController extends Controller {
         studentController.setError(this.getError());
         this.deniedCourses = new ArrayList<>();
 
-        Random randomizer = new Random();
         int studentsCount = students.size();
         Student student = null;
+
         for (int i = 0; i < studentsCount; i++) {
             student = students.get(i);
             Course course = null;
             this.deniedCourses.clear();
 
-            //todo : can change later
             while (student.getSelectedCourses().size() != 5) {
                 course = randomCourse(student);
 

@@ -15,7 +15,7 @@ class LabelingControllerTest {
 
     String ANSI_GREEN = "\u001B[32m";
     String ANSI_RESET = "\u001B[0m";
-    LabelingController labelingControllerTest = new LabelingController();
+    LabelingController labelingControllerTest = new LabelingController(null);
     RandomizationController randomizationControllerTest = new RandomizationController(null);
 
     int advisorCount;
@@ -41,7 +41,7 @@ class LabelingControllerTest {
         advisorCount++;
         labelingControllerTest.getAdvisors().add(generateAdvisor(advisorCount));
         returnedAdvisor = labelingControllerTest.chooseRandomAdvisor();
-        assertEquals(returnedAdvisor.getSsn(), labelingControllerTest.getAdvisors().get(1).getSsn());
+        assertEquals(returnedAdvisor.getSsn(), labelingControllerTest.getAdvisors().get(0).getSsn());
         returnedAdvisor.getStudents().add(students.get(1));
 
         //Add one more student
@@ -49,7 +49,7 @@ class LabelingControllerTest {
 
         //0 index advisor will be assigned, not the advisor in the first index
         returnedAdvisor = labelingControllerTest.chooseRandomAdvisor();
-        assertNotEquals(returnedAdvisor.getSsn(), labelingControllerTest.getAdvisors().get(1).getSsn());
+        assertNotEquals(returnedAdvisor.getSsn(), labelingControllerTest.getAdvisors().get(0).getSsn());
 
         System.out.println(ANSI_GREEN + "testChooseRandomAdvisor success" + ANSI_RESET);
     }

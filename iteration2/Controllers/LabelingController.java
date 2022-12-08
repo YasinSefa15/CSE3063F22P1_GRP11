@@ -14,17 +14,12 @@ public class LabelingController extends Controller {
     private ArrayList<Curriculum> curriculums;
     private ArrayList<Course> courses;
 
-    public LabelingController(){
-
-    }
     public LabelingController(RegistrationError error) {
         super.setError(error);
-        initDirectories();
-        initObjects();
     }
 
     private void initDirectories() {
-        File directory = new File(String.valueOf(System.getProperty("user.dir") + "/iteration2/Data/Input/Students"));
+        File directory = new File(System.getProperty("user.dir") + "/iteration2/Data/Input/Students");
 
         if (!directory.exists()) {
             directory.mkdirs();
@@ -32,17 +27,24 @@ public class LabelingController extends Controller {
     }
 
     public void execute() {
+        //inits directories and objects first
+        initDirectories();
+        initObjects();
+
+        //then start simmlation
         SimulationController simulationController = new SimulationController(courses, students, curriculums, advisors);
         simulationController.setError(this.getError());
         simulationController.startSimulation();
     }
 
     public void initObjects() {
-        RandomizationController randomizationController = new RandomizationController(new RegistrationError());
-        students.addAll(randomizationController.generateStudentsAndExport(courses, advisors));
         initAdvisors();
         initCoursesAndCurriculum();
         initStudents();
+
+        RandomizationController randomizationController = new RandomizationController(new RegistrationError());
+        students.addAll(randomizationController.generateStudentsAndExport(courses, advisors));
+
     }
 
     public void initCoursesAndCurriculum() {
@@ -168,7 +170,7 @@ public class LabelingController extends Controller {
     public Advisor chooseRandomAdvisor() {
         int studentCount = students.size();
         for (Advisor advisor : advisors) {
-            if (advisor.getStudents().size() < studentCount / advisors.size()) {
+            if (advisor.getStudents().size() <= studentCount / advisors.size()) {
                 return advisor;
             }
         }
@@ -183,6 +185,7 @@ public class LabelingController extends Controller {
     public void setAdvisors(ArrayList<Advisor> advisors) {
         this.advisors = advisors;
     }
+
     public ArrayList<Advisor> getAdvisors() {
         return this.advisors;
     }

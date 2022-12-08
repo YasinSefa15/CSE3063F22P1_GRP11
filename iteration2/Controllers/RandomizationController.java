@@ -53,8 +53,7 @@ public class RandomizationController extends Controller {
                     2022 - (semester / 2),
                     semester,
                     generateTranscript(semester, courses),
-                    null
-                    //advisors.get((int) (Math.random() * advisors.size()))
+                    advisors.get((int) (Math.random() * advisors.size()))
             ));
 
             students.forEach((n) -> {
@@ -68,32 +67,6 @@ public class RandomizationController extends Controller {
         return students;
     }
 
-    public ArrayList<Course> generateMandatoryCourses(int count) {
-        ArrayList<Course> courses = new ArrayList<>();
-
-
-        for (int i = 0; i < count; i++) {
-
-            courses.add(
-                    new Mandatory(
-                            "exampleLecture",
-                            "9999",
-                            (int) (Math.random() * 8),
-                            (int) (Math.random() * 5) * 5,
-                            60,
-                            (int) (Math.random() * 8) + 1,
-                            null,
-                            null,
-                            null,
-                            null
-                    )
-            );
-        }
-
-        System.out.println("Generated new " + (count) + "  mandatory courses.");
-
-        return courses;
-    }
 
     public Transcript generateTranscript(int semester, ArrayList<Course> courses) {
         Transcript transcript = new Transcript(

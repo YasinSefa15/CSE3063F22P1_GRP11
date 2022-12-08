@@ -53,7 +53,7 @@ public class RandomizationController extends Controller {
                     2022 - (semester / 2),
                     semester,
                     generateTranscript(semester, courses),
-                    advisors.get((int) (Math.random() * advisors.size()))
+                    advisors.size() != 0? advisors.get((int) (Math.random() * advisors.size())) : null
             ));
 
             students.forEach((n) -> {

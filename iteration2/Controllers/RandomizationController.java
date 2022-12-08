@@ -16,21 +16,23 @@ public class RandomizationController extends Controller {
         super.setError(error);
     }
 
-    public ArrayList<Student> generateRandomInputs(ArrayList<Course> courses, Advisor advisor) {
-        return generateStudents(400 + (int) (Math.random() * 100), courses, advisor);
-    }
-
-    public ArrayList<Student> generateStudents(int count, ArrayList<Course> courses, Advisor advisor) {
+    public ArrayList<Student> generateStudentsAndExport(ArrayList<Course> courses, ArrayList<Advisor> advisors) {
         String requestedPath = System.getProperty("user.dir") + "/iteration2/Data/Input/Students";
         String[] fileNames = new File(requestedPath).list();
-
         int availableStudents = fileNames.length;
+        int newStudentsCount = (400 + (int) (Math.random() * 100)) - availableStudents;
+        ArrayList<Student> students = generateStudents(newStudentsCount, courses, advisors);
+        students.forEach(this::exportJSONFile);
+        return students;
+    }
+
+    public ArrayList<Student> generateStudents(int count, ArrayList<Course> courses, ArrayList<Advisor> advisors) {
         ArrayList<Student> students = new ArrayList<>();
         int semester = 1;
         String ssn = "";
 
 
-        for (int i = 0; i < count - availableStudents; i++) {
+        for (int i = 0; i < count; i++) {
             if (i > count / 4 && i < count / 2) {
                 semester = 2;
             } else if (i > count / 2 && i < count * 3 / 4) {
@@ -46,27 +48,52 @@ public class RandomizationController extends Controller {
                     lastNames[(int) (Math.random() * lastNames.length)],
                     ssn,
                     (int) (Math.random() * 2) == 1 ? 'm' : 'f',
-                    "1501" + String.valueOf(2022 - (semester / 2)).substring(1, 3).concat(String.valueOf((int) (Math.random() * 899 + 100 ))),
+                    "1501" + String.valueOf(2022 - (semester / 2)).substring(1, 3).concat(String.valueOf((int) (Math.random() * 899 + 100))),
                     semester == 4 && (int) (Math.random() * 2) == 1,
                     2022 - (semester / 2),
                     semester,
                     generateTranscript(semester, courses),
-                    advisor
+                    null
+                    //advisors.get((int) (Math.random() * advisors.size()))
             ));
 
             students.forEach((n) -> {
                 n.setSelectedCourses(new HashMap<Course, Boolean>());
             });
 
-            exportJSONFile(students.get(students.size() - 1));
         }
 
-        System.out.println("Generated new " + (count - availableStudents) + " students." +
-                " There has been " + availableStudents + " available students before the execution.");
+        System.out.println("Generated new " + (count) + " students.");
 
         return students;
     }
 
+    public ArrayList<Course> generateMandatoryCourses(int count) {
+        ArrayList<Course> courses = new ArrayList<>();
+
+
+        for (int i = 0; i < count; i++) {
+
+            courses.add(
+                    new Mandatory(
+                            "exampleLecture",
+                            "9999",
+                            (int) (Math.random() * 8),
+                            (int) (Math.random() * 5) * 5,
+                            60,
+                            (int) (Math.random() * 8) + 1,
+                            null,
+                            null,
+                            null,
+                            null
+                    )
+            );
+        }
+
+        System.out.println("Generated new " + (count) + "  mandatory courses.");
+
+        return courses;
+    }
 
     public Transcript generateTranscript(int semester, ArrayList<Course> courses) {
         Transcript transcript = new Transcript(

@@ -20,16 +20,16 @@ public class RandomizationController extends Controller {
         super.setError(error);
         try {
             File dir = new File(System.getProperty("user.dir") + "/iteration2/Data/Input/Students");
-            for(File file: dir.listFiles())
+            for (File file : dir.listFiles())
                 if (!file.isDirectory())
                     file.delete();
 
             dir = new File(System.getProperty("user.dir") + "/iteration2/Data/Output/Students");
-            for(File file: dir.listFiles()){
+            for (File file : dir.listFiles()) {
                 file.delete();
             }
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
 
         }
@@ -56,7 +56,7 @@ public class RandomizationController extends Controller {
 
     public ArrayList<Student> generateStudents(int count, ArrayList<Course> courses, ArrayList<Advisor> advisors, int semester) {
         ArrayList<Student> students = new ArrayList<>();
-        semester = semester + 2 * ((int)(Math.random() * 4));
+        semester = semester + 2 * ((int) (Math.random() * 4));
         String ssn = "";
 
         for (int i = 0; i < count; i++) {
@@ -98,17 +98,24 @@ public class RandomizationController extends Controller {
                 new ArrayList<>()
         );
 
-        boolean provides = true;
+        boolean provides;
 
         for (Course course : courses) {
             if (course.getSemester() <= semester) {
-                //Student passed the course
-                if ((int) (Math.random() * 2) == 1) {
+                //Student passed the course by 25% chance
+                if ((int) (Math.random() * 5) >= 1) {
                     provides = true;
-                    for (Course prerequisite : course.getPreRequisiteCourses()) {
-                        if (!transcript.getCompletedCourses().contains(prerequisite)) {
-                            provides = false;
-                            break;
+                    //student did not completed required credits for the course
+                    if (transcript.getCompletedCredit() < course.getRequiredCredits()) {
+                        provides = false;
+                    } else {
+                        //student has enough credits
+                        //student did not completed required courses for the course
+                        for (Course prerequisite : course.getPreRequisiteCourses()) {
+                            if (!transcript.getCompletedCourses().contains(prerequisite)) {
+                                provides = false;
+                                break;
+                            }
                         }
                     }
 

@@ -3,8 +3,10 @@ package iteration2.Controllers;
 import iteration2.Models.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -14,8 +16,10 @@ public class LabelingController extends Controller {
     private ArrayList<Curriculum> curriculums;
     private ArrayList<Course> courses;
 
+
     public LabelingController(RegistrationError error) {
         super.setError(error);
+
     }
 
     private void initDirectories() {
@@ -32,6 +36,7 @@ public class LabelingController extends Controller {
         initObjects();
 
         //then start simmlation
+
         SimulationController simulationController = new SimulationController(courses, students, curriculums, advisors);
         simulationController.setError(this.getError());
         simulationController.startSimulation();
@@ -40,8 +45,8 @@ public class LabelingController extends Controller {
     public void initObjects() {
         initAdvisors();
         initCoursesAndCurriculum();
-        initStudents();
 
+        students = new ArrayList<>();
         RandomizationController randomizationController = new RandomizationController(new RegistrationError());
         students.addAll(randomizationController.generateStudentsAndExport(courses, advisors));
 
@@ -87,43 +92,6 @@ public class LabelingController extends Controller {
         return weeklyHoursList;
     }
 
-
-    public void initStudents() {
-        students = new ArrayList<>();
-        ArrayList<JSONObject> objects = readJSONFiles("Students");
-
-        objects.forEach((n) -> {
-                    Student newStudent = new Student(
-                            n.getString("name"),
-                            n.getString("surname"),
-                            n.getString("ssn"),
-                            n.getString("gender").charAt(0),
-                            n.getString("id"),
-                            n.getBoolean("isGraduate"),
-                            n.getInt("registerDate"),
-                            n.getInt("semesterNo"),
-                            new Transcript(
-                                    n.getJSONObject("Transcript").getDouble("gpa"),
-                                    n.getJSONObject("Transcript").getInt("completedCredit"),
-                                    createCoursesList(n.getJSONObject("Transcript").getJSONArray("completedCourses")),
-                                    createCoursesList(n.getJSONObject("Transcript").getJSONArray("failedCourses"))
-                            ),
-                            chooseRandomAdvisor()
-                    );
-                    students.add(
-                            newStudent
-                    );
-
-                    newStudent.getAdvisor().getStudents().add(newStudent);
-                }
-        );
-
-
-        students.forEach((n) -> {
-            n.setSelectedCourses(new HashMap<Course, Boolean>());
-        });
-    }
-
     private ArrayList<Course> createCoursesList(JSONArray coursesList) {
         ArrayList<Course> resultCourses = new ArrayList<>();
         JSONObject jsonObject = null;
@@ -167,23 +135,9 @@ public class LabelingController extends Controller {
         return advisors;
     }
 
-    public Advisor chooseRandomAdvisor() {
-        int studentCount = students.size();
-        for (Advisor advisor : advisors) {
-            if (advisor.getStudents().size() <= studentCount / advisors.size()) {
-                return advisor;
-            }
-        }
-
-        return advisors.get(0);
-    }
 
     public void setStudents(ArrayList<Student> students) {
         this.students = students;
-    }
-
-    public void setAdvisors(ArrayList<Advisor> advisors) {
-        this.advisors = advisors;
     }
 
     public ArrayList<Advisor> getAdvisors() {

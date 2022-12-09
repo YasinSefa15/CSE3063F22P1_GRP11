@@ -1,11 +1,15 @@
 package iteration2.Controllers;
 
 import iteration2.Models.*;
+import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 
 public class RandomizationController extends Controller {
 
@@ -14,35 +18,51 @@ public class RandomizationController extends Controller {
 
     public RandomizationController(RegistrationError error) {
         super.setError(error);
+        try {
+            File dir = new File(System.getProperty("user.dir") + "/iteration2/Data/Input/Students");
+            for(File file: dir.listFiles())
+                if (!file.isDirectory())
+                    file.delete();
+
+            dir = new File(System.getProperty("user.dir") + "/iteration2/Data/Output/Students");
+            for(File file: dir.listFiles()){
+                file.delete();
+            }
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+
+        }
     }
 
     public ArrayList<Student> generateStudentsAndExport(ArrayList<Course> courses, ArrayList<Advisor> advisors) {
-        String requestedPath = System.getProperty("user.dir") + "/iteration2/Data/Input/Students";
-        String[] fileNames = new File(requestedPath).list();
-        int availableStudents = fileNames.length;
-        int newStudentsCount = (400 + (int) (Math.random() * 100)) - availableStudents;
-        ArrayList<Student> students = generateStudents(newStudentsCount, courses, advisors);
+        JSONObject parameters = null;
+        try {
+            Object obj = new JSONParser()
+                    .parse(new FileReader(System.getProperty("user.dir") + "/iteration2/Data/Input/parameters.json"));
+            parameters = new JSONObject(obj.toString());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.exit(1);
+        }
+
+        int semester = parameters.getString("semester").equals("FALL") ? 1 : 2;
+        int newStudentsCount = parameters.getInt("student_count");
+
+        ArrayList<Student> students = generateStudents(newStudentsCount, courses, advisors, semester);
         students.forEach(this::exportJSONFile);
         return students;
     }
 
-    public ArrayList<Student> generateStudents(int count, ArrayList<Course> courses, ArrayList<Advisor> advisors) {
+    public ArrayList<Student> generateStudents(int count, ArrayList<Course> courses, ArrayList<Advisor> advisors, int semester) {
         ArrayList<Student> students = new ArrayList<>();
-        int semester = 1;
+        semester = semester + 2 * ((int)(Math.random() * 4));
         String ssn = "";
 
-
         for (int i = 0; i < count; i++) {
-            if (i > count / 4 && i < count / 2) {
-                semester = 2;
-            } else if (i > count / 2 && i < count * 3 / 4) {
-                semester = 3;
-            } else if (i > count * 3 / 4) {
-                semester = 4;
-            }
-
             ssn = String.valueOf((long) (Math.random() * 1000000000));
             ssn += String.valueOf((int) (Math.random() * 100));
+            Advisor advisor = chooseRandomAdvisor(students, advisors);
             students.add(new Student(
                     firstNames[(int) (Math.random() * firstNames.length)],
                     lastNames[(int) (Math.random() * lastNames.length)],
@@ -53,8 +73,10 @@ public class RandomizationController extends Controller {
                     2022 - (semester / 2),
                     semester,
                     generateTranscript(semester, courses),
-                    advisors.size() != 0? advisors.get((int) (Math.random() * advisors.size())) : null
+                    advisor
             ));
+
+            advisor.getStudents().add(students.get(students.size() - 1));
 
             students.forEach((n) -> {
                 n.setSelectedCourses(new HashMap<Course, Boolean>());
@@ -104,6 +126,17 @@ public class RandomizationController extends Controller {
         transcript.calculateGPA();
 
         return transcript;
+    }
+
+    public Advisor chooseRandomAdvisor(ArrayList<Student> students, ArrayList<Advisor> advisors) {
+        double studentCount = students.size();
+        for (Advisor advisor : advisors) {
+            if (advisor.getStudents().size() <= studentCount / advisors.size()) {
+                return advisor;
+            }
+        }
+
+        return advisors.get(0);
     }
 
     @Override

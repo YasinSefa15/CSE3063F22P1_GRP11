@@ -27,6 +27,7 @@ public class SimulationController extends Controller {
     public void startSimulation() {
         registerStudentsToClasses();
         exportObjects();
+        printErrorMessages();
     }
 
     private void exportObjects() {
@@ -37,8 +38,13 @@ public class SimulationController extends Controller {
             student.getTranscript().calculateGPA();
             exportJSONFile(student);
         }
-
         exportJSONFile(this.getError());
+    }
+
+    private void printErrorMessages() {
+        for (String message : this.getError().getAllErrorMessages()) {
+            System.out.println(message);
+        }
     }
 
     public void registerStudentsToClasses() {

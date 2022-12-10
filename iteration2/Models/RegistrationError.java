@@ -99,6 +99,11 @@ public class RegistrationError extends Model {
             count=0;
         }
     }
+
+    public ArrayList<String> getAllErrorMessages() {
+        return allErrorMessages;
+    }
+
     @Override
     public JSONObject toJson() {
         writeAllErrors(errorList);

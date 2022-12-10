@@ -3,12 +3,9 @@ package iteration2.Controllers;
 import iteration2.Models.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.json.simple.parser.JSONParser;
 
 import java.io.File;
-import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class LabelingController extends Controller {
     private ArrayList<Student> students;
@@ -44,76 +41,81 @@ public class LabelingController extends Controller {
 
     public void initObjects() {
         initAdvisors();
-        initCoursesAndCurriculum();
-
+        initCoursesAndCurriculums();
         students = new ArrayList<>();
         RandomizationController randomizationController = new RandomizationController(new RegistrationError());
         students.addAll(randomizationController.generateStudentsAndExport(courses, advisors));
 
     }
 
-    public void initCoursesAndCurriculum() {
+    public void initCoursesAndCurriculums() {
         courses = new ArrayList<>();
         curriculums = new ArrayList<>();
 
         ArrayList<JSONObject> objects = readJSONFiles("Curriculum");
 
         for (JSONObject object : objects) {
-            Curriculum newCurriculum = new Curriculum();
+            Curriculum curriculum2015 = new Curriculum();
+            Curriculum curriculum2020 = new Curriculum();
+            readCurriculumJSON(object, curriculum2015, "Curriculum2015");
+            readCurriculumJSON(object, curriculum2020, "Curriculum2020");
+            curriculums.add(curriculum2015);
+            curriculums.add(curriculum2020);
+        }
+    }
 
-            JSONArray courses = object.getJSONArray("Curriculum2020");
-            for (int i = 0; i < courses.length(); i++) {
-                JSONObject course = courses.getJSONObject(i);
-                switch (course.getInt("courseType")) {
-                    case 0:
-                        Course mandatoryCourse = new Mandatory(
-                                course.getString("name"),
-                                course.getString("code"),
-                                course.getInt("credit"),
-                                course.getInt("requiredCredits"),
-                                course.getInt("quota"),
-                                course.getInt("semester"),
-                                createCoursesList(course.getJSONArray("preRequisiteCourses")),
-                                createWeeklyHoursList(course.getJSONArray("weeklyHours")),
-                                new ArrayList<>()
-                        );
-                        newCurriculum.addCourseToSemester(mandatoryCourse);
-                        this.courses.add(mandatoryCourse);
-                        break;
-                    case 1:
-                        Course labCourse = new Lab(
-                                course.getString("name"),
-                                course.getString("code"),
-                                course.getInt("credit"),
-                                course.getInt("requiredCredits"),
-                                course.getInt("quota"),
-                                course.getInt("semester"),
-                                createCoursesList(course.getJSONArray("preRequisiteCourses")),
-                                createWeeklyHoursList(course.getJSONArray("weeklyHours")),
-                                new ArrayList<>()
-                                );
-                        newCurriculum.addCourseToSemester(labCourse);
-                        this.courses.add(labCourse);
-                        break;
-                    case 2:
-                        Course electiveCourse = new Elective(
-                                course.getString("name"),
-                                course.getString("code"),
-                                course.getInt("credit"),
-                                course.getInt("requiredCredits"),
-                                course.getInt("quota"),
-                                course.getInt("semester"),
-                                createCoursesList(course.getJSONArray("preRequisiteCourses")),
-                                createWeeklyHoursList(course.getJSONArray("weeklyHours")),
-                                new ArrayList<>(),
-                                course.getEnum(ElectiveType.class, "electiveType")
-                        );
-                        newCurriculum.addCourseToSemester(electiveCourse);
-                        this.courses.add(electiveCourse);
-                        break;
-                }
+    private void readCurriculumJSON(JSONObject object, Curriculum newCurriculum, String curriculum) {
+        JSONArray courses = object.getJSONArray(curriculum);
+        for (int i = 0; i < courses.length(); i++) {
+            JSONObject course = courses.getJSONObject(i);
+            switch (course.getInt("courseType")) {
+                case 0:
+                    Course mandatoryCourse = new Mandatory(
+                            course.getString("name"),
+                            course.getString("code"),
+                            course.getInt("credit"),
+                            course.getInt("requiredCredits"),
+                            course.getInt("quota"),
+                            course.getInt("semester"),
+                            createCoursesList(course.getJSONArray("preRequisiteCourses")),
+                            createWeeklyHoursList(course.getJSONArray("weeklyHours")),
+                            new ArrayList<>()
+                    );
+                    newCurriculum.addCourseToSemester(mandatoryCourse);
+                    this.courses.add(mandatoryCourse);
+                    break;
+                case 1:
+                    Course labCourse = new Lab(
+                            course.getString("name"),
+                            course.getString("code"),
+                            course.getInt("credit"),
+                            course.getInt("requiredCredits"),
+                            course.getInt("quota"),
+                            course.getInt("semester"),
+                            createCoursesList(course.getJSONArray("preRequisiteCourses")),
+                            createWeeklyHoursList(course.getJSONArray("weeklyHours")),
+                            new ArrayList<>()
+                            );
+                    newCurriculum.addCourseToSemester(labCourse);
+                    this.courses.add(labCourse);
+                    break;
+                case 2:
+                    Course electiveCourse = new Elective(
+                            course.getString("name"),
+                            course.getString("code"),
+                            course.getInt("credit"),
+                            course.getInt("requiredCredits"),
+                            course.getInt("quota"),
+                            course.getInt("semester"),
+                            createCoursesList(course.getJSONArray("preRequisiteCourses")),
+                            createWeeklyHoursList(course.getJSONArray("weeklyHours")),
+                            new ArrayList<>(),
+                            course.getEnum(ElectiveType.class, "electiveType")
+                    );
+                    newCurriculum.addCourseToSemester(electiveCourse);
+                    this.courses.add(electiveCourse);
+                    break;
             }
-            curriculums.add(newCurriculum);
         }
     }
 

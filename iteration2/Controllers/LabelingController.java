@@ -64,8 +64,8 @@ public class LabelingController extends Controller {
             JSONArray courses = object.getJSONArray("Curriculum2020");
             for (int i = 0; i < courses.length(); i++) {
                 JSONObject course = courses.getJSONObject(i);
-                switch (course.getString("courseType")) {
-                    case "0":
+                switch (course.getInt("courseType")) {
+                    case 0:
                         Course mandatoryCourse = new Mandatory(
                                 course.getString("name"),
                                 course.getString("code"),
@@ -80,7 +80,7 @@ public class LabelingController extends Controller {
                         newCurriculum.addCourseToSemester(mandatoryCourse);
                         this.courses.add(mandatoryCourse);
                         break;
-                    case "1":
+                    case 1:
                         Course labCourse = new Lab(
                                 course.getString("name"),
                                 course.getString("code"),
@@ -95,7 +95,7 @@ public class LabelingController extends Controller {
                         newCurriculum.addCourseToSemester(labCourse);
                         this.courses.add(labCourse);
                         break;
-                    case "2":
+                    case 2:
                         Course electiveCourse = new Elective(
                                 course.getString("name"),
                                 course.getString("code"),

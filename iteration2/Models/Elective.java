@@ -5,7 +5,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class Elective extends Course{
-    private final ElectiveType type;
+    private ElectiveType type;
 
     public Elective(String name, String code, int credit, int requiredCredits, int quota, int semester,
                     ArrayList<Course> preRequisiteCourses, ArrayList<String> weeklyHours,
@@ -19,11 +19,15 @@ public class Elective extends Course{
         this.setPreRequisiteCourses(preRequisiteCourses);
         this.setWeeklyHours(weeklyHours);
         this.setRegisteredStudents(registeredStudents);
-        this.type = type;
+        this.setType(type);
     }
 
     public ElectiveType getType() {
         return type;
+    }
+
+    public void setType (ElectiveType type) {
+        this.type = type;
     }
 
     @Override

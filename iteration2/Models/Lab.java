@@ -20,14 +20,18 @@ public class Lab extends Course {
         this.setPreRequisiteCourses(preRequisiteCourses);
         this.setWeeklyHours(weeklyHours);
         this.setRegisteredStudents(registeredStudents);
-        this.sectionNumber = -1;
+        this.setSectionNumber(generateSectionNumber());
     }
 
-    public void generateSectionNumber(){
-        this.sectionNumber = (int)Math.floor(Math.random()*(4)+1);
+    public int generateSectionNumber(){
+        return (int)Math.floor(Math.random()*(4)+1);
     }
     public int getSectionNumber() {
         return sectionNumber;
+    }
+
+    public void setSectionNumber(int sectionNumber) {
+        this.sectionNumber = sectionNumber;
     }
 
     @Override

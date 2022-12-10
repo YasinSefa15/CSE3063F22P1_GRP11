@@ -13,8 +13,8 @@ import java.util.Objects;
 
 public class RandomizationController extends Controller {
 
-    private final String[] firstNames = {"John", "Jane", "Bob", "Alice", "Joe", "Mary", "Tom", "Sally", "Bill", "Sue"};
-    private final String[] lastNames = {"Smith", "Jones", "Brown", "Johnson", "Williams", "Miller", "Davis", "Garcia", "Rodriguez", "Wilson"};
+    private final String[] firstNames = {"Yiğit", "Samet", "Baran", "Ali", "Emre", "Tahsin", "Necmettin", "Kerem", "Berke", "Hasan", "Osman", "Tunahan", "Yunus", "Yusuf", "Ceren", "Esra", "Kübra", "Ezgi", "Ayşe", "Berfin"};
+    private final String[] lastNames = {"Ayan", "Öztürk", "Özdemir", "Aydın", "Demir", "Türkoğlu", "Yayın", "Oduncu", "Ekinci", "Toraman", "Akkurt", "Engin", "Yasan", "Özcan", "Kaya", "Kara", "Kılıç", "Koç"};
 
     public RandomizationController(RegistrationError error) {
         super.setError(error);

@@ -64,21 +64,54 @@ public class LabelingController extends Controller {
             JSONArray courses = object.getJSONArray("Curriculum2020");
             for (int i = 0; i < courses.length(); i++) {
                 JSONObject course = courses.getJSONObject(i);
-                Course newCourse = new Mandatory(
-                        course.getString("name"),
-                        course.getString("code"),
-                        course.getInt("credit"),
-                        course.getInt("requiredCredits"),
-                        course.getInt("quota"),
-                        course.getInt("semester"),
-                        createCoursesList(course.getJSONArray("preRequisiteCourses")),
-                        createWeeklyHoursList(course.getJSONArray("weeklyHours")),
-                        new ArrayList<>(),
-                        null
-                );
-                newCurriculum.addCourseToSemester(newCourse);
-
-                this.courses.add(newCourse);
+                switch (course.getString("courseType")) {
+                    case "0":
+                        Course mandatoryCourse = new Mandatory(
+                                course.getString("name"),
+                                course.getString("code"),
+                                course.getInt("credit"),
+                                course.getInt("requiredCredits"),
+                                course.getInt("quota"),
+                                course.getInt("semester"),
+                                createCoursesList(course.getJSONArray("preRequisiteCourses")),
+                                createWeeklyHoursList(course.getJSONArray("weeklyHours")),
+                                new ArrayList<>()
+                        );
+                        newCurriculum.addCourseToSemester(mandatoryCourse);
+                        this.courses.add(mandatoryCourse);
+                        break;
+                    case "1":
+                        Course labCourse = new Lab(
+                                course.getString("name"),
+                                course.getString("code"),
+                                course.getInt("credit"),
+                                course.getInt("requiredCredits"),
+                                course.getInt("quota"),
+                                course.getInt("semester"),
+                                createCoursesList(course.getJSONArray("preRequisiteCourses")),
+                                createWeeklyHoursList(course.getJSONArray("weeklyHours")),
+                                new ArrayList<>()
+                                );
+                        newCurriculum.addCourseToSemester(labCourse);
+                        this.courses.add(labCourse);
+                        break;
+                    case "2":
+                        Course electiveCourse = new Elective(
+                                course.getString("name"),
+                                course.getString("code"),
+                                course.getInt("credit"),
+                                course.getInt("requiredCredits"),
+                                course.getInt("quota"),
+                                course.getInt("semester"),
+                                createCoursesList(course.getJSONArray("preRequisiteCourses")),
+                                createWeeklyHoursList(course.getJSONArray("weeklyHours")),
+                                new ArrayList<>(),
+                                course.getEnum(ElectiveType.class, "electiveType")
+                        );
+                        newCurriculum.addCourseToSemester(electiveCourse);
+                        this.courses.add(electiveCourse);
+                        break;
+                }
             }
             curriculums.add(newCurriculum);
         }
@@ -111,8 +144,7 @@ public class LabelingController extends Controller {
                                     finalJsonObject.getInt("semester"),
                                     createCoursesList(finalJsonObject.getJSONArray("preRequisiteCourses")),
                                     createWeeklyHoursList(finalJsonObject.getJSONArray("weeklyHours")),
-                                    new ArrayList<>(),
-                                    null
+                                    new ArrayList<>()
                             ))
             );
         }

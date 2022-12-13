@@ -121,7 +121,7 @@ public class LabelingController extends Controller {
         }
     }
 
-    private ArrayList<String> createWeeklyHoursList(JSONArray weeklyHours) {
+    public ArrayList<String> createWeeklyHoursList(JSONArray weeklyHours) {
         ArrayList<String> weeklyHoursList = new ArrayList<>();
         for (int i = 0; i < weeklyHours.length(); i++) {
             weeklyHoursList.add(weeklyHours.getString(i));
@@ -129,7 +129,7 @@ public class LabelingController extends Controller {
         return weeklyHoursList;
     }
 
-    private ArrayList<Course> createCoursesList(JSONArray coursesList) {
+    public ArrayList<Course> createCoursesList(JSONArray coursesList) {
         ArrayList<Course> resultCourses = new ArrayList<>();
         JSONObject jsonObject = null;
         for (int i = 0; i < coursesList.length(); i++) {
@@ -176,7 +176,8 @@ public class LabelingController extends Controller {
         this.students = students;
     }
 
-    public ArrayList<Advisor> getAdvisors() {
-        return this.advisors;
+    public void setCourses(ArrayList<Course> courses) {
+        this.courses = courses;
     }
+
 }

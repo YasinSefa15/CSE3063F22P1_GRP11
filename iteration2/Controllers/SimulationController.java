@@ -15,8 +15,8 @@ public class SimulationController extends Controller {
 
     private ArrayList<Course> deniedCourses;
 
-    SimulationController(ArrayList<Student> students,
-                         ArrayList<Curriculum> curriculums, ArrayList<Advisor> advisors) {
+     SimulationController(ArrayList<Student> students,
+                                ArrayList<Curriculum> curriculums, ArrayList<Advisor> advisors) {
         this.students = students;
         this.curriculums = curriculums;
         this.advisors = advisors;
@@ -72,5 +72,11 @@ public class SimulationController extends Controller {
             }
 
         }
+    }
+
+
+
+    public ArrayList<Advisor> getAdvisors() {
+        return this.advisors;
     }
 }

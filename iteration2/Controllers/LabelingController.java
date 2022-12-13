@@ -32,9 +32,8 @@ public class LabelingController extends Controller {
         initDirectories();
         initObjects();
 
-        //then start simmlation
-
-        SimulationController simulationController = new SimulationController(courses, students, curriculums, advisors);
+        //then start simulation
+        SimulationController simulationController = new SimulationController(students, curriculums, advisors);
         simulationController.setError(this.getError());
         simulationController.startSimulation();
     }
@@ -42,10 +41,13 @@ public class LabelingController extends Controller {
     public void initObjects() {
         initAdvisors();
         initCoursesAndCurriculums();
+        initStudents();
+    }
+
+    public void initStudents() {
         students = new ArrayList<>();
         RandomizationController randomizationController = new RandomizationController(new RegistrationError());
         students.addAll(randomizationController.generateStudentsAndExport(courses, advisors));
-
     }
 
     public void initCoursesAndCurriculums() {
@@ -95,7 +97,7 @@ public class LabelingController extends Controller {
                             createCoursesList(course.getJSONArray("preRequisiteCourses")),
                             createWeeklyHoursList(course.getJSONArray("weeklyHours")),
                             new ArrayList<>()
-                            );
+                    );
                     newCurriculum.addCourseToSemester(labCourse);
                     this.courses.add(labCourse);
                     break;

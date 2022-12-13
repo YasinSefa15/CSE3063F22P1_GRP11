@@ -6,19 +6,17 @@ import iteration2.Models.Student;
 import iteration2.Models.Advisor;
 
 import java.util.ArrayList;
-import java.util.Random;
+
 
 public class SimulationController extends Controller {
-    private ArrayList<Course> courses;
     private ArrayList<Student> students;
     private ArrayList<Advisor> advisors;
     private ArrayList<Curriculum> curriculums;
 
     private ArrayList<Course> deniedCourses;
 
-    SimulationController(ArrayList<Course> courses, ArrayList<Student> students,
+    SimulationController(ArrayList<Student> students,
                          ArrayList<Curriculum> curriculums, ArrayList<Advisor> advisors) {
-        this.courses = courses;
         this.students = students;
         this.curriculums = curriculums;
         this.advisors = advisors;
@@ -57,33 +55,22 @@ public class SimulationController extends Controller {
 
         for (int i = 0; i < studentsCount; i++) {
             student = students.get(i);
-            Course course = null;
             this.deniedCourses.clear();
+            //if student registered 2020 and later first indexed curriculum will be taken consideration
+            int studentRegistersDateToCurriculum = student.getRegisterDate() >= 2020 ? 1 : 0;
+            int simulationSemester = student.getSemesterNo();
+            ArrayList<Course> courses = curriculums.get(studentRegistersDateToCurriculum).getCourses().get(simulationSemester);
 
-            while (student.getSelectedCourses().size() != 5) {
-                course = randomCourse(student);
-
-                if (!studentController.registerToCourse(student, course)) {
-                    deniedCourses.add(course);
+            if (courses != null) {
+                for (Course course : courses) {
+                    if (!studentController.registerToCourse(student, course)) {
+                        deniedCourses.add(course);
+                    }
                 }
+            } else {
+                System.out.println("courses  is null " + student.getSemesterNo());
             }
+
         }
-    }
-
-    public Course randomCourse(Student student) {
-        Random randomizer = new Random();
-        Course course = null;
-        boolean ableToRegister = false;
-
-        while (!ableToRegister) {
-            course = courses.get(randomizer.nextInt(courses.size()));
-            if ((!student.getTranscript().getCompletedCourses().contains(course)
-                    || !student.getTranscript().getFailedCourses().contains(course)
-                    && !deniedCourses.contains(course))) {
-                ableToRegister = true;
-            }
-        }
-
-        return course;
     }
 }

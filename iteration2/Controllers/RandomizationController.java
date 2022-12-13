@@ -56,10 +56,11 @@ public class RandomizationController extends Controller {
 
     public ArrayList<Student> generateStudents(int count, ArrayList<Course> courses, ArrayList<Advisor> advisors, int semester) {
         ArrayList<Student> students = new ArrayList<>();
-        semester = semester + 2 * ((int) (Math.random() * 4));
         String ssn = "";
+        int studentSemester = semester;
 
         for (int i = 0; i < count; i++) {
+            studentSemester = semester + 2 * ((int) (Math.random() * 4));
             ssn = String.valueOf((long) (Math.random() * 1000000000));
             ssn += String.valueOf((int) (Math.random() * 100));
             Advisor advisor = chooseRandomAdvisor(students, advisors);
@@ -69,10 +70,10 @@ public class RandomizationController extends Controller {
                     ssn,
                     (int) (Math.random() * 2) == 1 ? 'm' : 'f',
                     "1501" + String.valueOf(2022 - (semester / 2)).substring(1, 3).concat(String.valueOf((int) (Math.random() * 899 + 100))),
-                    semester == 4 && (int) (Math.random() * 2) == 1,
-                    2022 - (semester / 2),
-                    semester,
-                    generateTranscript(semester, courses),
+                    studentSemester == 4 && (int) (Math.random() * 2) == 1,
+                    2022 - (studentSemester / 2),
+                    studentSemester,
+                    generateTranscript(studentSemester, courses),
                     advisor
             ));
 
@@ -101,9 +102,9 @@ public class RandomizationController extends Controller {
         boolean provides;
 
         for (Course course : courses) {
-            if (course.getSemester() <= semester) {
-                //Student passed the course by 25% chance
-                if ((int) (Math.random() * 5) >= 1) {
+            if (course.getSemester() < semester) {
+                //Student passed the course by 90% chance
+                if ((int) (Math.random() * 6) >= 1) {
                     provides = true;
                     //student did not completed required credits for the course
                     if (transcript.getCompletedCredit() < course.getRequiredCredits()) {

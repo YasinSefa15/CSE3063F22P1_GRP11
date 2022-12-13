@@ -2,6 +2,7 @@ package iteration2.Models;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.json.JSONTokener;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -19,21 +20,26 @@ public class Advisor extends Person {
     public boolean courseAvailability(Student student, Course course) {
        if (!checkSemester(student, course)) {
           student.addError(this.error.reportError(1001,new String[]{course.getName(),Integer.toString(course.getSemester()), Integer.toString(student.getSemesterNo())}));
+          return false;
        }
        if(!checkCredit(student, course)) {
            student.addError(this.error.reportError(1002,new String[]{course.getName(),Integer.toString(student.getTranscript().getCompletedCredit())}));
+           return false;
        }
        if(!checkQuota(course)) {
            student.addError(this.error.reportError(1003,new String[]{course.getName()}));
+           return false;
        }
        Object[] tempReturn = checkPreRequisite(student, course);
        if(!(boolean)tempReturn[0]) {
            student.addError(this.error.reportError(1004,new String[]{course.getName(),(String)tempReturn[1]}));
+           //return false;
        }
        Object[] tempReturn2 = checkCollision(student);
        if(!(boolean)tempReturn2[0]) {
            student.addError(this.error.reportError(1005,new String[]{(String)tempReturn2[1],(String)tempReturn2[2],
                    (String)tempReturn2[3]}));
+           //return false;
        }
        if(!checkElective(student, course)) {
            //1005
@@ -45,17 +51,17 @@ public class Advisor extends Person {
     }
 
     public boolean checkSemester(Student student, Course course) {
-        if(course.getSemester() == student.getSemesterNo()) {
+        if(course.getSemester() <= student.getSemesterNo()) {
             return true;
         }
         return false;
     }
 
     public boolean checkQuota(Course course) {
-        if(course.getRegisteredStudents().size() < course.getQuota()) {
-            return true;
+        if(course.getRegisteredStudents().size() >= course.getQuota()) {
+            return false;
         }
-        return false;
+        return true;
     }
     public Object[] checkPreRequisite(Student student, Course course) {
         ArrayList<Course> tempCompletedCourse = student.getTranscript().getCompletedCourses();
@@ -81,10 +87,10 @@ public class Advisor extends Person {
     }
 
     public boolean checkCredit(Student student, Course course) {
-        if(course.getRequiredCredits() <= student.getTranscript().getCompletedCredit()) {
-            return true;
+        if(course.getRequiredCredits() > student.getTranscript().getCompletedCredit()) {
+            return false;
         }
-        return false;
+        return true;
     }
 
     public Object[] checkCollision(Student student) {

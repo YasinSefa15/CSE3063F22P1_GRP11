@@ -73,10 +73,4 @@ public class SimulationController extends Controller {
 
         }
     }
-
-
-
-    public ArrayList<Advisor> getAdvisors() {
-        return this.advisors;
-    }
 }

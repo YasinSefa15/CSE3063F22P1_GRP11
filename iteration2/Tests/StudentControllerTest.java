@@ -1,4 +1,4 @@
-package iteration2.Tests;
+/*package iteration2.Tests;
 
 import iteration2.Controllers.LabelingController;
 import iteration2.Controllers.StudentController;
@@ -75,3 +75,4 @@ class StudentControllerTest {
     void changeCourseStatus() {
     }
 }
+*/

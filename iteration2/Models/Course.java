@@ -11,10 +11,10 @@ public abstract class Course extends Model {
     private int credit;
     private int requiredCredits;
     private int quota;
+    private int registeredStudentsCount;
     private int semester;
     private ArrayList<Course> preRequisiteCourses = new ArrayList<Course>();
     private ArrayList<String> weeklyHours = new ArrayList<String>();
-    private ArrayList<Student> registeredStudents = new ArrayList<Student>();
 
     public String getName() {
         return name;
@@ -38,6 +38,10 @@ public abstract class Course extends Model {
 
     public int getSemester() {
         return semester;
+    }
+
+    public int getRegisteredStudentsCount() {
+        return registeredStudentsCount;
     }
 
     public ArrayList<Course> getPreRequisiteCourses() {
@@ -72,6 +76,10 @@ public abstract class Course extends Model {
         this.semester = semester;
     }
 
+    public void setRegisteredStudentsCount(int registeredStudentsCount) {
+        this.registeredStudentsCount = registeredStudentsCount;
+    }
+
     public void setPreRequisiteCourses(ArrayList<Course> preRequisiteCourses) {
         this.preRequisiteCourses = preRequisiteCourses;
     }
@@ -80,12 +88,8 @@ public abstract class Course extends Model {
         this.weeklyHours = weeklyHours;
     }
 
-    public ArrayList<Student> getRegisteredStudents() {
-        return registeredStudents;
-    }
-
-    public void setRegisteredStudents(ArrayList<Student> registeredStudents) {
-        this.registeredStudents = registeredStudents;
+    public void addRegisteredStudent(){
+        this.registeredStudentsCount++;
     }
 
     @Override
@@ -96,10 +100,10 @@ public abstract class Course extends Model {
         jsonObject.put("credit", this.credit);
         jsonObject.put("requiredCredits", this.requiredCredits);
         jsonObject.put("quota", this.quota);
+        jsonObject.put("registeredStudentsCount", this.registeredStudentsCount);
         jsonObject.put("semester", this.semester);
         jsonObject.put("preRequisiteCourses", toJsonArray(this.preRequisiteCourses));
         jsonObject.put("weeklyHours", this.weeklyHours);
-        jsonObject.put("registeredStudents", this.registeredStudents);
         return jsonObject;
     }
 

@@ -80,8 +80,7 @@ public class LabelingController extends Controller {
                             course.getInt("quota"),
                             course.getInt("semester"),
                             createCoursesList(course.getJSONArray("preRequisiteCourses")),
-                            createWeeklyHoursList(course.getJSONArray("weeklyHours")),
-                            new ArrayList<>()
+                            createWeeklyHoursList(course.getJSONArray("weeklyHours"))
                     );
                     newCurriculum.addCourseToSemester(mandatoryCourse);
                     this.courses.add(mandatoryCourse);
@@ -95,8 +94,7 @@ public class LabelingController extends Controller {
                             course.getInt("quota"),
                             course.getInt("semester"),
                             createCoursesList(course.getJSONArray("preRequisiteCourses")),
-                            createWeeklyHoursList(course.getJSONArray("weeklyHours")),
-                            new ArrayList<>()
+                            createWeeklyHoursList(course.getJSONArray("weeklyHours"))
                     );
                     newCurriculum.addCourseToSemester(labCourse);
                     this.courses.add(labCourse);
@@ -111,7 +109,6 @@ public class LabelingController extends Controller {
                             course.getInt("semester"),
                             createCoursesList(course.getJSONArray("preRequisiteCourses")),
                             createWeeklyHoursList(course.getJSONArray("weeklyHours")),
-                            new ArrayList<>(),
                             course.getEnum(ElectiveType.class, "electiveType")
                     );
                     newCurriculum.addCourseToSemester(electiveCourse);
@@ -147,8 +144,7 @@ public class LabelingController extends Controller {
                                     finalJsonObject.getInt("quota"),
                                     finalJsonObject.getInt("semester"),
                                     createCoursesList(finalJsonObject.getJSONArray("preRequisiteCourses")),
-                                    createWeeklyHoursList(finalJsonObject.getJSONArray("weeklyHours")),
-                                    new ArrayList<>()
+                                    createWeeklyHoursList(finalJsonObject.getJSONArray("weeklyHours"))
                             ))
             );
         }

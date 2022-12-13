@@ -14,7 +14,7 @@ public class StudentController extends Controller {
 
         //if advisor allows, register to course
         student.addToSelectedCourses(course, changeCourseStatus(student, course));
-
+        course.addRegisteredStudent();
         return true;
     }
 

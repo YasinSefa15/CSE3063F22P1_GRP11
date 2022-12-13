@@ -7,8 +7,7 @@ import java.util.ArrayList;
 public class Mandatory extends Course {
 
     public Mandatory(String name, String code, int credit, int requiredCredits, int quota, int semester,
-                     ArrayList<Course> preRequisiteCourses, ArrayList<String> weeklyHours,
-                     ArrayList<Student> registeredStudents) {
+                     ArrayList<Course> preRequisiteCourses, ArrayList<String> weeklyHours) {
         this.setName(name);
         this.setCode(code);
         this.setCredit(credit);
@@ -17,7 +16,6 @@ public class Mandatory extends Course {
         this.setSemester(semester);
         this.setPreRequisiteCourses(preRequisiteCourses);
         this.setWeeklyHours(weeklyHours);
-        this.setRegisteredStudents(registeredStudents);
     }
 
     @Override

@@ -9,7 +9,7 @@ public class Elective extends Course{
 
     public Elective(String name, String code, int credit, int requiredCredits, int quota, int semester,
                     ArrayList<Course> preRequisiteCourses, ArrayList<String> weeklyHours,
-                    ArrayList<Student> registeredStudents, ElectiveType type) {
+                    ElectiveType type) {
         this.setName(name);
         this.setCode(code);
         this.setCredit(credit);
@@ -18,7 +18,6 @@ public class Elective extends Course{
         this.setSemester(semester);
         this.setPreRequisiteCourses(preRequisiteCourses);
         this.setWeeklyHours(weeklyHours);
-        this.setRegisteredStudents(registeredStudents);
         this.setType(type);
     }
 

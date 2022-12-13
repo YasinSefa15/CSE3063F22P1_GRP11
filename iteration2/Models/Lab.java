@@ -9,8 +9,7 @@ public class Lab extends Course {
 
     public Lab(){}
     public Lab(String name, String code, int credit, int requiredCredits, int quota, int semester,
-               ArrayList<Course> preRequisiteCourses, ArrayList<String> weeklyHours,
-               ArrayList<Student> registeredStudents) {
+               ArrayList<Course> preRequisiteCourses, ArrayList<String> weeklyHours) {
         this.setName(name);
         this.setCode(code);
         this.setCredit(credit);
@@ -19,7 +18,6 @@ public class Lab extends Course {
         this.setSemester(semester);
         this.setPreRequisiteCourses(preRequisiteCourses);
         this.setWeeklyHours(weeklyHours);
-        this.setRegisteredStudents(registeredStudents);
         this.setSectionNumber(generateSectionNumber());
     }
 

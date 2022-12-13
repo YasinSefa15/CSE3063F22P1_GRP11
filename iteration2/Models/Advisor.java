@@ -58,7 +58,7 @@ public class Advisor extends Person {
     }
 
     public boolean checkQuota(Course course) {
-        if(course.getRegisteredStudents().size() >= course.getQuota()) {
+        if(course.getRegisteredStudentsCount() >= course.getQuota()) {
             return false;
         }
         return true;

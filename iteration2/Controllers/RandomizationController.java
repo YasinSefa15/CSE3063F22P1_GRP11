@@ -69,7 +69,7 @@ public class RandomizationController extends Controller {
                     lastNames[(int) (Math.random() * lastNames.length)],
                     ssn,
                     (int) (Math.random() * 2) == 1 ? 'm' : 'f',
-                    "1501" + String.valueOf(2022 - (semester / 2)).substring(1, 3).concat(String.valueOf((int) (Math.random() * 899 + 100))),
+                    "1501" + String.valueOf(22 - (int)(Math.random() * 5)).concat(String.valueOf((int) (Math.random() * 899 + 100))),
                     studentSemester == 4 && (int) (Math.random() * 2) == 1,
                     2022 - (studentSemester / 2),
                     studentSemester,

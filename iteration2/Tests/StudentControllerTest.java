@@ -1,4 +1,4 @@
-/*package iteration2.Tests;
+package iteration2.Tests;
 
 import iteration2.Controllers.LabelingController;
 import iteration2.Controllers.StudentController;
@@ -41,32 +41,32 @@ class StudentControllerTest {
 
         Course course = new Mandatory(
                 "name", "code", 3, 0, 10, 5,
-                new ArrayList<>(), new ArrayList<>(), new ArrayList<>()
+                new ArrayList<>(), new ArrayList<>()
         );
 
         //testing semester
         assertFalse(studentControllerTest.registerToCourse(student, course));
         course.setSemester(2);
         assertTrue(studentControllerTest.registerToCourse(student, course));
-        course.setRegisteredStudents(new ArrayList<>()); //freeing quota
+        course.setRegisteredStudentsCount(0); //freeing quota
 
 
         //testing credit
         student.getTranscript().setCompletedCredit(4);
         course.setRequiredCredits(3);
         assertTrue(studentControllerTest.registerToCourse(student, course));
-        course.setRegisteredStudents(new ArrayList<>()); //freeing quota
+        course.setRegisteredStudentsCount(0); //freeing quota
 
         course.setRequiredCredits(5);
         student.getTranscript().setCompletedCredit(4);
         assertFalse(studentControllerTest.registerToCourse(student, course));
-        course.setRegisteredStudents(new ArrayList<>()); //freeing quota
+        course.setRegisteredStudentsCount(0); //freeing quota
 
         //testing quota
         student.getTranscript().setCompletedCredit(6);
         assertTrue(studentControllerTest.registerToCourse(student, course));
         //assume there is one different student registered to course
-        course.getRegisteredStudents().add(student);
+        course.addRegisteredStudent();
         course.setQuota(1);
         assertFalse(studentControllerTest.registerToCourse(student, course));
     }
@@ -75,4 +75,3 @@ class StudentControllerTest {
     void changeCourseStatus() {
     }
 }
-*/

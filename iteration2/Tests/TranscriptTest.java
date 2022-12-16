@@ -21,6 +21,22 @@ class TranscriptTest {
     }
 
     @Test
+    void calculateGPA(){
+        ArrayList<Course>  transcriptCompletedCourses =transcriptTest.getCompletedCourses();
+        Course course=new Mandatory("CSE1001","1001",6,2,100,1,new ArrayList<>(),new ArrayList<>());
+        transcriptCompletedCourses.add(course);
+        transcriptTest.addToCompletedCourses(course);
+
+        ArrayList<Course>  transcriptFailedCourses =transcriptTest.getFailedCourses();
+        Course course2=new Mandatory("CSE2002","2002",2,4,200,2,new ArrayList<>(),new ArrayList<>());
+        transcriptFailedCourses.add(course2);
+        transcriptTest.addToFailedCourses(course2);
+
+        transcriptTest.calculateGPA();
+        assertEquals(3,transcriptTest.getGpa());
+    }
+
+    @Test
     void addToCompletedCourses() {
         ArrayList<Course>  transcriptCompletedCourses =transcriptTest.getCompletedCourses();
         Course course=new Mandatory("CSE1111","1111",4,2,100,1,new ArrayList<>(),new ArrayList<>());

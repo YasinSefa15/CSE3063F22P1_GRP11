@@ -1,5 +1,6 @@
 package iteration2.Models;
 
+import org.hamcrest.CoreMatchers;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import java.text.DecimalFormat;
@@ -20,11 +21,19 @@ public class Transcript extends Model{
 
     public void  calculateGPA(){
         double tempGpa=0;
+        int totalCredit=0;
+        int courseCredit=0;
         for (Course course:completedCourses){
-            double randomScore=Math.random()*4;
-            tempGpa+=course.getCredit()*randomScore;
+            courseCredit=course.getCredit();
+            totalCredit+=courseCredit;
+            tempGpa+=courseCredit*4;
         }
-        this.gpa=tempGpa/completedCredit;
+        for (Course course:failedCourses){
+            courseCredit=course.getCredit();
+            totalCredit+=courseCredit;
+            tempGpa+=courseCredit*0;
+        }
+        this.gpa=tempGpa/totalCredit;
     }
 
     public double getGpa() {

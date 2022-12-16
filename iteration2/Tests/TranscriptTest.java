@@ -20,11 +20,6 @@ class TranscriptTest {
         transcriptTest=new Transcript(3.5,30,new ArrayList<>(),new ArrayList<>());
     }
 
-
-    @Test
-    void calculateGPA() {
-    }
-
     @Test
     void addToCompletedCourses() {
         ArrayList<Course>  transcriptCompletedCourses =transcriptTest.getCompletedCourses();

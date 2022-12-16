@@ -1,4 +1,4 @@
-package iteration2.Tests;
+/*package iteration2.Tests;
 
 import iteration2.Controllers.LabelingController;
 import iteration2.Models.Course;
@@ -73,3 +73,4 @@ class LabelingControllerTest {
         assertEquals(resultCourses.get(1).getCode(), "102");
     }
 }
+*/

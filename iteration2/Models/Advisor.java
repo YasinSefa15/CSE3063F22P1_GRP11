@@ -2,10 +2,10 @@ package iteration2.Models;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.json.JSONTokener;
 
 import java.util.ArrayList;
 import java.util.Set;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Advisor extends Person {
     private ArrayList<Student> students;
@@ -118,11 +118,21 @@ public class Advisor extends Person {
     }
 
     public boolean checkElective(Student student, Course course) {
+        AtomicInteger count = new AtomicInteger();
+        student.getSelectedCourses().forEach((k,v)->{
+            if (k.getClass().equals(Elective.class))
+                count.getAndIncrement();
+
+
+        });
+        if (count.get() >=2){
+            return false;
+        }
         return true;
     }
 
     public boolean FTETakeable(Student student, Course course) {
-        if(course.getSemester() >= 8) {
+        if(student.getSemesterNo()>= 8) {
             return true;
         }
         return false;

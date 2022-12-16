@@ -2,6 +2,8 @@ package iteration2.Models;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 
 import java.util.*;
 
@@ -99,6 +101,12 @@ public class RegistrationError extends Model {
             count=0;
         }
     }
+    public void getErrorsIntoLog(){
+        Logger log = Logger.getLogger(RegistrationError.class);
+        BasicConfigurator.configure();
+        for (String s : allErrorMessages) {
+            log.info(s); }
+    }
 
     public ArrayList<String> getAllErrorMessages() {
         return allErrorMessages;
@@ -109,6 +117,7 @@ public class RegistrationError extends Model {
         writeAllErrors(errorList);
         JSONObject jsonObject =new JSONObject();
         JSONArray jsonArray = new JSONArray(allErrorMessages);
+        getErrorsIntoLog();
         jsonObject.put("totalErrors",jsonArray);
         return jsonObject;
     }

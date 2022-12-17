@@ -16,7 +16,7 @@ public class Transcript extends Model{
     private ArrayList<Course> completedCourses;
     private  ArrayList<Course> failedCourses;
 
-    private static final String FILE_PATH="/iteration2/Logs/Transcript.log";
+    private static String FILE_PATH="/iteration2/Logs/Transcript.log";
     private static Logger logger=Logger.getLogger(Transcript.class.getName());
     private static FileHandler fileHandler;
 

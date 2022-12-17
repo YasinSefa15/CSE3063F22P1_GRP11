@@ -14,7 +14,7 @@ public class Curriculum {
     public HashMap<Integer, ArrayList<Course>> getCourses() {
         return courses;
     }
-    private static final String FILE_PATH="/iteration2/Logs/Curriculum.log";
+    private static String FILE_PATH="/iteration2/Logs/Curriculum.log";
     private static Logger logger=Logger.getLogger(Curriculum.class.getName());
     private static FileHandler fileHandler;
 

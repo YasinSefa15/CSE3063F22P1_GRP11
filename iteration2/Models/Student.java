@@ -21,7 +21,7 @@ public class Student extends Person {
     private Advisor advisor;
     private HashMap<Course, Boolean> selectedCourses;
 
-    private static final String FILE_PATH="/iteration2/Logs/Student.log";
+    private static String FILE_PATH="/iteration2/Logs/Student.log";
     private static Logger logger=Logger.getLogger(Student.class.getName());
     private static FileHandler fileHandler;
 

@@ -15,7 +15,7 @@ public class Advisor extends Person {
     private ArrayList<Student> students;
     private RegistrationError error;
 
-    private static final String FILE_PATH="/iteration2/Logs/Advisor.log";
+    private static String FILE_PATH="/iteration2/Logs/Advisor.log";
     private static Logger logger=Logger.getLogger(Advisor.class.getName());
     private static FileHandler fileHandler;
 

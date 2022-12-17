@@ -29,12 +29,13 @@ public class Student extends Person {
         try {
             fileHandler = new FileHandler(System.getProperty("user.dir")+file_path,true);
             logger.addHandler(fileHandler);
+            logger.setUseParentHandlers(false);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public static void customLog(boolean type,String message){
+    public void customLog(boolean type,String message){
         SimpleFormatter formatter =new SimpleFormatter();
         fileHandler.setFormatter(formatter);
         if(type)

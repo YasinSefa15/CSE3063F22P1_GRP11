@@ -18,20 +18,21 @@ public class RegistrationError extends Model {
     private int noOfLastErrorType = 1006;
 
 
-    private static String FILE_PATH="/iteration2/Logs/RegistrationError.log";
+    private static String file_path="/iteration2/Logs/RegistrationError.log";
     private static Logger logger=Logger.getLogger(RegistrationError.class.getName());
     private static FileHandler fileHandler;
 
     static {
         try {
-            fileHandler = new FileHandler(System.getProperty("user.dir")+FILE_PATH,true);
+            fileHandler = new FileHandler(System.getProperty("user.dir")+file_path,true);
             logger.addHandler(fileHandler);
+            logger.setUseParentHandlers(false);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public static void customLog(boolean type,String message){
+    public void customLog(boolean type,String message){
         SimpleFormatter formatter =new SimpleFormatter();
         fileHandler.setFormatter(formatter);
         if(type)

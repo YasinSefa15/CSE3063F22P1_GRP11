@@ -80,10 +80,7 @@ public class Transcript extends Model{
 
     public void setCompletedCredit(int completedCredit) {
         if (completedCredit>=0){
-            //CustomLog.customLog(true,"The student's completed credit is set.");
             this.completedCredit = completedCredit;
-        }else {
-            //CustomLog.customLog(false,"The student's completed credit is not set because the entered completed credit is less than 0.");
         }
     }
 

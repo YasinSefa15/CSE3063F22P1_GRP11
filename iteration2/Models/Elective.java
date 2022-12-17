@@ -21,10 +21,6 @@ public class Elective extends Course{
         this.setType(type);
     }
 
-    public ElectiveType getType() {
-        return type;
-    }
-
     public void setType (ElectiveType type) {
         this.type = type;
     }

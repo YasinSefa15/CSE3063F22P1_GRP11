@@ -24,9 +24,6 @@ public class Lab extends Course {
     public int generateSectionNumber(){
         return (int)Math.floor(Math.random()*(4)+1);
     }
-    public int getSectionNumber() {
-        return sectionNumber;
-    }
 
     public void setSectionNumber(int sectionNumber) {
         this.sectionNumber = sectionNumber;

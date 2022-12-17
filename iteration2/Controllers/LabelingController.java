@@ -7,7 +7,7 @@ import org.json.JSONObject;
 import java.io.File;
 import java.util.ArrayList;
 
-public class LabelingController extends Controller {
+public class  LabelingController extends Controller {
     private ArrayList<Student> students;
     private ArrayList<Advisor> advisors;
     private ArrayList<Curriculum> curriculums;
@@ -163,7 +163,6 @@ public class LabelingController extends Controller {
                 n.getString("gender").charAt(0),
                 this.getError()
         )));
-
         return advisors;
     }
 
@@ -172,8 +171,5 @@ public class LabelingController extends Controller {
         this.students = students;
     }
 
-    public void setCourses(ArrayList<Course> courses) {
-        this.courses = courses;
-    }
 
 }

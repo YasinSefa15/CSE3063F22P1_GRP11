@@ -172,4 +172,11 @@ public class  LabelingController extends Controller {
     }
 
 
+    public ArrayList<Advisor> getAdvisors() {
+        return advisors;
+    }
+
+    public ArrayList<Course> getCourses() {
+        return courses;
+    }
 }

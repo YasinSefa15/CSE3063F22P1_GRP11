@@ -2,11 +2,13 @@ package iteration2.Models;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-//import org.apache.log4j.BasicConfigurator;
-//import org.apache.log4j.Logger;
 
+import java.io.IOException;
 import java.util.*;
+import java.util.logging.FileHandler;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
+
 
 public class RegistrationError extends Model {
 
@@ -14,6 +16,29 @@ public class RegistrationError extends Model {
     private ArrayList<String> errorList = new ArrayList<String>();
     private ArrayList<String> allErrorMessages = new ArrayList<>();
     private int noOfLastErrorType = 1006;
+
+
+    private static String FILE_PATH="/iteration2/Logs/RegistrationError.log";
+    private static Logger logger=Logger.getLogger(RegistrationError.class.getName());
+    private static FileHandler fileHandler;
+
+    static {
+        try {
+            fileHandler = new FileHandler(System.getProperty("user.dir")+FILE_PATH,true);
+            logger.addHandler(fileHandler);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void customLog(boolean type,String message){
+        SimpleFormatter formatter =new SimpleFormatter();
+        fileHandler.setFormatter(formatter);
+        if(type)
+            logger.info(message);
+        else
+            logger.warning(message);
+    }
 
     public RegistrationError(){
         errorType.put(1001, "semester inconsistency");
@@ -59,6 +84,7 @@ public class RegistrationError extends Model {
             default:
                 message = "Undefined error!";
         }
+        customLog(true, message);
         return message;
     }
 
@@ -102,15 +128,6 @@ public class RegistrationError extends Model {
             count=0;
         }
     }
-   /* public void getErrorsIntoLog(){
-        Logger log = Logger.getLogger(RegistrationError.class);
-        BasicConfigurator.configure();
-        for (String s : allErrorMessages) {
-            log.info(s); }
-    }
-    */
-
-
     public ArrayList<String> getAllErrorMessages() {
         return allErrorMessages;
     }
@@ -120,10 +137,8 @@ public class RegistrationError extends Model {
         writeAllErrors(errorList);
         JSONObject jsonObject =new JSONObject();
         JSONArray jsonArray = new JSONArray(allErrorMessages);
-      //  getErrorsIntoLog();
         jsonObject.put("totalErrors",jsonArray);
         return jsonObject;
     }
-
 
 }

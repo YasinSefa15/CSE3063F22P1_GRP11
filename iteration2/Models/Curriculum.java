@@ -14,13 +14,13 @@ public class Curriculum {
     public HashMap<Integer, ArrayList<Course>> getCourses() {
         return courses;
     }
-    private static String FILE_PATH="/iteration2/Logs/Curriculum.log";
+    private static String file_path="/iteration2/Logs/Curriculum.log";
     private static Logger logger=Logger.getLogger(Curriculum.class.getName());
     private static FileHandler fileHandler;
 
     static {
         try {
-            fileHandler = new FileHandler(System.getProperty("user.dir")+FILE_PATH,true);
+            fileHandler = new FileHandler(System.getProperty("user.dir")+file_path,true);
             logger.addHandler(fileHandler);
         } catch (IOException e) {
             e.printStackTrace();

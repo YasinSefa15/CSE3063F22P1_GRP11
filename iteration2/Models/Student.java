@@ -21,13 +21,13 @@ public class Student extends Person {
     private Advisor advisor;
     private HashMap<Course, Boolean> selectedCourses;
 
-    private static String FILE_PATH="/iteration2/Logs/Student.log";
+    private static String file_path="/iteration2/Logs/Student.log";
     private static Logger logger=Logger.getLogger(Student.class.getName());
     private static FileHandler fileHandler;
 
     static {
         try {
-            fileHandler = new FileHandler(System.getProperty("user.dir")+FILE_PATH,true);
+            fileHandler = new FileHandler(System.getProperty("user.dir")+file_path,true);
             logger.addHandler(fileHandler);
         } catch (IOException e) {
             e.printStackTrace();

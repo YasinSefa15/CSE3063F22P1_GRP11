@@ -15,13 +15,13 @@ public class Advisor extends Person {
     private ArrayList<Student> students;
     private RegistrationError error;
 
-    private static String FILE_PATH="/iteration2/Logs/Advisor.log";
+    private static String file_path="/iteration2/Logs/Advisor.log";
     private static Logger logger=Logger.getLogger(Advisor.class.getName());
     private static FileHandler fileHandler;
 
     static {
         try {
-            fileHandler = new FileHandler(System.getProperty("user.dir")+FILE_PATH,true);
+            fileHandler = new FileHandler(System.getProperty("user.dir")+file_path,true);
             logger.addHandler(fileHandler);
         } catch (IOException e) {
             e.printStackTrace();

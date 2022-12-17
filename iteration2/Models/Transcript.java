@@ -16,13 +16,13 @@ public class Transcript extends Model{
     private ArrayList<Course> completedCourses;
     private  ArrayList<Course> failedCourses;
 
-    private static String FILE_PATH="/iteration2/Logs/Transcript.log";
+    private static String file_path="/iteration2/Logs/Transcript.log";
     private static Logger logger=Logger.getLogger(Transcript.class.getName());
     private static FileHandler fileHandler;
 
     static {
         try {
-            fileHandler = new FileHandler(System.getProperty("user.dir")+FILE_PATH,true);
+            fileHandler = new FileHandler(System.getProperty("user.dir")+file_path,true);
             logger.addHandler(fileHandler);
         } catch (IOException e) {
             e.printStackTrace();

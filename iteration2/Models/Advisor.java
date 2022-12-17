@@ -65,19 +65,19 @@ public class Advisor extends Person {
         Object[] tempReturn = checkPreRequisite(student, course);
         if(!(boolean)tempReturn[0]) {
             student.addError(this.error.reportError(1004,new String[]{course.getName(),(String)tempReturn[1]}));
-            //return false;
+            return false;
         }
         Object[] tempReturn2 = checkCollision(student);
         if(!(boolean)tempReturn2[0]) {
             student.addError(this.error.reportError(1005,new String[]{(String)tempReturn2[1],(String)tempReturn2[2],
                     (String)tempReturn2[3]}));
-            //return false;
+            return false;
         }
         if(!checkElective(student, course)) {
-            //1005
+            return false;
         }
         if(!FTETakeable(student, course)) {
-            //1006
+            //return false;
         }
         customLog(true, "courseAvailability method is called and advisor check the course availability.");
         return true;
@@ -164,8 +164,8 @@ public class Advisor extends Person {
         return true;
     }
 
-    public boolean FTETakeable(Student student, Course course) {
-        if(student.getSemesterNo()>= 8) {
+    public boolean FTETakeable(Student student, Object course) {
+        if(student.getSemesterNo() >= 7 && course.getClass().equals(Elective.class) && ((Elective) course).getType() == ElectiveType.FTE) {
             return true;
         }
         return false;

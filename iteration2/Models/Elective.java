@@ -25,6 +25,10 @@ public class Elective extends Course{
         this.type = type;
     }
 
+    public Object getType() {
+        return type;
+    }
+
     @Override
     public JSONObject toJson() {
         return null;

@@ -2,8 +2,12 @@ package iteration2.Models;
 
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Student extends Person {
 
@@ -17,6 +21,28 @@ public class Student extends Person {
     private Advisor advisor;
     private HashMap<Course, Boolean> selectedCourses;
 
+    private static String file_path="/iteration2/Logs/Student.log";
+    private static Logger logger=Logger.getLogger(Student.class.getName());
+    private static FileHandler fileHandler;
+
+    static {
+        try {
+            fileHandler = new FileHandler(System.getProperty("user.dir")+file_path,true);
+            logger.addHandler(fileHandler);
+            logger.setUseParentHandlers(false);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void customLog(boolean type,String message){
+        SimpleFormatter formatter =new SimpleFormatter();
+        fileHandler.setFormatter(formatter);
+        if(type)
+            logger.info(message);
+        else
+            logger.warning(message);
+    }
     public Student(String name, String surname, String ssn, Character gender, String id, Boolean isGraduate, int registerDate, int semesterNo, Transcript transcript, Advisor advisor) {
         super(name, surname, ssn, gender);
 
@@ -27,6 +53,8 @@ public class Student extends Person {
         this.transcript = transcript;
         this.advisor = advisor;
         this.errors = new ArrayList<>();
+
+        customLog(true, "Student constructor method is called and new student object is generated.");
     }
 
     public String getId() {
@@ -123,6 +151,10 @@ public class Student extends Person {
     public void addToSelectedCourses(Course course, Boolean status) {
         if (!selectedCourses.containsKey(course)) {
             selectedCourses.put(course, status);
+            customLog(true, "Checked if the course is completed before and it is not completed. Added to selected courses");
+        }
+        else {
+            customLog(false, "Checked if the course is completed before and it is completed. Course cannot be added");
         }
     }
 }

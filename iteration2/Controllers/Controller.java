@@ -7,7 +7,7 @@ import org.json.simple.parser.JSONParser;
 import java.io.*;
 import java.util.ArrayList;
 
-public abstract class Controller {
+public class Controller {
     private RegistrationError error;
 
     public ArrayList<JSONObject> readJSONFiles(String path) {

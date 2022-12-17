@@ -7,14 +7,40 @@ import org.json.simple.parser.JSONParser;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Objects;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class RandomizationController extends Controller {
 
-    private String[] firstNames = {"Yiğit", "Samet", "Baran", "Ali", "Emre", "Tahsin", "Necmettin", "Kerem", "Berke", "Hasan", "Osman", "Tunahan", "Yunus", "Yusuf", "Ceren", "Esra", "Kübra", "Ezgi", "Ayşe", "Berfin"};
-    private String[] lastNames = {"Ayan", "Öztürk", "Özdemir", "Aydın", "Demir", "Türkoğlu", "Yayın", "Oduncu", "Ekinci", "Toraman", "Akkurt", "Engin", "Yasan", "Özcan", "Kaya", "Kara", "Kılıç", "Koç"};
+    private final String[] firstNames = {"Yiğit", "Samet", "Baran", "Ali", "Emre", "Tahsin", "Necmettin", "Kerem", "Berke", "Hasan", "Osman", "Tunahan", "Yunus", "Yusuf", "Ceren", "Esra", "Kübra", "Ezgi", "Ayşe", "Berfin"};
+    private final String[] lastNames = {"Ayan", "Öztürk", "Özdemir", "Aydın", "Demir", "Türkoğlu", "Yayın", "Oduncu", "Ekinci", "Toraman", "Akkurt", "Engin", "Yasan", "Özcan", "Kaya", "Kara", "Kılıç", "Koç"};
+
+    private static String FILE_PATH="/iteration2/Logs/Transcript.log";
+    private static Logger logger=Logger.getLogger(Transcript.class.getName());
+    private static FileHandler fileHandler;
+
+    static {
+        try {
+            fileHandler = new FileHandler(System.getProperty("user.dir")+FILE_PATH,true);
+            logger.addHandler(fileHandler);
+            logger.setUseParentHandlers(false);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void customLog(boolean type,String message){
+        SimpleFormatter formatter =new SimpleFormatter();
+        fileHandler.setFormatter(formatter);
+        if(type)
+            logger.info("\u001B[32m"+message+"\u001B[0m");
+        else
+            logger.warning("\u001B[31m"+message+"\u001B[0m");
+    }
 
     public RandomizationController(RegistrationError error) {
         super.setError(error);
@@ -73,7 +99,7 @@ public class RandomizationController extends Controller {
                     studentSemester == 4 && (int) (Math.random() * 2) == 1,
                     2022 - (studentSemester / 2),
                     studentSemester,
-                    generateTranscript(studentSemester, courses),
+                    generateTranscript(studentSemester, courses,"1501" + String.valueOf(22 - ((studentSemester - 1) / 2)).concat(String.valueOf((int) (Math.random() * 899 + 100)))),
                     advisor
             ));
 
@@ -91,14 +117,14 @@ public class RandomizationController extends Controller {
     }
 
 
-    public Transcript generateTranscript(int semester, ArrayList<Course> courses) {
+    public Transcript generateTranscript(int semester, ArrayList<Course> courses,String studentSsn) {
         Transcript transcript = new Transcript(
                 0,
                 0,
                 new ArrayList<>(),
                 new ArrayList<>()
         );
-
+        customLog(true,"Transcript constructor method is called and new transcript object is generated for "+studentSsn);
         boolean provides;
 
         for (Course course : courses) {
@@ -122,17 +148,19 @@ public class RandomizationController extends Controller {
 
                     if (provides) {
                         transcript.addToCompletedCourses(course);
+                        customLog(true,"A new course has been added to the courses that the student has completed for "+studentSsn);
                         transcript.setCompletedCredit(transcript.getCompletedCredit() + course.getCredit());
                     }
 
                 } else { //Student failed the course
                     transcript.addToFailedCourses(course);
+                    customLog(true,"A new course has been added to the courses that the student has failed for "+studentSsn);
                 }
             }
         }
 
         transcript.calculateGPA();
-
+        customLog(true,"The student's GPA is calculated for "+studentSsn);
         return transcript;
     }
 

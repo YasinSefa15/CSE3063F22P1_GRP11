@@ -3,51 +3,83 @@ package iteration2.Models;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Advisor extends Person {
     private ArrayList<Student> students;
     private RegistrationError error;
 
+    private static final String FILE_PATH="/iteration2/Logs/Advisor.log";
+    private static Logger logger=Logger.getLogger(Advisor.class.getName());
+    private static FileHandler fileHandler;
+
+    static {
+        try {
+            fileHandler = new FileHandler(System.getProperty("user.dir")+FILE_PATH,true);
+            logger.addHandler(fileHandler);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void customLog(boolean type,String message){
+        SimpleFormatter formatter =new SimpleFormatter();
+        fileHandler.setFormatter(formatter);
+        if(type)
+            logger.info(message);
+        else
+            logger.warning(message);
+    }
+
     public Advisor(ArrayList<Student> students, String name, String surname, String ssn, Character gender, RegistrationError error) {
         super(name,surname,ssn,gender);
         this.students = students;
         this.error = error;
+        customLog(true, "Advisor constructor method is called and new advisor object is generated.");
     }
 
     public boolean courseAvailability(Student student, Course course) {
-       if (!checkSemester(student, course)) {
-          student.addError(this.error.reportError(1001,new String[]{course.getName(),Integer.toString(course.getSemester()), Integer.toString(student.getSemesterNo())}));
-          return false;
-       }
-       if(!checkCredit(student, course)) {
-           student.addError(this.error.reportError(1002,new String[]{course.getName(),Integer.toString(student.getTranscript().getCompletedCredit())}));
-           return false;
-       }
-       if(!checkQuota(course)) {
-           student.addError(this.error.reportError(1003,new String[]{course.getName()}));
-           return false;
-       }
-       Object[] tempReturn = checkPreRequisite(student, course);
-       if(!(boolean)tempReturn[0]) {
-           student.addError(this.error.reportError(1004,new String[]{course.getName(),(String)tempReturn[1]}));
-           //return false;
-       }
-       Object[] tempReturn2 = checkCollision(student);
-       if(!(boolean)tempReturn2[0]) {
-           student.addError(this.error.reportError(1005,new String[]{(String)tempReturn2[1],(String)tempReturn2[2],
-                   (String)tempReturn2[3]}));
-           //return false;
-       }
-       if(!checkElective(student, course)) {
-           //1005
-       }
-       if(!FTETakeable(student, course)) {
-           //1006
-       }
-       return true;
+
+        if (!checkSemester(student, course)) {
+            student.addError(this.error.reportError(1001,new String[]{course.getName(),Integer.toString(course.getSemester()), Integer.toString(student.getSemesterNo())}));
+            customLog(false, "Checked semester of students and courses that requested by students and they are declined ");
+            return false;
+        }
+        if(!checkCredit(student, course)) {
+            student.addError(this.error.reportError(1002,new String[]{course.getName(),Integer.toString(student.getTranscript().getCompletedCredit())}));
+            customLog(false, "Compared credit of students and required credit of course and it is not enough.");
+            return false;
+        }
+        if(!checkQuota(course)) {
+            student.addError(this.error.reportError(1003,new String[]{course.getName()}));
+            customLog(false, "Check quota of course and there is not enough space for student.");
+            return false;
+        }
+        Object[] tempReturn = checkPreRequisite(student, course);
+        if(!(boolean)tempReturn[0]) {
+            student.addError(this.error.reportError(1004,new String[]{course.getName(),(String)tempReturn[1]}));
+            //return false;
+        }
+        Object[] tempReturn2 = checkCollision(student);
+        if(!(boolean)tempReturn2[0]) {
+            student.addError(this.error.reportError(1005,new String[]{(String)tempReturn2[1],(String)tempReturn2[2],
+                    (String)tempReturn2[3]}));
+            //return false;
+        }
+        if(!checkElective(student, course)) {
+            //1005
+        }
+        if(!FTETakeable(student, course)) {
+            //1006
+        }
+        customLog(true, "courseAvailability method is called and advisor check the course availability.");
+        return true;
     }
 
     public boolean checkSemester(Student student, Course course) {

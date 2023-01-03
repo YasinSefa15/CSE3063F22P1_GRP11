@@ -1,0 +1,812 @@
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:20 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Differential Equations because student failed prereq: MATH1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Modeling and Discrete Simulation because student failed prereq: STAT2253
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Modeling and Discrete Simulation because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Modeling and Discrete Simulation because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Modeling and Discrete Simulation because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The advisor didn't approve Digital Logic Design because course's quota is full
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Object Oriented Software Design because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Operating Systems because student failed prereq: CSE2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Database Systems because student failed prereq: CS2225
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Electric Circuits because student failed prereq: PHYS1102
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Data Structures because student failed prereq: CSE1242
+Dec 23, 2022 5:10:21 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Numerical Methods because student failed prereq: MAT1001
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+Dec 23, 2022 5:15:41 PM iteration2.Models.RegistrationError customLog
+INFO: The system didn't allow Microprocessors because student failed prereq: CSE3038

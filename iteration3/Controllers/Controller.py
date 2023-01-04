@@ -6,14 +6,10 @@ class Controller:
     def __init__(self):
         self.error = None
 
-    def execute(self):
-        print("Executing Controller")
-
     def read_json_files(self, path):
-        print("Reading json files")
         json_objects = []
-
         requested_path = os.getcwd() + '/Data/Input/' + path
+        print("--C--->Reading json files on path: " + requested_path)
         file_names = os.listdir(requested_path)
 
         for file in file_names:

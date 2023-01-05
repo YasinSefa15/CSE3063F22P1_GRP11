@@ -1,3 +1,5 @@
+import logging
+
 
 class RegistrationError:
     error_type = {}
@@ -47,7 +49,7 @@ def report_error(self, error_code, data):
         self.store_error_info(error_code, data[0])
     elif error_code == 1006:
         message = "The advisor didn't approve {data[0]} because student already took {data[1]} and in FALL semester only 2 TE can be taken"
-        self.store_error_info(
+        self.store_error_info()
 
 
 

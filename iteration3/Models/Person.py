@@ -2,6 +2,9 @@ import json
 from datetime import date
 from abc import ABC, abstractmethod
 
+from iteration3.Models.Model import Model
+
+
 class Person(Model, metaclass=ABC):
     def __init__(self, name: str, surname: str, ssn: str, gender: str):
         super().__init__()

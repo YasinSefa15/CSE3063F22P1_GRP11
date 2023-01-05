@@ -1,6 +1,9 @@
 import json
 from decimal import Decimal
 
+from iteration3.Models.Model import Model
+
+
 class Transcript(Model):
     def __init__(self, gpa:float, completedCredit:int, completedCourses:[], failedCourses:[]):
         self.gpa = gpa

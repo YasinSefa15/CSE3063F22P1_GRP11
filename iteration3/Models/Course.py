@@ -1,5 +1,9 @@
 import json
 from abc import ABC, abstractmethod
+
+from iteration3.Models.Model import Model
+
+
 class Course(Model, metaclass=ABC):
     def __init__(self):
         self.name = ""

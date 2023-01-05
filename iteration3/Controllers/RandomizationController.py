@@ -1,6 +1,8 @@
 from iteration3.Controllers.Controller import Controller
 from faker import Faker
 
+from iteration3.Models.Student import Student
+
 
 class RandomizationController(Controller):
     def __init__(self):
@@ -8,6 +10,7 @@ class RandomizationController(Controller):
         self.fake = Faker("tr_TR")
 
     def generate_students(self, num_students):
+        stu = Student("x", "x", "x", "x", "x", "x", "x", "x", "x", "x")
         for i in range(num_students):
             """print(self.fake.first_name())
             print(self.fake.last_name())"""

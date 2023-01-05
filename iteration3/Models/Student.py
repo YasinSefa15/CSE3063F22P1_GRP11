@@ -1,7 +1,6 @@
 import json
 
 from iteration3.Models.Person import Person
-from iteration3.Models.RegistrationError import customLog
 
 
 class Student(Person):
@@ -14,8 +13,13 @@ class Student(Person):
         self._transcript = transcript
         self._advisor = advisor
         self._errors = []
+        """self.custom_log(True, "Student constructor method is called and new student object is generated.")"""
 
-        customLog(True, "Student constructor method is called and new student object is generated.")
+    def custom_log(self, is_error, message):
+        if is_error:
+            self.logger.info(message)
+        else:
+            self.logger.warning(message)
 
     def getId(self):
         return self._id

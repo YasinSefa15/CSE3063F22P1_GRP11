@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 from iteration3.Models.Model import Model
 
 
-class Person(Model, metaclass=ABC):
+class Person(Model, ABC):
     def __init__(self, name: str, surname: str, ssn: str, gender: str):
         super().__init__()
         self.__name = name

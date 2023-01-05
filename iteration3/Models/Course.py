@@ -8,67 +8,74 @@ class Course(Model, metaclass=ABC):
     def __init__(self):
         self.name = ""
         self.code = ""
+        self.letter_grade = ""
         self.credit = 0
-        self.requiredCredits = 0
+        self.required_credits = 0
         self.quota = 0
-        self.registeredStudentsCount = 0
+        self.registered_students_count = 0
         self.semester = 0
-        self.preRequisiteCourses = []
-        self.weeklyHours = []
+        self.prerequisite_courses = []
+        self.weekly_hours = []
 
-    def getName(self):
+    def get_name(self):
         return self.name
 
-    def getCode(self):
+    def get_code(self):
         return self.code
 
-    def getCredit(self):
+    def get_letter_grade(self):
+        return self.letter_grade
+
+    def get_credit(self):
         return self.credit
 
-    def getRequiredCredits(self):
-        return self.requiredCredits
+    def get_required_credits(self):
+        return self.required_credits
 
-    def getQuota(self):
+    def get_quota(self):
         return self.quota
 
-    def getSemester(self):
+    def get_semester(self):
         return self.semester
 
-    def getRegisteredStudentsCount(self):
-        return self.registeredStudentsCount
+    def get_registered_students_count(self):
+        return self.registered_students_count
 
-    def getPreRequisiteCourses(self):
-        return self.preRequisiteCourses
+    def get_prerequisite_courses(self):
+        return self.prerequisite_courses
 
-    def getWeeklyHours(self):
+    def get_weekly_hours(self):
         return self.weeklyHours
 
-    def setName(self, name):
+    def set_name(self, name):
         self.name = name
 
-    def setCode(self, code):
+    def set_code(self, code):
         self.code = code
 
-    def setCredit(self, credit):
+    def set_letter_grade(self, letter_grade):
+        self.letter_grade = letter_grade
+
+    def set_credit(self, credit):
         self.credit = credit
 
-    def setRequiredCredits(self, requiredCredits):
-        self.requiredCredits = requiredCredits
+    def set_required_credits(self, required_credits):
+        self.required_credits = required_credits
 
-    def setQuota(self, quota):
+    def set_quota(self, quota):
         self.quota = quota
 
-    def setSemester(self, semester):
+    def set_semester(self, semester):
         self.semester = semester
 
-    def setRegisteredStudentsCount(self, registeredStudentsCount):
-        self.registeredStudentsCount = registeredStudentsCount
+    def set_registered_students_count(self, registered_students_count):
+        self.registered_students_count = registered_students_count
 
-    def setPreRequisiteCourses(self, preRequisiteCourses):
-        self.preRequisiteCourses = preRequisiteCourses
+    def set_pre_requisite_courses(self, pre_requisite_courses):
+        self.prerequisite_courses = pre_requisite_courses
 
-    def setWeeklyHours(self, weeklyHours):
-        self.weeklyHours = weeklyHours
+    def set_weekly_hours(self, weekly_hours):
+        self.weekly_hours = weekly_hours
 
     def add_registered_student(self):
         self.registered_students_count += 1
@@ -82,16 +89,16 @@ class Course(Model, metaclass=ABC):
         json_object["credit"] = self.credit
         json_object["required_credits"] = self.required_credits
         json_object["quota"] = self.quota
-        json_object["registeredStudentsCount"] = self.registeredStudentsCount
+        json_object["registeredStudentsCount"] = self.registered_students_count
         json_object["semester"] = self.semester
-        json_object["preRequisiteCourses"] = self.to_json_array(self.preRequisiteCourses)
-        json_object["weeklyHours"] = self.weeklyHours
+        json_object["preRequisiteCourses"] = self.to_json_array(self.prerequisite_courses)
+        json_object["weeklyHours"] = self.weekly_hours
         return json.dumps(json_object)
 
-    def to_json_array(self, preRequisiteCourses):
+    def to_json_array(self, prerequisite_courses):
         json_array = []
 
-        for course in preRequisiteCourses:
+        for course in prerequisite_courses:
             json_array.append(course.to_json())
 
         return json.dumps(json_array)

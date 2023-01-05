@@ -17,7 +17,10 @@ class StudentController(Controller):
         return True
 
     def change_course_status(self, student, course):
-        if random.randint(0, 1) == 1:
+        letter_grades = ["AA", "BA", "BB", "CB", "CC", "DC", "DD", "FF"]
+        random_grade = random.randint(0, 7)
+        course.set_letter_grade(letter_grades[random_grade])
+        if random_grade < 7:
             student.transcript.add_to_completed_courses(course)
             student.transcript.set_completed_credit(
                 student.transcript.get_completed_credit() + course.credit

@@ -23,8 +23,8 @@ class Student(Person):
             self.logger.warning(message)
 
     @property
-    def Id(self):
-        return self._id
+    def id(self):
+        return self.__id
 
     @property
     def registerDate(self):
@@ -113,4 +113,8 @@ class Student(Person):
         else:
             self.custom_log(False,
                             "Checked if the course is completed before and it is completed. Course cannot be added")
+
+
+
+
 

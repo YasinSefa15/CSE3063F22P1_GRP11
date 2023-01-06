@@ -1,3 +1,6 @@
+import json
+import os
+
 from iteration3.Controllers.Controller import Controller
 from iteration3.Controllers.RandomizationController import RandomizationController
 from iteration3.Models.Advisor import Advisor
@@ -7,6 +10,7 @@ class LabelingController(Controller):
     def __init__(self):
         super().__init__()
         self.__advisors = []
+        self.__students = []
 
     def execute(self):
         print("*-->Executing LabelingController")
@@ -20,7 +24,6 @@ class LabelingController(Controller):
 
     def init_advisors(self):
         print("--LC-->Initializing advisors")
-        advisors = []
         read_advisors = self.read_json_files("Advisors")
         for read_advisor in read_advisors:
             self.__advisors.append(Advisor(
@@ -31,8 +34,6 @@ class LabelingController(Controller):
                 read_advisor["students"],
                 None
             ))
-        return self.__advisors
-    def get_advisors(self):
         return self.__advisors
 
     def init_courses_and_curriculums(self):
@@ -45,7 +46,21 @@ class LabelingController(Controller):
     def init_students(self):
         print("--LC-->Initializing students")
         randomization_controller = RandomizationController()
-        randomization_controller.generate_students(10)
+        requested_path = os.getcwd() + '/Data/Input/parameters.json'
+        parameters = []
+        try:
+            with open(requested_path) as f:
+                obj = json.load(f)
+                jo = json.loads(json.dumps(obj))
+                parameters.append(jo)
+        except Exception as e:
+            print(e)
+        self.__students = randomization_controller.generate_students(parameters[0]["student_count"], parameters[0]["semester"])
 
-    def get_advisors(self):
+    @property
+    def advisors(self):
         return self.__advisors
+
+    @property
+    def students(self):
+        return self.__students

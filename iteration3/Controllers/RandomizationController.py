@@ -11,7 +11,7 @@ class RandomizationController(Controller):
         super().__init__()
         self.fake = Faker("tr_TR")
 
-    def generate_students(self, num_students):
+    def generate_students(self, num_students, semester):
         students = []
         for i in range(num_students):
             semester_no = self.fake.random_int(min=1, max=8)

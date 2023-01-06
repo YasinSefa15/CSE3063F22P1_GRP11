@@ -13,35 +13,26 @@ class Person(Model, ABC):
         self.__ssn = ssn
         self.__gender = gender
 
+    @property
+    def name(self):
+        return self.__name
 
-        @property
-        def name(self) -> str:
-            return self.__name
+    @property
+    def surname(self):
+        return self.__surname
 
-        @name.setter
-        def name(self, name: str):
-            self.__name = name
+    @property
+    def ssn(self) -> str:
+        return self.__ssn
 
-        @property
-        def surname(self) -> str:
-            return self.__surname
+    @ssn.setter
+    def ssn(self, ssn: str):
+        self.__ssn = ssn
 
-        @surname.setter
-        def surname(self, surname: str):
-            self.__surname = surname
+    @property
+    def gender(self) -> str:
+        return self.__gender
 
-        @property
-        def ssn(self) -> str:
-            return self.__ssn
-
-        @ssn.setter
-        def ssn(self, ssn: str):
-            self.__ssn = ssn
-
-        @property
-        def gender(self) -> str:
-            return self.__gender
-
-        @gender.setter
-        def gender(self, gender: str):
-            self.__gender = gender
+    @gender.setter
+    def gender(self, gender: str):
+        self.__gender = gender

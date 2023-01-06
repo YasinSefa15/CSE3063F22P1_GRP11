@@ -3,7 +3,7 @@ from abc import ABC
 from iteration3.Models.Person import Person
 
 
-class Advisor(Person, ABC):
+class Advisor(Person):
     def __init__(self, name, surname, ssn, gender, students, error):
         super().__init__(name, surname, ssn, gender)
         self._students = students

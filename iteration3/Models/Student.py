@@ -1,6 +1,7 @@
 import json
 
 from iteration3.Models.Person import Person
+from abc import ABC, abstractmethod
 
 
 class Student(Person):
@@ -57,8 +58,9 @@ class Student(Person):
     def add_error(self, error_message):
          self.errors.append(error_message)
 
+
     def get_name(self):
-        return super().get_name()
+        return super.__name
 
     def get_surname(self):
         return super().get_surname()

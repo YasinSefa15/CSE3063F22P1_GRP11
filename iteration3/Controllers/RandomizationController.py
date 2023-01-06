@@ -39,3 +39,4 @@ class RandomizationController(Controller):
 
     def choose_advisor(self):
         print("--RC-->Chosen advisor id xxx for student id xxx")
+        return True

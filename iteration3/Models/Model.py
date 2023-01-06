@@ -3,6 +3,7 @@ import datetime
 import json
 from abc import ABC, abstractmethod
 
+
 class Model(ABC):
     def __init__(self):
         self.__created_at = datetime.datetime.now()
@@ -11,9 +12,3 @@ class Model(ABC):
     @abstractmethod
     def to_json(self):
         raise NotImplementedError
-
-
-
-
-
-

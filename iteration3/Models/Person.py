@@ -13,6 +13,7 @@ class Person(Model, ABC):
         self.__ssn = ssn
         self.__gender = gender
 
+
         @property
         def name(self) -> str:
             return self.__name

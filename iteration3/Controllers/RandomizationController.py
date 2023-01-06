@@ -7,9 +7,11 @@ from iteration3.Models.Student import Student
 
 
 class RandomizationController(Controller):
-    def __init__(self):
+    def __init__(self, advisors, curriculums):
         super().__init__()
         self.fake = Faker("tr_TR")
+        self.__advisors = advisors
+        self.__curriculums = curriculums
 
     def generate_students(self, num_students, semester):
         students = []
@@ -27,7 +29,6 @@ class RandomizationController(Controller):
                 None,
                 None
             ))
-        print(self.fake.ssn())
         print("--RC-->Generated " + str(num_students) + " students")
         return students
 

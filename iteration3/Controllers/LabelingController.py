@@ -6,6 +6,8 @@ from iteration3.Controllers.RandomizationController import RandomizationControll
 from iteration3.Controllers.SimulationController import SimulationController
 
 from iteration3.Models.Advisor import Advisor
+from iteration3.Models.Curriculum import Curriculum
+from iteration3.Models.Mandatory import Mandatory
 
 
 class LabelingController(Controller):
@@ -24,7 +26,7 @@ class LabelingController(Controller):
     def init_objects(self):
         print("--LC-->Initializing objects")
         self.init_advisors()
-        self.init_courses_and_curriculums()
+        self.init_curriculums()
         self.init_students()
 
     def init_advisors(self):
@@ -37,20 +39,42 @@ class LabelingController(Controller):
                 read_advisor["ssn"],
                 read_advisor["gender"],
                 read_advisor["students"],
-                None
+                None  # todo: error eklenecek
             ))
         return self.__advisors
 
-    def init_courses_and_curriculums(self):
+    def init_curriculums(self):
         print("--LC-->Initializing courses and curriculums")
         curriculums = self.read_json_files("Curriculum")[0]
 
         for key in enumerate(curriculums):
-            print(key[1])
+            self.__curriculums.append(Curriculum(
+                key[1],
+                self.read_curriculum_json(curriculums[key[1]])
+            ))
+
+    def read_curriculum_json(self, curriculum):
+        print("--LC-->Reading curriculum json")
+        courses = []
+        for key in enumerate(curriculum):
+            read = key[1]
+            if read["courseType"] == 0:
+                courses.append(Mandatory(
+                    read["name"],
+                    read["code"],
+                    read["credit"],
+                    read["requiredCredits"],
+                    read["quota"],
+                    read["semester"],
+                    [],  # todo : önkoşul dersler eklenecek
+                    read["weeklyHours"],
+                ))
+
+        return courses
 
     def init_students(self):
         print("--LC-->Initializing students")
-        randomization_controller = RandomizationController()
+        randomization_controller = RandomizationController(self.__advisors, self.__curriculums)
         requested_path = os.getcwd() + '/Data/Input/parameters.json'
         parameters = []
         try:
@@ -60,7 +84,8 @@ class LabelingController(Controller):
                 parameters.append(jo)
         except Exception as e:
             print(e)
-        self.__students = randomization_controller.generate_students(parameters[0]["student_count"], parameters[0]["semester"])
+        self.__students = randomization_controller.generate_students(parameters[0]["student_count"],
+                                                                     parameters[0]["semester"])
 
     @property
     def advisors(self):

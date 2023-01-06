@@ -15,15 +15,16 @@ class SimulationController(Controller.Controller):
         self.__denied_courses = []
 
     def start_simulation(self):
-        # self.register_students_to_classes()
-        self.export_objects()
+        #self.register_students_to_classes()
+        #self.export_objects()
         # self.print_error_messages()
+        pass
 
     def export_objects(self):
         for advisor in self.__advisors:
             self.export_json_file(advisor)
         for student in self.__students:
-            student.transcript.calculate_gpa()
+            #student.transcript.calculate_gpa()
             self.export_json_file(student)
         self.export_json_file(self.error)
 

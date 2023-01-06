@@ -27,7 +27,7 @@ class Controller:
         path = ""
 
         if object.__class__.__name__ == "Student":
-            file_name = object.get_id()
+            file_name = object.id
             json_object = object.to_json()
             path = "Output/Students"
             content = json.dumps(json_object)

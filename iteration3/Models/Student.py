@@ -69,21 +69,7 @@ class Student(Person):
     def add_error(self, error_message):
          self.errors.append(error_message)
 
-    @property
-    def name(self):
-        return super.__name
 
-    @property
-    def surname(self):
-        return super().get_surname()
-
-    @property
-    def ssn(self):
-        return super().get_ssn()
-
-    @property
-    def gender(self):
-        return super().get_gender()
 
     def to_json(self):
         json_object = {

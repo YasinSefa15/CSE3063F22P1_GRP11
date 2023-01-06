@@ -7,38 +7,38 @@ from iteration3.Models.RegistrationError import customLog
 class Student(Person):
     def __init__(self, name, surname, ssn, gender, id, isGraduate, registerDate, semesterNo, transcript, advisor):
         super().__init__(name, surname, ssn, gender)
-        self._id = id
-        self._registerDate = registerDate
-        self._isGraduate = isGraduate
-        self._semesterNo = semesterNo
-        self._transcript = transcript
-        self._advisor = advisor
-        self._errors = []
+        self.__id = id
+        self.__registerDate = registerDate
+        self.__isGraduate = isGraduate
+        self.__semesterNo = semesterNo
+        self.__transcript = transcript
+        self.__advisor = advisor
+        self.__errors = []
 
         customLog(True, "Student constructor method is called and new student object is generated.")
 
-    def getId(self):
-        return self._id
+    def id(self):
+        return self.__id
 
-    def getRegisterDate(self):
-        return self._registerDate
+    def registerDate(self):
+        return self.__registerDate
 
-    def get_is_graduate(self):
-        return self._isGraduate
+    def is_graduate(self):
+        return self.__isGraduate
 
-    def get_semester_no(self):
-        return self._semesterNo
+    def semester_no(self):
+        return self.__semesterNo
 
-    def get_transcript(self):
-        return self._transcript
+    def transcript(self):
+        return self.__transcript
 
-    def get_errors(self):
-        return self._errors
+    def errors(self):
+        return self.__errors
 
-    def get_advisor(self):
-        return self._advisor
+    def advisor(self):
+        return self.__advisor
 
-    def get_selected_courses(self):
+    def selected_courses(self):
         return self._selectedCourses
 
     def set_semester_no(self, semesterNo):
@@ -53,16 +53,16 @@ class Student(Person):
     def add_error(self, error_message):
          self.errors.append(error_message)
 
-    def get_name(self):
+    def name(self):
         return super().get_name()
 
-    def get_surname(self):
+    def surname(self):
         return super().get_surname()
 
-    def get_ssn(self):
+    def ssn(self):
         return super().get_ssn()
 
-    def get_gender(self):
+    def gender(self):
         return super().get_gender()
 
     def to_json(self):

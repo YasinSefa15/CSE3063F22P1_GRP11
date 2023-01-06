@@ -3,6 +3,8 @@ import os
 
 from iteration3.Controllers.Controller import Controller
 from iteration3.Controllers.RandomizationController import RandomizationController
+from iteration3.Controllers.SimulationController import SimulationController
+
 from iteration3.Models.Advisor import Advisor
 
 
@@ -11,10 +13,13 @@ class LabelingController(Controller):
         super().__init__()
         self.__advisors = []
         self.__students = []
+        self.__curriculums = []
 
     def execute(self):
         print("*-->Executing LabelingController")
         self.init_objects()
+        simulation_controller = SimulationController(self.__students, self.__curriculums, self.__advisors)
+        simulation_controller.start_simulation()
 
     def init_objects(self):
         print("--LC-->Initializing objects")

@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 from iteration3.Models.Model import Model
 
 
-class Course(Model, metaclass=ABC):
+class Course(Model, ABC):
     def __init__(self):
         self.name = ""
         self.code = ""

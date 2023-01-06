@@ -4,7 +4,11 @@ import iteration3.Models.Student as Student
 import iteration3.Models.Course as Course
 
 
-class StudentController(Controller):
+class StudentController(Controller.Controller):
+
+    def __init__(self):
+        super().__init__()
+
     def register_to_course(self, student, course):
         permission = student.advisor.course_availability(student, course)
 

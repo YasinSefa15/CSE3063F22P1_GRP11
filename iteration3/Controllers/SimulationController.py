@@ -5,22 +5,24 @@ import iteration3.Models.Advisor as Advisor
 import iteration3.Models.Curriculum as Curriculum
 import iteration3.Controllers.StudentController as StudentController
 
-class SimulationController(Controller):
-    def __init__(self, students: List[Student], curriculums: List[Curriculum], advisors: List[Advisor]):
-        self.students = students
-        self.curriculums = curriculums
-        self.advisors = advisors
-        self.denied_courses = []
+
+class SimulationController(Controller.Controller):
+    def __init__(self, students, advisors, curriculums):
+        super().__init__()
+        self.__students = students
+        self.__curriculums = curriculums
+        self.__advisors = advisors
+        self.__denied_courses = []
 
     def start_simulation(self):
-        self.register_students_to_classes()
+        # self.register_students_to_classes()
         self.export_objects()
-        self.print_error_messages()
+        # self.print_error_messages()
 
     def export_objects(self):
-        for advisor in self.advisors:
+        for advisor in self.__advisors:
             self.export_json_file(advisor)
-        for student in self.students:
+        for student in self.__students:
             student.transcript.calculate_gpa()
             self.export_json_file(student)
         self.export_json_file(self.error)

@@ -1,26 +1,38 @@
 import json
 from decimal import Decimal
 
-class Transcript(Model):
-    def __init__(self, gpa:float, completedCredit:int, completedCourses:[], failedCourses:[]):
-        self.gpa = gpa
-        self.completedCredit = completedCredit
-        self.completedCourses = completedCourses
-        self.failedCourses = failedCourses
+from iteration3.Models.Model import Model
 
-    def calculateGPA(self):
-        temp_gpa = 0
-        total_credit = 0
-        course_credit = 0
-        for course in self.completedCourses:
-            course_credit = course.get_credit()
-            total_credit += course_credit
-            temp_gpa += course_credit * 4
-        for course in self.failedCourses:
-            course_credit = course.get_credit()
-            total_credit += course_credit
-            temp_gpa += course_credit * 0
-        self.gpa = temp_gpa / total_credit
+
+class Transcript(Model):
+
+    def __init__(self, gpa:float, completed_credit:int, completed_courses:[], failed_courses:[]):
+        self.gpa = gpa
+        self.completed_credit = completed_credit
+        self.completed_courses = completed_courses
+        self.failed_courses = failed_courses
+
+    def calculate_gpa(self):
+        letter_grade_dict = {
+            "AA": 4.0,
+            "BA": 3.5,
+            "BB": 3.0,
+            "BC": 2.5,
+            "CC": 2.0,
+            "DC": 1.5,
+            "DD": 1.0,
+            "FF": 0.0
+        }
+        gpa = 0
+        credit = 0
+        for i in range(len(self.completed_courses)):
+            gpa += self.completed_courses[i].get_credit() * letter_grade_dict[self.completed_courses[i].get_letter_grade()]
+            credit += self.completed_courses[i].get_credit()
+        for i in range(len(self.failed_courses)):
+            gpa += self.failed_courses[i].get_credit() * letter_grade_dict[self.failed_courses[i].get_letter_grade()]
+            credit += self.failed_courses[i].get_credit()
+        self.gpa = gpa / credit
+
 
     def get_gpa(self):
         return self.gpa
@@ -30,37 +42,37 @@ class Transcript(Model):
             self.gpa = gpa
 
     def get_completed_credit(self):
-        return self.completedCredit
+        return self.completed_credit
 
-    def set_completed_credit(self, completedCredit:int):
-        if completedCredit >= 0:
-            self.completedCredit = completedCredit
+    def set_completed_credit(self, completed_credit:int):
+        if completed_credit >= 0:
+            self.completed_credit = completed_credit
 
     def get_completed_courses(self):
-        return self.completedCourses
+        return self.completed_courses
 
-    def set_completed_courses(self, completedCourses:[]):
-        for i in range(len(completedCourses)):
-            for j in range(len(self.completedCourses)):
-                if completedCourses[i].get_code() != self.completedCourses[j].get_code():
-                    self.completedCourses.add(completedCourses[i])
+    def set_completed_courses(self, completed_courses:[]):
+        for i in range(len(completed_courses)):
+            for j in range(len(self.completed_courses)):
+                if completed_courses[i].get_code() != self.completed_courses[j].get_code():
+                    self.completed_courses.add(completed_courses[i])
 
     def get_failed_courses(self):
-        return self.failedCourses
+        return self.failed_courses
 
-    def set_failed_courses(self, failedCourses:[]):
-        for i in range(len(failedCourses)):
-            for j in range(len(self.failedCourses)):
-                if failedCourses[i].get_code() != self.failedCourses[j].get_code():
-                    self.failedCourses.add(failedCourses[i])
+    def set_failed_courses(self, failed_courses:[]):
+        for i in range(len(failed_courses)):
+            for j in range(len(self.failed_courses)):
+                if failed_courses[i].get_code() != self.failed_courses[j].get_code():
+                    self.failed_courses.add(failed_courses[i])
 
     def add_to_completed_courses(self, course):
-        if course not in self.completedCourses:
-            self.completedCourses.add(course)
+        if course not in self.completed_courses:
+            self.completed_courses.add(course)
 
     def add_to_failed_courses(self, course):
-        if course not in self.failedCourses:
-            self.failedCourses.add(course)
+        if course not in self.failed_courses:
+            self.failed_courses.add(course)
 
     def convert_arraylist_to_json_array(self, array_list:[]):
         json_array = []
@@ -71,7 +83,7 @@ class Transcript(Model):
     def to_json(self):
         json_object = {}
         json_object['gpa'] = format(self.gpa, '##.##')
-        json_object['completedCredit'] = self.completedCredit
-        json_object['completedCourses'] = self.convert_arraylist_to_json_array(self.completedCourses)
-        json_object['failedCourses'] = self.convert_arraylist_to_json_array(self.failedCourses)
+        json_object['completedCredit'] = self.completed_credit
+        json_object['completedCourses'] = self.convert_arraylist_to_json_array(self.completed_courses)
+        json_object['failedCourses'] = self.convert_arraylist_to_json_array(self.failed_courses)
         return json_object

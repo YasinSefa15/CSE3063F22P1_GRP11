@@ -1,6 +1,9 @@
 import json
 from typing import List
 
+from iteration3.Models.Course import Course
+
+
 class Mandatory(Course):
     def __init__(self, name: str, code: str, credit: int, required_credits: int, quota: int, semester: int, pre_requisite_courses: List[Course], weekly_hours: List[str]) -> None:
         self.name = name

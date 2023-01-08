@@ -1,4 +1,5 @@
 import json
+import logging
 
 from iteration3.Models.Person import Person
 from abc import ABC, abstractmethod
@@ -7,6 +8,11 @@ from abc import ABC, abstractmethod
 class Student(Person):
 
 
+    logger = logging.getLogger(__name__)
+    file_handler = logging.FileHandler("RegistrationError.log")
+    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
 
     def __init__(self, name, surname, ssn, gender, id, isGraduate, registerDate, semesterNo, transcript, advisor,selectedCourses):
         super().__init__(name, surname, ssn, gender)

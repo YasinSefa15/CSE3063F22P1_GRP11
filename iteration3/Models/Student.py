@@ -5,7 +5,10 @@ from abc import ABC, abstractmethod
 
 
 class Student(Person):
-    def __init__(self, name, surname, ssn, gender, id, isGraduate, registerDate, semesterNo, transcript, advisor):
+
+
+
+    def __init__(self, name, surname, ssn, gender, id, isGraduate, registerDate, semesterNo, transcript, advisor,selectedCourses):
         super().__init__(name, surname, ssn, gender)
         self.__id = id
         self.__registerDate = registerDate
@@ -14,6 +17,7 @@ class Student(Person):
         self.__transcript = transcript
         self.__advisor = advisor
         self.__errors = []
+        self.__selectedCourses = []
         """self.custom_log(True, "Student constructor method is called and new student object is generated.")"""
 
     def custom_log(self, is_error, message):
@@ -56,15 +60,15 @@ class Student(Person):
 
     @semester_no.setter
     def set_semester_no(self, semesterNo):
-        self._semesterNo = semesterNo
+        self.__semesterNo = semesterNo
 
     @transcript.setter
     def set_transcript(self, transcript):
-        self._transcript = transcript
+        self.__transcript = transcript
 
     @selected_courses.setter
     def set_selected_courses(self, selectedCourses):
-        self._selectedCourses = selectedCourses
+        self.__selectedCourses = selectedCourses
 
     def add_error(self, error_message):
          self.errors.append(error_message)

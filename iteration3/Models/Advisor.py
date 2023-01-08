@@ -1,5 +1,8 @@
 from abc import ABC
 
+
+
+from iteration3.Models import Elective, ElectiveType
 from iteration3.Models.Person import Person
 
 
@@ -13,33 +16,38 @@ class Advisor(Person):
         def to_json(self):
             return ""
 
-    def course_availability(student, course):
-        if not check_semester(student, course):
-            student.add_error(error.report_error(1001, [course.name, str(course.semester), str(student.semester_no)]))
-            custom_log(False,
-                       "Checked semester of students and courses that requested by students and they are declined ")
+    def custom_log(self, is_error, message):
+        if is_error:
+            self.logger.info(message)
+        else:
+            self.logger.warning(message)
+    def course_availability(self, student, course):
+        if not self.check_semester(self, student, course):
+            student.add_error(self._error.report_error(1001, [course.name, str(course.semester), str(student.semester_no)]))
+            self.custom_log(False,"Checked semester of students and courses that requested by students and they are declined ")
             return False
-        if not check_credit(student, course):
-            student.add_error(error.report_error(1002, [course.name, str(student.transcript.completed_credit)]))
-            custom_log(False, "Compared credit of students and required credit of course and it is not enough.")
+        if not self.check_credit(self, student, course):
+            student.add_error(self._error.report_error(1002, [course.name, str(student.transcript.completed_credit)]))
+            self.custom_log(False, "Compared credit of students and required credit of course and it is not enough.")
             return False
-        if not check_quota(course):
-            student.add_error(error.report_error(1003, [course.name]))
-            custom_log(False, "Check quota of course and there is not enough space for student.")
+        if not self.check_quota(self, course):
+            student.add_error(self._error.report_error(1003, [course.name]))
+            self.custom_log(False, "Check quota of course and there is not enough space for student.")
             return False
-        temp_return = check_pre_requisite(student, course)
+        temp_return = self.check_pre_requisite(self, student, course)
         if not temp_return[0]:
-            student.add_error(error.report_error(1004, [course.name, temp_return[1]]))
+            student.add_error(self._error.report_error(1004, [course.name, temp_return[1]]))
             return False
-        temp_return_2 = check_collision(student)
+        temp_return_2 = self.check_collision(self, student)
         if not temp_return_2[0]:
-            student.add_error(error.report_error(1005, [temp_return_2[1], temp_return_2[2], temp_return_2[3]]))
+            student.add_error(self._error.report_error(1005, [temp_return_2[1], temp_return_2[2], temp_return_2[3]]))
             return False
-        if not check_elective(student, course):
+        if not self.check_elective(self, student, course):
             return False
-        if not fte_takeable(student, course):
+        if not self.fte_takeable(self, student, course):
             # return False
             pass
+        self.custom_log(True, "courseAvailability method is called and advisor check the course availability.")
 
         return True
 
@@ -48,18 +56,18 @@ class Advisor(Person):
             return False
         return True
 
-    def checkSemester(self, student, course):
+    def check_semester(self, student, course):
         if course.getSemester() <= student.getSemesterNo():
-            return true
-        return false
+            return True
+        return False
 
 
-    def checkCredit(self, student, course):
+    def check_credit(self, student, course):
         if course.getRequiredCredits() > student.getTranscript().getCompletedCredit():
-            return true
-        return false
+            return True
+        return False
 
-    def check_pre_requisite(student, course):
+    def check_pre_requisite(self, student, course):
         temp_completed_course = student.transcript.completed_courses
         availability = True
         error_info = [None, None]
@@ -77,7 +85,7 @@ class Advisor(Person):
         error_info[0] = availability
         return error_info
 
-    def check_collision(student):
+    def check_collision(self, student):
         courses_of_hash = student.selected_courses.keys()
         courses = list(courses_of_hash)
         error_info = [None, None, None, None]
@@ -97,7 +105,7 @@ class Advisor(Person):
                     return error_info
         return error_info
 
-    def check_elective(student, course):
+    def check_elective(self, student, course):
         count = 0
         for k, v in student.selected_courses.items():
             if isinstance(k, Elective):
@@ -106,7 +114,7 @@ class Advisor(Person):
             return False
         return True
 
-    def fte_takeable(student, course):
+    def fte_takeable(self, student, course):
         if student.semester_no >= 7 and isinstance(course, Elective) and course.type == ElectiveType.FTE:
             return True
         return False

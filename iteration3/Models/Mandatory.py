@@ -5,7 +5,8 @@ from iteration3.Models.Course import Course
 
 
 class Mandatory(Course):
-    def __init__(self, name: str, code: str, credit: int, required_credits: int, quota: int, semester: int, pre_requisite_courses: List[Course], weekly_hours: List[str]) -> None:
+    def __init__(self, name, code, credit, required_credits, quota, semester, pre_requisite_courses, weekly_hours):
+        super().__init__()
         self.__name = name
         self.__code = code
         self.__credit = credit

@@ -6,15 +6,13 @@ from abc import ABC, abstractmethod
 
 
 class Student(Person):
-
-
     logger = logging.getLogger(__name__)
     file_handler = logging.FileHandler("RegistrationError.log")
     formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
 
-    def __init__(self, name, surname, ssn, gender, id, isGraduate, registerDate, semesterNo, transcript, advisor,selectedCourses):
+    def __init__(self, name, surname, ssn, gender, id, isGraduate, registerDate, semesterNo, transcript, advisor):
         super().__init__(name, surname, ssn, gender)
         self.__id = id
         self.__registerDate = registerDate
@@ -37,7 +35,7 @@ class Student(Person):
         return self.__id
 
     @property
-    def registerDate(self):
+    def register_date(self):
         return self.__registerDate
 
     @property
@@ -77,40 +75,33 @@ class Student(Person):
         self.__selectedCourses = selectedCourses
 
     def add_error(self, error_message):
-         self.errors.append(error_message)
-
-
+        self.errors.append(error_message)
 
     def to_json(self):
         json_object = {
-            "name": self.get_name(),
-            "surname": self.get_surname(),
-            "ssn": self.get_ssn(),
-            "gender": self.get_gender(),
-            "id": self.get_id(),
-            "isGraduate": self.get_is_graduate(),
-            "registerDate": self.get_register_date(),
-            "semesterNo": self.get_semester_no(),
-            "Transcript": self.get_transcript().to_json(),
-            "errors": self.get_errors(),
+            "name": self.name,
+            "surname": self.surname,
+            "ssn": self.ssn,
+            "gender": self.gender,
+            "id": self.id,
+            "isGraduate": self.is_graduate,
+            "registerDate": self.register_date,
+            "semesterNo": self.semester_no,
+            "Transcript": self.transcript.to_json,
+            "errors": self.errors,
             "Advisor": {
-                "name": self.get_advisor().get_name(),
-                "surname": self.get_advisor().get_surname(),
-                "ssn": self.get_advisor().get_ssn()
+                "name": self.advisor.name,
+                "surname": self.advisor.surname,
+                "ssn": self.advisor.ssn
             }
         }
         return json.dumps(json_object)
 
     def add_to_selected_courses(self, course, status):
-        if course not in self.selectedCourses:
-            self.selectedCourses[course] = status
+        if course not in self.selected_courses:
+            self.selected_courses[course] = status
             self.custom_log(True,
                             "Checked if the course is completed before and it is not completed. Added to selected courses")
         else:
             self.custom_log(False,
                             "Checked if the course is completed before and it is completed. Course cannot be added")
-
-
-
-
-

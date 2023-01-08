@@ -23,7 +23,6 @@ class Student(Person):
         self.__errors = []
         self.__selectedCourses = []
         """self.custom_log(True, "Student constructor method is called and new student object is generated.")"""
-
     def custom_log(self, is_error, message):
         if is_error:
             self.logger.info(message)
@@ -99,7 +98,7 @@ class Student(Person):
 
     def add_to_selected_courses(self, course, status):
         if course not in self.selected_courses:
-            self.selected_courses[course] = status
+            self.selected_courses.append([course, status])
             self.custom_log(True,
                             "Checked if the course is completed before and it is not completed. Added to selected courses")
         else:

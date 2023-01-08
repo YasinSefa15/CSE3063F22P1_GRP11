@@ -34,7 +34,7 @@ class TestStudent(unittest.TestCase):
 
     def test_add_to_selected_courses(self):
         self.student.add_to_selected_courses(self.course1, True)
-        self.assertEqual(self.student.selected_courses, {self.course1, True})
+        self.assertEqual(self.student.selected_courses, {[self.course1, True]})
 
         #self.student.add_to_selected_courses(self.course2, False)
         #self.assertEqual(self.student.selected_courses, {self.course1: True, self.course2: False})

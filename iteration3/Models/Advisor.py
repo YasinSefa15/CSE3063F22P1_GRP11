@@ -1,9 +1,9 @@
 from abc import ABC
 
-
-
 from iteration3.Models import Elective, ElectiveType
+from iteration3.Models.Course import Course
 from iteration3.Models.Person import Person
+from iteration3.Models.Student import Student
 
 
 class Advisor(Person):
@@ -11,7 +11,6 @@ class Advisor(Person):
         super().__init__(name, surname, ssn, gender)
         self.__students = students
         self.__error = error
-
 
         def to_json(self):
             return ""
@@ -21,10 +20,13 @@ class Advisor(Person):
             self.logger.info(message)
         else:
             self.logger.warning(message)
+
     def course_availability(self, student, course):
         if not self.check_semester(self, student, course):
-            student.add_error(self._error.report_error(1001, [course.name, str(course.semester), str(student.semester_no)]))
-            self.custom_log(False,"Checked semester of students and courses that requested by students and they are declined ")
+            student.add_error(
+                self._error.report_error(1001, [course.name, str(course.semester), str(student.semester_no)]))
+            self.custom_log(False,
+                            "Checked semester of students and courses that requested by students and they are declined ")
             return False
         if not self.check_credit(self, student, course):
             student.add_error(self._error.report_error(1002, [course.name, str(student.transcript.completed_credit)]))
@@ -56,18 +58,17 @@ class Advisor(Person):
             return False
         return True
 
-    def check_semester(self, student, course):
-        if course.getSemester() <= student.getSemesterNo():
+    def check_semester(self, student:Student, course:Course):
+        if course.get_semester() <= student.semester_no:
             return True
         return False
 
-
-    def check_credit(self, student, course):
+    def check_credit(self, student:Student, course:Course):
         if course.getRequiredCredits() > student.getTranscript().getCompletedCredit():
             return True
         return False
 
-    def check_pre_requisite(self, student, course):
+    def check_pre_requisite(self, student:Student, course:Course):
         temp_completed_course = student.transcript.completed_courses
         availability = True
         error_info = [None, None]
@@ -85,7 +86,7 @@ class Advisor(Person):
         error_info[0] = availability
         return error_info
 
-    def check_collision(self, student):
+    def check_collision(self, student:Student):
         courses_of_hash = student.selected_courses.keys()
         courses = list(courses_of_hash)
         error_info = [None, None, None, None]
@@ -105,7 +106,7 @@ class Advisor(Person):
                     return error_info
         return error_info
 
-    def check_elective(self, student, course):
+    def check_elective(self, student:Student, course:Course):
         count = 0
         for k, v in student.selected_courses.items():
             if isinstance(k, Elective):
@@ -114,13 +115,15 @@ class Advisor(Person):
             return False
         return True
 
-    def fte_takeable(self, student, course):
+    def fte_takeable(self, student:Student, course:Course):
         if student.semester_no >= 7 and isinstance(course, Elective) and course.type == ElectiveType.FTE:
             return True
         return False
+
     @property
     def students(self):
         return self.students
+
     @students.setter
     def students(self, students):
         for i in range(len(students)):
@@ -128,11 +131,5 @@ class Advisor(Person):
                 if students[i].id != self.students[j].id:
                     self.students.add(students[i])
 
-
-
-
-
     def to_json(self):
         return ""
-
-

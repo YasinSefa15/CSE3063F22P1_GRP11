@@ -39,7 +39,7 @@ class LabelingController(Controller):
                 read_advisor["ssn"],
                 read_advisor["gender"],
                 read_advisor["students"],
-                None  # todo: error eklenecek
+                self.error
             ))
         return self.__advisors
 

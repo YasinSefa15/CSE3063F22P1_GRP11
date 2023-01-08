@@ -1,7 +1,9 @@
 from iteration3.Controllers.LabelingController import LabelingController
+from iteration3.Models.RegistrationError import RegistrationError
 
 labelingController = LabelingController()
 labelingController.execute()
+labelingController.error(RegistrationError())
 
 #person class ın da setter olduğu için = deyip değer atıyabiliyorum
 #person class ın da @property deyip getter yazıyorum get_name demedim name dedim adına

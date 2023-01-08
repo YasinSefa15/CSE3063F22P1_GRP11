@@ -30,22 +30,22 @@ class Controller:
             file_name = object.id
             json_object = object.to_json()
             path = "Output/Students"
-            content = json.dumps(json_object)
+            content = json_object
         elif object.__class__.__name__ == "Advisor":
             file_name = object.get_name() + object.get_surname()
             file_name = file_name.replace(" ", "")
             json_object = object.to_json()
             path = "Output/Advisors"
-            content = json.dumps(json_object)
+            content = json_object
         elif object.__class__.__name__ == "RegistrationError":
             file_name = "RegistrationErrors"
             json_object = object.to_json()
-            content = json.dumps(json_object)
+            content = json_object
         else:
             return False
 
-        full_file_name = os.getcwd() + '/iteration2/Data/' + path + '/' + file_name + '.json'
-
+        full_file_name = os.getcwd() + '/Data/' + path + '/' + str(file_name) + '.json'
+        print(content)
         try:
             directory = os.path.dirname(full_file_name)
 
@@ -53,9 +53,18 @@ class Controller:
                 os.makedirs(directory)
 
             with open(full_file_name, 'w') as f:
-                f.write(content)
+                json.dump(content, f)
+                #f.write(content)
         except OSError as e:
             print("An error occurred while exporting .json file.")
             print(e)
         return False
 
+
+    @property
+    def error(self):
+        return self.__error
+
+    @error.setter
+    def error(self, error):
+        self.__error = error

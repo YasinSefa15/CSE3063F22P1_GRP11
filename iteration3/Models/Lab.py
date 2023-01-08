@@ -21,6 +21,9 @@ class Lab(Course):
     def _generate_section_number(self) -> int:
         return int(math.floor(random.random() * 4 + 1))
 
+    def get_credit(self):
+        return self.__credit
+
     def set_section_number(self, section_number: int) -> None:
         self.section_number = section_number
 

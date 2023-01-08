@@ -1,17 +1,16 @@
 from abc import ABC
 
-
-
 from iteration3.Models import Elective, ElectiveType
+from iteration3.Models.Course import Course
 from iteration3.Models.Person import Person
+from iteration3.Models.Student import Student
 
 
 class Advisor(Person):
     def __init__(self, name, surname, ssn, gender, students, error):
         super().__init__(name, surname, ssn, gender)
-        self._students = students
-        self._error = error
-
+        self.__students = students
+        self.__error = error
 
         def to_json(self):
             return ""
@@ -21,10 +20,13 @@ class Advisor(Person):
             self.logger.info(message)
         else:
             self.logger.warning(message)
-    def course_availability(self, student, course):
+
+    def course_availability(self, student:Student, course:Course):
         if not self.check_semester(self, student, course):
-            student.add_error(self._error.report_error(1001, [course.name, str(course.semester), str(student.semester_no)]))
-            self.custom_log(False,"Checked semester of students and courses that requested by students and they are declined ")
+            student.add_error(
+                self._error.report_error(1001, [course.name, str(course.semester), str(student.semester_no)]))
+            self.custom_log(False,
+                            "Checked semester of students and courses that requested by students and they are declined ")
             return False
         if not self.check_credit(self, student, course):
             student.add_error(self._error.report_error(1002, [course.name, str(student.transcript.completed_credit)]))
@@ -51,31 +53,30 @@ class Advisor(Person):
 
         return True
 
-    def check_quota(self, course):
+    def check_quota(self, course:Course):
         if course.get_registered_students_count() >= course.get_quota():
             return False
         return True
 
-    def check_semester(self, student, course):
-        if course.getSemester() <= student.getSemesterNo():
+    def check_semester(self, student:Student, course:Course):
+        if course.get_semester() <= student.semester_no:
             return True
         return False
 
-
-    def check_credit(self, student, course):
-        if course.getRequiredCredits() > student.getTranscript().getCompletedCredit():
+    def check_credit(self, student:Student, course:Course):
+        if course.get_required_credits() > student.transcript.get_completed_credit():
             return True
         return False
 
-    def check_pre_requisite(self, student, course):
-        temp_completed_course = student.transcript.completed_courses
+    def check_pre_requisite(self, student:Student, course:Course):
+        temp_completed_course = student.transcript.get_completed_courses()
         availability = True
         error_info = [None, None]
-        for i in range(len(course.pre_requisite_courses)):
+        for i in range(len(course.get_prerequisite_courses())):
             for j in range(len(temp_completed_course)):
-                if course.pre_requisite_courses[i].code != temp_completed_course[j].code:
+                if course.get_prerequisite_courses()[i].get_code() != temp_completed_course[j].code:
                     availability = False
-                    error_info[1] = course.pre_requisite_courses[i].code
+                    error_info[1] = course.get_prerequisite_courses()[i].get_code()
                 else:
                     availability = True
                     error_info[1] = ""
@@ -85,7 +86,7 @@ class Advisor(Person):
         error_info[0] = availability
         return error_info
 
-    def check_collision(self, student):
+    def check_collision(self, student:Student):
         courses_of_hash = student.selected_courses.keys()
         courses = list(courses_of_hash)
         error_info = [None, None, None, None]
@@ -105,7 +106,8 @@ class Advisor(Person):
                     return error_info
         return error_info
 
-    def check_elective(self, student, course):
+    # check elective calışmıyor
+    def check_elective(self, student:Student, course:Course):
         count = 0
         for k, v in student.selected_courses.items():
             if isinstance(k, Elective):
@@ -114,25 +116,23 @@ class Advisor(Person):
             return False
         return True
 
-    def fte_takeable(self, student, course):
+    # fte takeable calışmıyor
+
+    def fte_takeable(self, student:Student, course:Course):
         if student.semester_no >= 7 and isinstance(course, Elective) and course.type == ElectiveType.FTE:
             return True
         return False
 
-    def get_students(self):
+    @property
+    def students(self):
         return self.students
 
-    def set_students(self, students):
+    @students.setter
+    def students(self, students):
         for i in range(len(students)):
             for j in range(len(self.students)):
                 if students[i].id != self.students[j].id:
                     self.students.add(students[i])
 
-
-
-
-
     def to_json(self):
         return ""
-
-

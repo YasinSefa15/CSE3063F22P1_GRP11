@@ -6,6 +6,7 @@ from iteration3.Models.Model import Model
 
 class Course(Model, ABC):
     def __init__(self):
+        super().__init__()
         self.__name = ""
         self.__code = ""
         self.__letter_grade = ""
@@ -14,7 +15,7 @@ class Course(Model, ABC):
         self.__quota = 0
         self.__registered_students_count = 0
         self.__semester = 0
-        self.__prerequisite_courses = []
+        self.__prerequisite_courses = [Course]
         self.__weekly_hours = []
 
     def get_name(self):
@@ -45,7 +46,7 @@ class Course(Model, ABC):
         return self.__prerequisite_courses
 
     def get_weekly_hours(self):
-        return self.__weeklyHours
+        return self.__weekly_hours
 
     def set_name(self, name):
         self.__name = name
@@ -83,11 +84,11 @@ class Course(Model, ABC):
     import json
 
     def to_json(self):
-        json_object = {"name": self.name, "code": self.code, "credit": self.credit,
-                       "required_credits": self.required_credits, "quota": self.quota,
-                       "registeredStudentsCount": self.registered_students_count, "semester": self.semester,
-                       "preRequisiteCourses": self.to_json_array(self.prerequisite_courses),
-                       "weeklyHours": self.weekly_hours}
+        json_object = {"name": self.__name, "code": self.__code, "credit": self.__credit,
+                       "required_credits": self.__required_credits, "quota": self.__quota,
+                       "registeredStudentsCount": self.__registered_students_count, "semester": self.__semester,
+                       "preRequisiteCourses": self.to_json_array(self.__prerequisite_courses),
+                       "weeklyHours": self.__weekly_hours}
         return json.dumps(json_object)
 
     def to_json_array(self, prerequisite_courses):

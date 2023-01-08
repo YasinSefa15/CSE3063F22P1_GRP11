@@ -67,7 +67,7 @@ class Advisor(Person):
             return True
         return False
 
-    def check_pre_requisite(student, course):
+    def check_pre_requisite(self, student, course):
         temp_completed_course = student.transcript.completed_courses
         availability = True
         error_info = [None, None]
@@ -85,7 +85,7 @@ class Advisor(Person):
         error_info[0] = availability
         return error_info
 
-    def check_collision(student):
+    def check_collision(self, student):
         courses_of_hash = student.selected_courses.keys()
         courses = list(courses_of_hash)
         error_info = [None, None, None, None]
@@ -105,7 +105,7 @@ class Advisor(Person):
                     return error_info
         return error_info
 
-    def check_elective(student, course):
+    def check_elective(self, student, course):
         count = 0
         for k, v in student.selected_courses.items():
             if isinstance(k, Elective):
@@ -114,7 +114,7 @@ class Advisor(Person):
             return False
         return True
 
-    def fte_takeable(student, course):
+    def fte_takeable(self, student, course):
         if student.semester_no >= 7 and isinstance(course, Elective) and course.type == ElectiveType.FTE:
             return True
         return False

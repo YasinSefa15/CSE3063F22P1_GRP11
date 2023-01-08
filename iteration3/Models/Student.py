@@ -8,7 +8,7 @@ class Student(Person):
 
 
 
-    def __init__(self, name, surname, ssn, gender, id, isGraduate, registerDate, semesterNo, transcript, advisor,selectedCourses ):
+    def __init__(self, name, surname, ssn, gender, id, isGraduate, registerDate, semesterNo, transcript, advisor,selectedCourses):
         super().__init__(name, surname, ssn, gender)
         self.__id = id
         self.__registerDate = registerDate

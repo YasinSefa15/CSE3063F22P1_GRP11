@@ -15,7 +15,7 @@ class Course(Model, ABC):
         self.__quota = 0
         self.__registered_students_count = 0
         self.__semester = 0
-        self.__prerequisite_courses = []
+        self.__prerequisite_courses = [Course]
         self.__weekly_hours = []
 
     def get_name(self):

@@ -64,19 +64,19 @@ class Advisor(Person):
         return False
 
     def check_credit(self, student:Student, course:Course):
-        if course.getRequiredCredits() > student.getTranscript().getCompletedCredit():
+        if course.get_required_credits() > student.transcript.get_completed_credit():
             return True
         return False
 
     def check_pre_requisite(self, student:Student, course:Course):
-        temp_completed_course = student.transcript.completed_courses
+        temp_completed_course = student.transcript.get_completed_courses()
         availability = True
         error_info = [None, None]
-        for i in range(len(course.pre_requisite_courses)):
+        for i in range(len(course.get_prerequisite_courses())):
             for j in range(len(temp_completed_course)):
-                if course.pre_requisite_courses[i].code != temp_completed_course[j].code:
+                if course.get_prerequisite_courses()[i].get_code() != temp_completed_course[j].code:
                     availability = False
-                    error_info[1] = course.pre_requisite_courses[i].code
+                    error_info[1] = course.get_prerequisite_courses()[i].get_code()
                 else:
                     availability = True
                     error_info[1] = ""
@@ -106,6 +106,7 @@ class Advisor(Person):
                     return error_info
         return error_info
 
+    # check elective calışmıyor
     def check_elective(self, student:Student, course:Course):
         count = 0
         for k, v in student.selected_courses.items():
@@ -114,6 +115,8 @@ class Advisor(Person):
         if count >= 2:
             return False
         return True
+
+    # fte takeable calışmıyor
 
     def fte_takeable(self, student:Student, course:Course):
         if student.semester_no >= 7 and isinstance(course, Elective) and course.type == ElectiveType.FTE:

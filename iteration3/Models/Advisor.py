@@ -9,8 +9,8 @@ from iteration3.Models.Person import Person
 class Advisor(Person):
     def __init__(self, name, surname, ssn, gender, students, error):
         super().__init__(name, surname, ssn, gender)
-        self._students = students
-        self._error = error
+        self.__students = students
+        self.__error = error
 
 
         def to_json(self):
@@ -118,11 +118,11 @@ class Advisor(Person):
         if student.semester_no >= 7 and isinstance(course, Elective) and course.type == ElectiveType.FTE:
             return True
         return False
-
-    def get_students(self):
+    @property
+    def students(self):
         return self.students
-
-    def set_students(self, students):
+    @students.setter
+    def students(self, students):
         for i in range(len(students)):
             for j in range(len(self.students)):
                 if students[i].id != self.students[j].id:

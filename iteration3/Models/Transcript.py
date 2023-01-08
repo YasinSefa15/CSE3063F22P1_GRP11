@@ -1,5 +1,6 @@
 import json
 from decimal import Decimal
+from random import random
 
 from iteration3.Models.Model import Model
 
@@ -7,6 +8,7 @@ from iteration3.Models.Model import Model
 class Transcript(Model):
 
     def __init__(self, gpa: float, completed_credit: int, completed_courses: [], failed_courses: []):
+        super().__init__()
         self.__gpa = gpa
         self.__completed_credit = completed_credit
         self.__completed_courses = completed_courses
@@ -26,11 +28,11 @@ class Transcript(Model):
         gpa = 0
         credit = 0
         for i in range(len(self.__completed_courses)):
-            gpa += self.__completed_courses[i].get_credit() * letter_grade_dict[
+            gpa += self.__completed_courses[i].get_credit()*letter_grade_dict[
                 self.__completed_courses[i].get_letter_grade()]
             credit += self.__completed_courses[i].get_credit()
         for i in range(len(self.__failed_courses)):
-            gpa += self.__failed_courses[i].get_credit() * letter_grade_dict[
+            gpa += self.__failed_courses[i].get_credit()*letter_grade_dict[
                 self.__failed_courses[i].get_letter_grade()]
             credit += self.__failed_courses[i].get_credit()
         self.__gpa = gpa / credit

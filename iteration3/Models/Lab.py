@@ -7,7 +7,7 @@ from iteration3.Models.Course import Course
 
 
 class Lab(Course):
-    def __init__(self, name, code, credit, required_credits, quota, semester, pre_requisite_courses, weekly_hours):
+    def __init__(self, name: str, code: str, credit: int, required_credits: int, quota: int, semester: int, pre_requisite_courses: List[Course], weekly_hours: List[str]) -> None:
         self.__name = name
         self.__code = code
         self.__credit = credit
@@ -20,6 +20,9 @@ class Lab(Course):
 
     def _generate_section_number(self) -> int:
         return int(math.floor(random.random() * 4 + 1))
+
+    def get_credit(self):
+        return self.__credit
 
     def set_section_number(self, section_number: int) -> None:
         self.section_number = section_number

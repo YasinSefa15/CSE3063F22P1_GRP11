@@ -19,5 +19,8 @@ class Elective(Course):
     def get_type(self):
         return self.type
 
+    def get_credit(self):
+        return self.__credit
+
     def to_json(self):
         return None

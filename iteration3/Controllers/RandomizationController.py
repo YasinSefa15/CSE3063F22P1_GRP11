@@ -24,7 +24,7 @@ class RandomizationController(Controller):
                 'm' if random.randint(0, 1) == 0 else 'f',
                 self.fake.random_int(min=100000, max=999999),
                 self.fake.boolean(),
-                self.fake.date_between(start_date='-4y', end_date='today'),
+                "2022",
                 semester_no,
                 None,
                 None

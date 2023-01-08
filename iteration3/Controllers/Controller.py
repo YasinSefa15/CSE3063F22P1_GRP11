@@ -60,3 +60,11 @@ class Controller:
             print(e)
         return False
 
+
+    @property
+    def error(self):
+        return self.__error
+
+    @error.setter
+    def error(self, error):
+        self.__error = error

@@ -1,69 +1,75 @@
 import json
 
 from iteration3.Models.Person import Person
-from iteration3.Models.RegistrationError import customLog
+from abc import ABC, abstractmethod
 
 
 class Student(Person):
     def __init__(self, name, surname, ssn, gender, id, isGraduate, registerDate, semesterNo, transcript, advisor):
         super().__init__(name, surname, ssn, gender)
-        self._id = id
-        self._registerDate = registerDate
-        self._isGraduate = isGraduate
-        self._semesterNo = semesterNo
-        self._transcript = transcript
-        self._advisor = advisor
-        self._errors = []
+        self.__id = id
+        self.__registerDate = registerDate
+        self.__isGraduate = isGraduate
+        self.__semesterNo = semesterNo
+        self.__transcript = transcript
+        self.__advisor = advisor
+        self.__errors = []
+        """self.custom_log(True, "Student constructor method is called and new student object is generated.")"""
 
-        customLog(True, "Student constructor method is called and new student object is generated.")
+    def custom_log(self, is_error, message):
+        if is_error:
+            self.logger.info(message)
+        else:
+            self.logger.warning(message)
 
-    def getId(self):
-        return self._id
+    @property
+    def id(self):
+        return self.__id
 
-    def getRegisterDate(self):
-        return self._registerDate
+    @property
+    def registerDate(self):
+        return self.__registerDate
 
-    def get_is_graduate(self):
-        return self._isGraduate
+    @property
+    def is_graduate(self):
+        return self.__isGraduate
 
-    def get_semester_no(self):
-        return self._semesterNo
+    @property
+    def semester_no(self):
+        return self.__semesterNo
 
-    def get_transcript(self):
-        return self._transcript
+    @property
+    def transcript(self):
+        return self.__transcript
 
-    def get_errors(self):
-        return self._errors
+    @property
+    def errors(self):
+        return self.__errors
 
-    def get_advisor(self):
-        return self._advisor
+    @property
+    def advisor(self):
+        return self.__advisor
 
-    def get_selected_courses(self):
-        return self._selectedCourses
+    @property
+    def selected_courses(self):
+        return self.__selectedCourses
 
+    @semester_no.setter
     def set_semester_no(self, semesterNo):
         self._semesterNo = semesterNo
 
+    @transcript.setter
     def set_transcript(self, transcript):
         self._transcript = transcript
 
+    @selected_courses.setter
     def set_selected_courses(self, selectedCourses):
         self._selectedCourses = selectedCourses
 
     def add_error(self, error_message):
          self.errors.append(error_message)
 
-    def get_name(self):
-        return super().get_name()
 
-    def get_surname(self):
-        return super().get_surname()
-
-    def get_ssn(self):
-        return super().get_ssn()
-
-    def get_gender(self):
-        return super().get_gender()
 
     def to_json(self):
         json_object = {
@@ -93,4 +99,8 @@ class Student(Person):
         else:
             self.custom_log(False,
                             "Checked if the course is completed before and it is completed. Course cannot be added")
+
+
+
+
 

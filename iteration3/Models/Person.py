@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 from iteration3.Models.Model import Model
 
 
-class Person(Model, metaclass=ABC):
+class Person(Model, ABC):
     def __init__(self, name: str, surname: str, ssn: str, gender: str):
         super().__init__()
         self.__name = name
@@ -13,34 +13,26 @@ class Person(Model, metaclass=ABC):
         self.__ssn = ssn
         self.__gender = gender
 
-        @property
-        def name(self) -> str:
-            return self.__name
+    @property
+    def name(self):
+        return self.__name
 
-        @name.setter
-        def name(self, name: str):
-            self.__name = name
+    @property
+    def surname(self):
+        return self.__surname
 
-        @property
-        def surname(self) -> str:
-            return self.__surname
+    @property
+    def ssn(self) -> str:
+        return self.__ssn
 
-        @surname.setter
-        def surname(self, surname: str):
-            self.__surname = surname
+    @ssn.setter
+    def ssn(self, ssn: str):
+        self.__ssn = ssn
 
-        @property
-        def ssn(self) -> str:
-            return self.__ssn
+    @property
+    def gender(self) -> str:
+        return self.__gender
 
-        @ssn.setter
-        def ssn(self, ssn: str):
-            self.__ssn = ssn
-
-        @property
-        def gender(self) -> str:
-            return self.__gender
-
-        @gender.setter
-        def gender(self, gender: str):
-            self.__gender = gender
+    @gender.setter
+    def gender(self, gender: str):
+        self.__gender = gender

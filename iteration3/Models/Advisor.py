@@ -9,6 +9,7 @@ class Advisor(Person):
         self._students = students
         self._error = error
 
+
         def to_json(self):
             return ""
 
@@ -121,5 +122,9 @@ class Advisor(Person):
 
 
 
+
+
+    def to_json(self):
+        return ""
 
 

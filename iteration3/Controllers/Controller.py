@@ -22,3 +22,40 @@ class Controller:
                 print(e)
 
         return json_objects
+
+    def export_json_file(self, object):
+        path = ""
+
+        if object.__class__.__name__ == "Student":
+            file_name = object.id
+            json_object = object.to_json()
+            path = "Output/Students"
+            content = json.dumps(json_object)
+        elif object.__class__.__name__ == "Advisor":
+            file_name = object.get_name() + object.get_surname()
+            file_name = file_name.replace(" ", "")
+            json_object = object.to_json()
+            path = "Output/Advisors"
+            content = json.dumps(json_object)
+        elif object.__class__.__name__ == "RegistrationError":
+            file_name = "RegistrationErrors"
+            json_object = object.to_json()
+            content = json.dumps(json_object)
+        else:
+            return False
+
+        full_file_name = os.getcwd() + '/iteration2/Data/' + path + '/' + file_name + '.json'
+
+        try:
+            directory = os.path.dirname(full_file_name)
+
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+
+            with open(full_file_name, 'w') as f:
+                f.write(content)
+        except OSError as e:
+            print("An error occurred while exporting .json file.")
+            print(e)
+        return False
+

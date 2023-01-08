@@ -21,7 +21,7 @@ class Advisor(Person):
         else:
             self.logger.warning(message)
 
-    def course_availability(self, student, course):
+    def course_availability(self, student:Student, course:Course):
         if not self.check_semester(self, student, course):
             student.add_error(
                 self._error.report_error(1001, [course.name, str(course.semester), str(student.semester_no)]))
@@ -53,7 +53,7 @@ class Advisor(Person):
 
         return True
 
-    def check_quota(self, course):
+    def check_quota(self, course:Course):
         if course.get_registered_students_count() >= course.get_quota():
             return False
         return True

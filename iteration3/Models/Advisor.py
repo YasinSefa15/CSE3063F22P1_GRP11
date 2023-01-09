@@ -21,7 +21,7 @@ class Advisor(Person):
         else:
             self.logger.warning(message)
 
-    def course_availability(self, student:Student, course:Course):
+    def course_availability(self, student: Student, course: Course):
         if not self.check_semester(self, student, course):
             student.add_error(
                 self._error.report_error(1001, [course.name, str(course.semester), str(student.semester_no)]))
@@ -53,22 +53,22 @@ class Advisor(Person):
 
         return True
 
-    def check_quota(self, course:Course):
+    def check_quota(self, course: Course):
         if course.get_registered_students_count() >= course.get_quota():
             return False
         return True
 
-    def check_semester(self, student:Student, course:Course):
+    def check_semester(self, student: Student, course: Course):
         if course.get_semester() <= student.semester_no:
             return True
         return False
 
-    def check_credit(self, student:Student, course:Course):
+    def check_credit(self, student: Student, course: Course):
         if course.get_required_credits() <= student.transcript.get_completed_credit():
             return True
         return False
 
-    def check_pre_requisite(self, student:Student, course:Course):
+    def check_pre_requisite(self, student: Student, course: Course):
         temp_completed_course = student.transcript.get_completed_courses()
         availability = True
         error_info = [None, None]
@@ -86,7 +86,7 @@ class Advisor(Person):
         error_info[0] = availability
         return error_info
 
-    def check_collision(self, student:Student):
+    def check_collision(self, student: Student):
         courses_of_hash = student.selected_courses.keys()
         courses = list(courses_of_hash)
         error_info = [None, None, None, None]
@@ -107,7 +107,7 @@ class Advisor(Person):
         return error_info
 
     # check elective calışmıyor
-    def check_elective(self, student:Student, course:Course):
+    def check_elective(self, student: Student, course: Course):
         count = 0
         for k, v in student.selected_courses.items():
             if isinstance(k, Elective):
@@ -118,7 +118,7 @@ class Advisor(Person):
 
     # fte takeable calışmıyor
 
-    def fte_takeable(self, student:Student, course:Course):
+    def fte_takeable(self, student: Student, course: Course):
         if student.semester_no >= 7 and isinstance(course, Elective) and course.type == ElectiveType.FTE:
             return True
         return False
@@ -131,5 +131,25 @@ class Advisor(Person):
     def students(self, students):
         self.__students = students
 
+    @property
+    def gender(self):
+        return self.gender
+
+    @students.setter
+    def students(self, students):
+        self.__students = students
+
+    def student_json(self):
+        result = {}
+        for student in self.students:
+            result[student.ssn] = student.to_json()
+        return result
+
     def to_json(self):
-        return {}
+        return {
+            "name": self.name,
+            "surname": self.surname,
+            "ssn": self.ssn,
+            "gender": super().gender,
+            "students": self.student_json()
+        }

@@ -23,6 +23,7 @@ class Course(Model, ABC):
     def get_name(self):
         return self.__name
 
+    @property
     def get_code(self):
         return self.__code
 

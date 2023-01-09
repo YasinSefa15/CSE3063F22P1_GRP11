@@ -1,17 +1,16 @@
 import random
-import iteration3.Controllers.Controller as Controller
-import iteration3.Models.Student as Student
-import iteration3.Models.Course as Course
+
+from iteration3.Controllers.Controller import Controller
 
 
-class StudentController(Controller.Controller):
+class StudentController(Controller):
 
     def __init__(self):
         super().__init__()
 
     def register_to_course(self, student, course):
-        permission = student.advisor.course_availability(student, course)
-
+        # permission = student.advisor.course_availability(student, course)
+        permission = True
         if not permission:
             return False
 
@@ -21,14 +20,13 @@ class StudentController(Controller.Controller):
         return True
 
     def change_course_status(self, student, course):
-        letter_grades = ["AA", "BA", "BB", "CB", "CC", "DC", "DD", "FF"]
+        letter_grades = ["AA", "BA", "BB", "BC", "CC", "DC", "DD", "FF"]
         random_grade = random.randint(0, 7)
         course.set_letter_grade(letter_grades[random_grade])
         if random_grade < 7:
             student.transcript.add_to_completed_courses(course)
-            student.transcript.set_completed_credit(
-                student.transcript.get_completed_credit() + course.credit
-            )
+            student.transcript.set_completed_credit = student.transcript.completed_credit + course.credit
+
             return True
         student.transcript.add_to_failed_courses(course)
         return False

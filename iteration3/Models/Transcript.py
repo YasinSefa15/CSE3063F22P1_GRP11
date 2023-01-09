@@ -28,13 +28,14 @@ class Transcript(Model):
         gpa = 0
         credit = 0
         for i in range(len(self.__completed_courses)):
-            gpa += self.__completed_courses[i].get_credit()*letter_grade_dict[
-                self.__completed_courses[i].get_letter_grade()]
-            credit += self.__completed_courses[i].get_credit()
+            gpa += self.__completed_courses[i].credit*letter_grade_dict[
+                self.__completed_courses[i].get_letter_grade()
+            ]
+            credit += self.__completed_courses[i].credit
         for i in range(len(self.__failed_courses)):
-            gpa += self.__failed_courses[i].get_credit()*letter_grade_dict[
+            gpa += self.__failed_courses[i].credit*letter_grade_dict[
                 self.__failed_courses[i].get_letter_grade()]
-            credit += self.__failed_courses[i].get_credit()
+            credit += self.__failed_courses[i].credit
         self.__gpa = 0 if credit == 0 else gpa / credit
 
     def get_gpa(self):
@@ -44,9 +45,11 @@ class Transcript(Model):
         if gpa >= 0:
             self.__gpa = gpa
 
-    def get_completed_credit(self):
+    @property
+    def completed_credit(self):
         return self.__completed_credit
 
+    @completed_credit.setter
     def set_completed_credit(self, completed_credit: int):
         if completed_credit >= 0:
             self.__completed_credit = completed_credit
@@ -85,7 +88,7 @@ class Transcript(Model):
 
     def to_json(self):
         json_object = {}
-        json_object['gpa'] = format(self.__gpa, '##.##')
+        json_object['gpa'] = float("{:.2f}".format(self.__gpa)),
         json_object['completedCredit'] = self.__completed_credit
         json_object['completedCourses'] = self.convert_arraylist_to_json_array(self.__completed_courses)
         json_object['failedCourses'] = self.convert_arraylist_to_json_array(self.__failed_courses)

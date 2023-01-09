@@ -5,29 +5,34 @@ from iteration3.Models.Model import Model
 
 
 class Course(Model, ABC):
-    def __init__(self):
+    def __init__(self, name, code, credit, required_credits, quota, semester, pre_requisite_courses, weekly_hours):
         super().__init__()
-        self.__name = ""
-        self.__code = ""
+        self.__name = name
+        self.__code = code
         self.__letter_grade = ""
-        self.__credit = 0
-        self.__required_credits = 0
-        self.__quota = 0
+        self.__credit = credit
+        self.__required_credits = required_credits
+        self.__quota = quota
         self.__registered_students_count = 0
-        self.__semester = 0
-        self.__prerequisite_courses = [Course]
-        self.__weekly_hours = []
+        self.__semester = semester
+        self.__prerequisite_courses = pre_requisite_courses
+        self.__weekly_hours = weekly_hours
 
+
+    @property
     def get_name(self):
         return self.__name
 
     def get_code(self):
         return self.__code
 
+
+
     def get_letter_grade(self):
         return self.__letter_grade
 
-    def get_credit(self):
+    @property
+    def credit(self):
         return self.__credit
 
     def get_required_credits(self):
@@ -36,7 +41,8 @@ class Course(Model, ABC):
     def get_quota(self):
         return self.__quota
 
-    def get_semester(self):
+    @property
+    def semester(self):
         return self.__semester
 
     def get_registered_students_count(self):

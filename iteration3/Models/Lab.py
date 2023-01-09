@@ -9,15 +9,7 @@ from iteration3.Models.Course import Course
 class Lab(Course):
     def __init__(self, name, code, credit, required_credits, quota, semester,
                  pre_requisite_courses, weekly_hours):
-        super().__init__()
-        self.__name = name
-        self.__code = code
-        self.__credit = credit
-        self.__required_credits = required_credits
-        self.__quota = quota
-        self.__semester = semester
-        self.__pre_requisite_courses = pre_requisite_courses
-        self.__weekly_hours = weekly_hours
+        super().__init__(name, code, credit, required_credits, quota, semester, pre_requisite_courses, weekly_hours)
         self.__section_number = self._generate_section_number()
 
     def _generate_section_number(self):
@@ -31,4 +23,3 @@ class Lab(Course):
 
     def to_json(self) -> json:
         return None
-

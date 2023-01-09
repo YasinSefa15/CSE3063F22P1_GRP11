@@ -7,6 +7,17 @@ class Curriculum:
     def courses(self):
         return self.__courses
 
+    @property
+    def name(self):
+        return self.__name
+
+    def course_by_semester(self, semester_no):
+        courses = []
+        for course in self.__courses:
+            if course.semester == semester_no:
+                courses.append(course)
+        return courses
+
     def custom_log(self, is_error, message):
         if is_error:
             self.logger.info(message)

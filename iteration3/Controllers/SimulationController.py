@@ -15,14 +15,13 @@ class SimulationController(Controller.Controller):
         self.__denied_courses = []
 
     def start_simulation(self):
-        #self.register_students_to_classes()
+        self.register_students_to_classes()
         self.export_objects()
-        # self.print_error_messages()
+        self.print_error_messages()
         pass
 
     def export_objects(self):
         for advisor in self.__advisors:
-            print(advisor.__class__)
             self.export_json_file(advisor)
         for student in self.__students:
             student.transcript.calculate_gpa()
@@ -34,21 +33,20 @@ class SimulationController(Controller.Controller):
             print(message)
 
     def register_students_to_classes(self):
-        student_controller = StudentController()
+        student_controller = StudentController.StudentController()
         student_controller.error = self.error
-        self.denied_courses.clear()
+        self.__denied_courses.clear()
 
-        for i in range(len(self.students)):
-            student = self.students[i]
-            self.denied_courses.clear()
+        for i in range(len(self.__students)):
+            student = self.__students[i]
+            self.__denied_courses.clear()
             # if student registered 2020 and later first indexed curriculum will be taken consideration
-            student_registers_date_to_curriculum = 1 if student.register_date >= 2020 else 0
-            simulation_semester = student.semester_no
-            courses = self.curriculums[student_registers_date_to_curriculum].courses[simulation_semester]
+            student_registers_date_to_curriculum = 1 if int(student.register_date) >= 2020 else 0
+            courses = self.__curriculums[student_registers_date_to_curriculum].course_by_semester(student.semester_no)
 
             if courses is not None:
                 for course in courses:
                     if not student_controller.register_to_course(student, course):
-                        self.denied_courses.append(course)
+                        self.__denied_courses.append(course)
             else:
                 print(f"courses  is null {student.semester_no}")

@@ -7,6 +7,8 @@ from iteration3.Controllers.SimulationController import SimulationController
 
 from iteration3.Models.Advisor import Advisor
 from iteration3.Models.Curriculum import Curriculum
+from iteration3.Models.Elective import Elective
+from iteration3.Models.Lab import Lab
 from iteration3.Models.Mandatory import Mandatory
 from iteration3.Models.RegistrationError import RegistrationError
 
@@ -68,11 +70,76 @@ class LabelingController(Controller):
                     read["requiredCredits"],
                     read["quota"],
                     read["semester"],
-                    [],  # todo : önkoşul dersler eklenecek
+                    self.create_courses_list(read["preRequisiteCourses"], curriculum),
                     read["weeklyHours"],
                 ))
-
+            elif read["courseType"] == 1:
+                courses.append(Lab(
+                    read["name"],
+                    read["code"],
+                    read["credit"],
+                    read["requiredCredits"],
+                    read["quota"],
+                    read["semester"],
+                    self.create_courses_list(read["preRequisiteCourses"], curriculum),
+                    read["weeklyHours"],
+                ))
+            elif read["courseType"] == 2:
+                courses.append(Elective(
+                    read["name"],
+                    read["code"],
+                    read["credit"],
+                    read["requiredCredits"],
+                    read["quota"],
+                    read["semester"],
+                    self.create_courses_list(read["preRequisiteCourses"], curriculum),
+                    read["weeklyHours"],
+                    read["electiveType"],
+                ))
         return courses
+
+    def create_courses_list(self, preRequisiteCourses, curriculum):
+        courses_list = []
+        for course in preRequisiteCourses:
+            if course in curriculum:
+                courses_list.append(course)
+                return courses_list
+            else:
+                if course["courseType"] == 0:
+                    courses_list.append(Mandatory(
+                        course["name"],
+                        course["code"],
+                        course["credit"],
+                        course["requiredCredits"],
+                        course["quota"],
+                        course["semester"],
+                        self.create_courses_list(course["preRequisiteCourses"], curriculum),
+                        course["weeklyHours"],
+                    ))
+                elif course["courseType"] == 1:
+                    courses_list.append(Lab(
+                        course["name"],
+                        course["code"],
+                        course["credit"],
+                        course["requiredCredits"],
+                        course["quota"],
+                        course["semester"],
+                        self.create_courses_list(course["preRequisiteCourses"], curriculum),
+                        course["weeklyHours"],
+                    ))
+                elif course["courseType"] == 2:
+                    courses_list.append(Elective(
+                        course["name"],
+                        course["code"],
+                        course["credit"],
+                        course["requiredCredits"],
+                        course["quota"],
+                        course["semester"],
+                        self.create_courses_list(course["preRequisiteCourses"], curriculum),
+                        course["weeklyHours"],
+                        course["electiveType"],
+                    ))
+        return courses_list
 
     def init_students(self):
         print("--LC-->Initializing students")

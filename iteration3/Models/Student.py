@@ -86,7 +86,7 @@ class Student(Person):
             "isGraduate": self.is_graduate,
             "registerDate": self.register_date,
             "semesterNo": self.semester_no,
-            #"Transcript": self.transcript.to_json,
+            "Transcript": json.dumps(self.transcript.to_json()),
             "errors": self.errors,
             "Advisor": {
                 "name": self.advisor.name,

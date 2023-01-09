@@ -1,8 +1,10 @@
+import logging
 class Curriculum:
     def __init__(self, name, courses):
         self.__courses = courses
         self.__name = name
 
+    logging.basicConfig(filename='Curriculum.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
     @property
     def courses(self):
         return self.__courses

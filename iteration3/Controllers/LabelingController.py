@@ -8,6 +8,7 @@ from iteration3.Controllers.SimulationController import SimulationController
 from iteration3.Models.Advisor import Advisor
 from iteration3.Models.Curriculum import Curriculum
 from iteration3.Models.Mandatory import Mandatory
+from iteration3.Models.RegistrationError import RegistrationError
 
 
 class LabelingController(Controller):
@@ -21,6 +22,7 @@ class LabelingController(Controller):
         print("*-->Executing LabelingController")
         self.init_objects()
         simulation_controller = SimulationController(self.__students, self.__curriculums, self.__advisors)
+        simulation_controller.error = RegistrationError()
         simulation_controller.start_simulation()
 
     def init_objects(self):
@@ -75,6 +77,7 @@ class LabelingController(Controller):
     def init_students(self):
         print("--LC-->Initializing students")
         randomization_controller = RandomizationController(self.__advisors, self.__curriculums)
+        randomization_controller.error = self.error
         requested_path = os.getcwd() + '/Data/Input/parameters.json'
         parameters = []
         try:
@@ -86,6 +89,7 @@ class LabelingController(Controller):
             print(e)
         self.__students = randomization_controller.generate_students(parameters[0]["student_count"],
                                                                      parameters[0]["semester"])
+        return self.__students
 
     @property
     def advisors(self):

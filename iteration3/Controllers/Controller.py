@@ -1,10 +1,12 @@
 import json
 import os
 
+from iteration3.Models.RegistrationError import RegistrationError
+
 
 class Controller:
     def __init__(self):
-        self.error = None
+        self.__error = None
 
     def read_json_files(self, path):
         json_objects = []
@@ -32,7 +34,7 @@ class Controller:
             path = "Output/Students"
             content = json_object
         elif object.__class__.__name__ == "Advisor":
-            file_name = object.get_name() + object.get_surname()
+            file_name = object.name + object.surname
             file_name = file_name.replace(" ", "")
             json_object = object.to_json()
             path = "Output/Advisors"
@@ -45,7 +47,7 @@ class Controller:
             return False
 
         full_file_name = os.getcwd() + '/Data/' + path + '/' + str(file_name) + '.json'
-        print(content)
+
         try:
             directory = os.path.dirname(full_file_name)
 
@@ -54,12 +56,11 @@ class Controller:
 
             with open(full_file_name, 'w') as f:
                 json.dump(content, f)
-                #f.write(content)
+                # f.write(content)
         except OSError as e:
             print("An error occurred while exporting .json file.")
             print(e)
         return False
-
 
     @property
     def error(self):

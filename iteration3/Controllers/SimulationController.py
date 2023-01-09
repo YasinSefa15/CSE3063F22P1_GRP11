@@ -7,7 +7,7 @@ import iteration3.Controllers.StudentController as StudentController
 
 
 class SimulationController(Controller.Controller):
-    def __init__(self, students, advisors, curriculums):
+    def __init__(self, students, curriculums, advisors):
         super().__init__()
         self.__students = students
         self.__curriculums = curriculums
@@ -21,10 +21,11 @@ class SimulationController(Controller.Controller):
         pass
 
     def export_objects(self):
-        #for advisor in self.__advisors:
-            #self.export_json_file(advisor)
+        for advisor in self.__advisors:
+            print(advisor.__class__)
+            self.export_json_file(advisor)
         for student in self.__students:
-            #student.transcript.calculate_gpa()
+            student.transcript.calculate_gpa()
             self.export_json_file(student)
         self.export_json_file(self.error)
 

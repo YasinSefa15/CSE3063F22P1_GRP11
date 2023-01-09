@@ -86,7 +86,7 @@ class Student(Person):
             "isGraduate": self.is_graduate,
             "registerDate": self.register_date,
             "semesterNo": self.semester_no,
-            "Transcript": self.transcript.to_json,
+            #"Transcript": self.transcript.to_json,
             "errors": self.errors,
             "Advisor": {
                 "name": self.advisor.name,
@@ -94,7 +94,7 @@ class Student(Person):
                 "ssn": self.advisor.ssn
             }
         }
-        return json.dumps(json_object)
+        return json_object
 
     def add_to_selected_courses(self, course, status):
         if course not in self.selected_courses:

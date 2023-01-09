@@ -125,14 +125,11 @@ class Advisor(Person):
 
     @property
     def students(self):
-        return self.students
+        return self.__students
 
     @students.setter
     def students(self, students):
-        for i in range(len(students)):
-            for j in range(len(self.students)):
-                if students[i].id != self.students[j].id:
-                    self.students.add(students[i])
+        self.__students = students
 
     def to_json(self):
-        return ""
+        return {}

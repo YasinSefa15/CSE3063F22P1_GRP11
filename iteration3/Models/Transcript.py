@@ -35,7 +35,7 @@ class Transcript(Model):
             gpa += self.__failed_courses[i].get_credit()*letter_grade_dict[
                 self.__failed_courses[i].get_letter_grade()]
             credit += self.__failed_courses[i].get_credit()
-        self.__gpa = gpa / credit
+        self.__gpa = 0 if credit == 0 else gpa / credit
 
     def get_gpa(self):
         return self.__gpa

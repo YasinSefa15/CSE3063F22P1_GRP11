@@ -64,7 +64,7 @@ class Advisor(Person):
         return False
 
     def check_credit(self, student:Student, course:Course):
-        if course.get_required_credits() > student.transcript.get_completed_credit():
+        if course.get_required_credits() <= student.transcript.get_completed_credit():
             return True
         return False
 

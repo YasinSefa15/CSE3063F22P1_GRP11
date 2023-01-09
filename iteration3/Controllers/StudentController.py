@@ -9,8 +9,8 @@ class StudentController(Controller):
         super().__init__()
 
     def register_to_course(self, student, course):
-        # permission = student.advisor.course_availability(student, course)
-        permission = True
+        permission = student.advisor.course_availability(student, course)
+        # permission = True
         if not permission:
             return False
 

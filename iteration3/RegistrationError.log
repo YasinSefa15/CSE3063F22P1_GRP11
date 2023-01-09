@@ -1,156 +1,1169 @@
-2023-01-09 11:21:23,899 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,899 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,899 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,899 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,899 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,899 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,899 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,900 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,900 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,900 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,900 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,900 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,900 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,900 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,900 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,900 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,900 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,900 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,900 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,900 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,900 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,901 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,901 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,901 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,901 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,901 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,901 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,901 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,901 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,901 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,901 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,901 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,901 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,901 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,901 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,902 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,902 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,902 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,902 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,902 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,902 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,902 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,902 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,902 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,902 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,902 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,902 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,902 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,902 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,902 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,902 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,903 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,903 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,903 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,903 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,903 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,903 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,903 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,903 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,903 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,903 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,903 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,903 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,903 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,903 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,903 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,903 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,904 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,904 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,904 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,904 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,904 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,904 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,904 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,904 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,904 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,904 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,904 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,904 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,904 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,904 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,904 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,904 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,905 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,905 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,905 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,905 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,905 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,905 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,905 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,905 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,905 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,905 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,905 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,905 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,905 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,905 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,905 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,905 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,906 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,906 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,906 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,906 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,906 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,906 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,906 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,906 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,906 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,906 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,906 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,906 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,906 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,906 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,906 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,907 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,907 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,907 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,907 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,907 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,907 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,907 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,907 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,907 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,907 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,907 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,907 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,907 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,907 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,907 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,907 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,907 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,908 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,908 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,908 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,908 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,908 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,908 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,908 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,908 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,908 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,908 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,908 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,908 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,908 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,908 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,908 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,908 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,909 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,909 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,909 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,909 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,909 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,909 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,909 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
-2023-01-09 11:21:23,909 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
-2023-01-09 11:21:23,909 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,756 - iteration3.Controllers.LabelingController - INFO - Curriculum2015 is created
+2023-01-09 12:18:21,757 - iteration3.Controllers.LabelingController - INFO - Curriculum2020 is created
+2023-01-09 12:18:21,957 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,957 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,957 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,957 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,957 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,957 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,957 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,958 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,958 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,958 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,958 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,958 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,958 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,958 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,958 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,958 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,958 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,958 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,958 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,958 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,958 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,959 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,959 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,959 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,959 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,959 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,959 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,959 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,959 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,959 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,959 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,959 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,959 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,959 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,960 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,960 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,960 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,960 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,960 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,960 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,960 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,960 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,960 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,960 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,960 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,960 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,960 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,960 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,961 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,961 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,961 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,961 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,961 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,961 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,961 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,961 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,961 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,961 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,961 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,961 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,961 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,962 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,962 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,962 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,962 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,962 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,962 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,962 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,962 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,962 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,962 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,963 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,963 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,963 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,963 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,963 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,963 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,963 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,963 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,964 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,964 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,964 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,964 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,964 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,965 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,965 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,965 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,965 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,965 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,965 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,965 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,965 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,965 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,966 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,966 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,966 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,966 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,966 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,966 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,966 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,966 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,967 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,967 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,967 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,967 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,967 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,967 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,967 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,967 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,967 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,967 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,968 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,968 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,968 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,968 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,968 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,968 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,968 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,968 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,968 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,968 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,969 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,969 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,969 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,969 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,969 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,969 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,969 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,969 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,969 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,969 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,970 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,970 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,970 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,970 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,970 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,970 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,970 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,970 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,970 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,970 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,970 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,970 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,970 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,971 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,971 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:18:21,971 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:18:21,971 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,332 - iteration3.Controllers.LabelingController - INFO - advisor created Murat Can Ganiz is created
+2023-01-09 12:20:47,332 - iteration3.Controllers.LabelingController - INFO - advisor created Mustafa Ağaoğlu is created
+2023-01-09 12:20:47,332 - iteration3.Controllers.LabelingController - INFO - advisor created Betül Boz is created
+2023-01-09 12:20:47,332 - iteration3.Controllers.LabelingController - INFO - advisor created Çiğdem Eroğlu Erdem is created
+2023-01-09 12:20:47,332 - iteration3.Controllers.LabelingController - INFO - advisor created Müjdat Soytürk is created
+2023-01-09 12:20:47,332 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Fuat Alkaya is created
+2023-01-09 12:20:47,332 - iteration3.Controllers.LabelingController - INFO - advisor created Haluk Rahmi Topçuoğlu is created
+2023-01-09 12:20:47,332 - iteration3.Controllers.LabelingController - INFO - advisor created Borahan Tümer is created
+2023-01-09 12:20:47,333 - iteration3.Controllers.LabelingController - INFO - advisor created Ömer Korçak is created
+2023-01-09 12:20:47,333 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Haydar Özer is created
+2023-01-09 12:20:47,333 - iteration3.Controllers.LabelingController - INFO - advisor created Sanem Arslan is created
+2023-01-09 12:20:47,333 - iteration3.Controllers.LabelingController - INFO - advisor created Mehmet Baran is created
+2023-01-09 12:20:47,333 - iteration3.Controllers.LabelingController - INFO - advisor created Fatma Corut is created
+2023-01-09 12:20:47,336 - iteration3.Controllers.LabelingController - INFO - Curriculum2015 is created
+2023-01-09 12:20:47,336 - iteration3.Controllers.LabelingController - INFO - Curriculum2020 is created
+2023-01-09 12:20:47,542 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,543 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,543 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,543 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,543 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,543 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,543 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,543 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,544 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,544 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,544 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,544 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,544 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,544 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,544 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,544 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,544 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,544 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,545 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,545 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,545 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,545 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,545 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,545 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,545 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,545 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,546 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,546 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,546 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,546 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,546 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,546 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,546 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,546 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,546 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,546 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,546 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,546 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,547 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,547 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,547 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,547 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,547 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,547 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,547 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,547 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,547 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,547 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,547 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,548 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,548 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,548 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,548 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,548 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,548 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,548 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,548 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,548 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,548 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,548 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,548 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,549 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,549 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,549 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,549 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,549 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,549 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,549 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,549 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,549 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,549 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,549 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,549 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,549 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,550 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,550 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,550 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,550 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,550 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,550 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,550 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,550 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,550 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,551 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,551 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,551 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,551 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,551 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,551 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,551 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,551 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,551 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,551 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,551 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,551 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,551 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,551 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,552 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,552 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,552 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,552 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,552 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,552 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,552 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,552 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,552 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,552 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,552 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,552 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,552 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,552 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,552 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,553 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,553 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,553 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,553 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,553 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,553 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,553 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,553 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,553 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,553 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,553 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,554 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,554 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,554 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,554 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,554 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,554 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,554 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,554 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,554 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,554 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,554 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,554 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,555 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,555 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,555 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,555 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,555 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,555 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,555 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,555 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,555 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,555 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,555 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,555 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,556 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,556 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,556 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:47,556 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:20:47,556 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:20:54,611 - iteration3.Controllers.LabelingController - INFO - advisor created Murat Can Ganiz is created
+2023-01-09 12:20:54,612 - iteration3.Controllers.LabelingController - INFO - advisor created Mustafa Ağaoğlu is created
+2023-01-09 12:20:54,612 - iteration3.Controllers.LabelingController - INFO - advisor created Betül Boz is created
+2023-01-09 12:20:54,612 - iteration3.Controllers.LabelingController - INFO - advisor created Çiğdem Eroğlu Erdem is created
+2023-01-09 12:20:54,612 - iteration3.Controllers.LabelingController - INFO - advisor created Müjdat Soytürk is created
+2023-01-09 12:20:54,612 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Fuat Alkaya is created
+2023-01-09 12:20:54,612 - iteration3.Controllers.LabelingController - INFO - advisor created Haluk Rahmi Topçuoğlu is created
+2023-01-09 12:20:54,612 - iteration3.Controllers.LabelingController - INFO - advisor created Borahan Tümer is created
+2023-01-09 12:20:54,613 - iteration3.Controllers.LabelingController - INFO - advisor created Ömer Korçak is created
+2023-01-09 12:20:54,614 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Haydar Özer is created
+2023-01-09 12:20:54,614 - iteration3.Controllers.LabelingController - INFO - advisor created Sanem Arslan is created
+2023-01-09 12:20:54,615 - iteration3.Controllers.LabelingController - INFO - advisor created Mehmet Baran is created
+2023-01-09 12:20:54,615 - iteration3.Controllers.LabelingController - INFO - advisor created Fatma Corut is created
+2023-01-09 12:20:54,620 - iteration3.Controllers.LabelingController - INFO - Curriculum2015 is created
+2023-01-09 12:20:54,621 - iteration3.Controllers.LabelingController - INFO - Curriculum2020 is created
+2023-01-09 12:21:35,732 - iteration3.Controllers.LabelingController - INFO - advisor created Murat Can Ganiz is created
+2023-01-09 12:21:35,733 - iteration3.Controllers.LabelingController - INFO - advisor created Mustafa Ağaoğlu is created
+2023-01-09 12:21:35,733 - iteration3.Controllers.LabelingController - INFO - advisor created Betül Boz is created
+2023-01-09 12:21:35,733 - iteration3.Controllers.LabelingController - INFO - advisor created Çiğdem Eroğlu Erdem is created
+2023-01-09 12:21:35,733 - iteration3.Controllers.LabelingController - INFO - advisor created Müjdat Soytürk is created
+2023-01-09 12:21:35,733 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Fuat Alkaya is created
+2023-01-09 12:21:35,733 - iteration3.Controllers.LabelingController - INFO - advisor created Haluk Rahmi Topçuoğlu is created
+2023-01-09 12:21:35,733 - iteration3.Controllers.LabelingController - INFO - advisor created Borahan Tümer is created
+2023-01-09 12:21:35,733 - iteration3.Controllers.LabelingController - INFO - advisor created Ömer Korçak is created
+2023-01-09 12:21:35,734 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Haydar Özer is created
+2023-01-09 12:21:35,734 - iteration3.Controllers.LabelingController - INFO - advisor created Sanem Arslan is created
+2023-01-09 12:21:35,734 - iteration3.Controllers.LabelingController - INFO - advisor created Mehmet Baran is created
+2023-01-09 12:21:35,734 - iteration3.Controllers.LabelingController - INFO - advisor created Fatma Corut is created
+2023-01-09 12:21:35,736 - iteration3.Controllers.LabelingController - INFO - Curriculum2015 is created
+2023-01-09 12:21:35,737 - iteration3.Controllers.LabelingController - INFO - Curriculum2020 is created
+2023-01-09 12:21:36,749 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,749 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,749 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,749 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,750 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,750 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,750 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,750 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,750 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,750 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,750 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,750 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,750 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,750 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,751 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,751 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,751 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,751 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,751 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,751 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,751 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,751 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,751 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,751 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,751 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,751 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,752 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,752 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,752 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,752 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,752 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,752 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,752 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,752 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,752 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,752 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,752 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,752 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,753 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,753 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,753 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,753 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,753 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,753 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,753 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,753 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,753 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,753 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,753 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,753 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,753 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,754 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,754 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,754 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,754 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,754 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,754 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,754 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,754 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,754 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,754 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,754 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,754 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,755 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,755 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,755 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,755 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,755 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,755 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,755 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,755 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,755 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,755 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,755 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,755 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,755 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,756 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,756 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,756 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,756 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,756 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,756 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,757 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,757 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,757 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,757 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,757 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,757 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,757 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,757 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,757 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,757 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,757 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,757 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,757 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,758 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,758 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,758 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,758 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,758 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,758 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,758 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,758 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,758 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,759 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,759 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,759 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,759 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,759 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,759 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,760 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,760 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,760 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,760 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,760 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,760 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,761 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,761 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,761 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,761 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,761 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,761 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,761 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,761 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,761 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,761 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,761 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,761 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,762 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,762 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,762 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,762 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,762 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,762 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,762 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,762 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,762 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,762 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,762 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,762 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,763 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,763 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,763 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,763 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,763 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,763 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,763 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,763 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,763 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,763 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,763 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,764 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,764 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,764 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,764 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,764 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,764 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,764 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,764 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,764 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,764 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,764 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,764 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,764 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,765 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,765 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,765 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,765 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,765 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,765 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,765 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,765 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,765 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,765 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,765 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,765 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,766 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,766 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,766 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,766 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,766 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,766 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,766 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,766 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,766 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,766 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,766 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,767 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,767 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,767 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,767 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,767 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,767 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,767 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,767 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,767 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,768 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,768 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,768 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,768 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,768 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,768 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,768 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,768 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,769 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,769 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,769 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,769 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,769 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,769 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,769 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,770 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,770 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,770 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,770 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,770 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,770 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,770 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,770 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,771 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,771 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,771 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,771 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,771 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,771 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,771 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,771 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,771 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,772 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,772 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,772 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,772 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,772 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,772 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,772 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,772 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,772 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,772 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,773 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,773 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,773 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,773 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,773 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,773 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,773 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,773 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,773 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,774 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,774 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,774 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,774 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,774 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,774 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,774 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,774 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,775 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,775 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,775 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,775 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,775 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,775 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,775 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,776 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,776 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,776 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,776 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,776 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,776 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,776 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,776 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,776 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,776 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,776 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,777 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,777 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,777 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,777 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,777 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,777 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,777 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,777 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,777 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,778 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,778 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,778 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,778 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,778 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,778 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,778 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,778 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,778 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,778 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,778 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,778 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,778 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,778 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,779 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,779 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,779 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,779 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,779 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,779 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,779 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,779 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,780 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,780 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,780 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,780 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,780 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,780 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,780 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,780 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,780 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,781 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,781 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,781 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,781 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,781 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,781 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,781 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,781 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,781 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,781 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,781 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,781 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,782 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,782 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,782 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,782 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,782 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,782 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,782 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,782 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,782 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,782 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,782 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,782 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,783 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,783 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,783 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,783 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,783 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,783 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,783 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,783 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,784 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,784 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,784 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,784 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,784 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,784 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,784 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,784 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,784 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,784 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,784 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,784 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,784 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,784 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,784 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,785 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,785 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,785 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,785 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,785 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,785 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,785 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,785 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,785 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,785 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,785 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,785 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,785 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,785 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,785 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,786 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,786 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,786 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,786 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,786 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,786 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,786 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,786 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,786 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,786 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,786 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,786 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,786 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,787 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,787 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,787 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,787 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,787 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,787 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,787 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,787 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,787 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,788 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,788 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,788 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,788 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,788 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,788 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,788 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,788 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,788 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,789 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,789 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,789 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,789 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,789 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,789 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,789 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,789 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,789 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,789 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,789 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,789 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,789 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,789 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,790 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,790 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,790 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,790 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,790 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,790 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,790 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,790 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,790 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,790 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,790 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,790 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,790 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,790 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:36,790 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:21:36,790 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:21:52,228 - iteration3.Controllers.LabelingController - INFO - advisor created Murat Can Ganiz is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Mustafa Ağaoğlu is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Betül Boz is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Çiğdem Eroğlu Erdem is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Müjdat Soytürk is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Fuat Alkaya is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Haluk Rahmi Topçuoğlu is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Borahan Tümer is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Ömer Korçak is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Haydar Özer is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Sanem Arslan is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Mehmet Baran is created
+2023-01-09 12:21:52,229 - iteration3.Controllers.LabelingController - INFO - advisor created Fatma Corut is created
+2023-01-09 12:21:52,232 - iteration3.Controllers.LabelingController - INFO - Curriculum2015 is created
+2023-01-09 12:21:52,232 - iteration3.Controllers.LabelingController - INFO - Curriculum2020 is created
+2023-01-09 12:23:12,300 - iteration3.Controllers.LabelingController - INFO - advisor created Murat Can Ganiz is created
+2023-01-09 12:23:12,300 - iteration3.Controllers.LabelingController - INFO - advisor created Mustafa Ağaoğlu is created
+2023-01-09 12:23:12,300 - iteration3.Controllers.LabelingController - INFO - advisor created Betül Boz is created
+2023-01-09 12:23:12,300 - iteration3.Controllers.LabelingController - INFO - advisor created Çiğdem Eroğlu Erdem is created
+2023-01-09 12:23:12,300 - iteration3.Controllers.LabelingController - INFO - advisor created Müjdat Soytürk is created
+2023-01-09 12:23:12,300 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Fuat Alkaya is created
+2023-01-09 12:23:12,300 - iteration3.Controllers.LabelingController - INFO - advisor created Haluk Rahmi Topçuoğlu is created
+2023-01-09 12:23:12,300 - iteration3.Controllers.LabelingController - INFO - advisor created Borahan Tümer is created
+2023-01-09 12:23:12,301 - iteration3.Controllers.LabelingController - INFO - advisor created Ömer Korçak is created
+2023-01-09 12:23:12,301 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Haydar Özer is created
+2023-01-09 12:23:12,301 - iteration3.Controllers.LabelingController - INFO - advisor created Sanem Arslan is created
+2023-01-09 12:23:12,301 - iteration3.Controllers.LabelingController - INFO - advisor created Mehmet Baran is created
+2023-01-09 12:23:12,301 - iteration3.Controllers.LabelingController - INFO - advisor created Fatma Corut is created
+2023-01-09 12:23:12,303 - iteration3.Controllers.LabelingController - INFO - Curriculum2015 is created
+2023-01-09 12:23:12,304 - iteration3.Controllers.LabelingController - INFO - Curriculum2020 is created
+2023-01-09 12:23:24,758 - iteration3.Controllers.LabelingController - INFO - advisor created Murat Can Ganiz is created
+2023-01-09 12:23:24,758 - iteration3.Controllers.LabelingController - INFO - advisor created Mustafa Ağaoğlu is created
+2023-01-09 12:23:24,758 - iteration3.Controllers.LabelingController - INFO - advisor created Betül Boz is created
+2023-01-09 12:23:24,758 - iteration3.Controllers.LabelingController - INFO - advisor created Çiğdem Eroğlu Erdem is created
+2023-01-09 12:23:24,758 - iteration3.Controllers.LabelingController - INFO - advisor created Müjdat Soytürk is created
+2023-01-09 12:23:24,758 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Fuat Alkaya is created
+2023-01-09 12:23:24,759 - iteration3.Controllers.LabelingController - INFO - advisor created Haluk Rahmi Topçuoğlu is created
+2023-01-09 12:23:24,759 - iteration3.Controllers.LabelingController - INFO - advisor created Borahan Tümer is created
+2023-01-09 12:23:24,759 - iteration3.Controllers.LabelingController - INFO - advisor created Ömer Korçak is created
+2023-01-09 12:23:24,759 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Haydar Özer is created
+2023-01-09 12:23:24,759 - iteration3.Controllers.LabelingController - INFO - advisor created Sanem Arslan is created
+2023-01-09 12:23:24,759 - iteration3.Controllers.LabelingController - INFO - advisor created Mehmet Baran is created
+2023-01-09 12:23:24,759 - iteration3.Controllers.LabelingController - INFO - advisor created Fatma Corut is created
+2023-01-09 12:23:24,764 - iteration3.Controllers.LabelingController - INFO - Curriculum2015 is created
+2023-01-09 12:23:24,765 - iteration3.Controllers.LabelingController - INFO - Curriculum2020 is created
+2023-01-09 12:23:40,471 - iteration3.Controllers.LabelingController - INFO - advisor created Murat Can Ganiz is created
+2023-01-09 12:23:40,472 - iteration3.Controllers.LabelingController - INFO - advisor created Mustafa Ağaoğlu is created
+2023-01-09 12:23:40,472 - iteration3.Controllers.LabelingController - INFO - advisor created Betül Boz is created
+2023-01-09 12:23:40,473 - iteration3.Controllers.LabelingController - INFO - advisor created Çiğdem Eroğlu Erdem is created
+2023-01-09 12:23:40,473 - iteration3.Controllers.LabelingController - INFO - advisor created Müjdat Soytürk is created
+2023-01-09 12:23:40,473 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Fuat Alkaya is created
+2023-01-09 12:23:40,473 - iteration3.Controllers.LabelingController - INFO - advisor created Haluk Rahmi Topçuoğlu is created
+2023-01-09 12:23:40,473 - iteration3.Controllers.LabelingController - INFO - advisor created Borahan Tümer is created
+2023-01-09 12:23:40,474 - iteration3.Controllers.LabelingController - INFO - advisor created Ömer Korçak is created
+2023-01-09 12:23:40,474 - iteration3.Controllers.LabelingController - INFO - advisor created Ali Haydar Özer is created
+2023-01-09 12:23:40,474 - iteration3.Controllers.LabelingController - INFO - advisor created Sanem Arslan is created
+2023-01-09 12:23:40,474 - iteration3.Controllers.LabelingController - INFO - advisor created Mehmet Baran is created
+2023-01-09 12:23:40,475 - iteration3.Controllers.LabelingController - INFO - advisor created Fatma Corut is created
+2023-01-09 12:23:40,479 - iteration3.Controllers.LabelingController - INFO - Curriculum2015 is created
+2023-01-09 12:23:40,481 - iteration3.Controllers.LabelingController - INFO - Curriculum2020 is created
+2023-01-09 12:23:41,321 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,322 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,322 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,322 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,322 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,322 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,323 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,323 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,323 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,323 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,323 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,323 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,323 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,323 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,323 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,324 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,324 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,324 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,324 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,324 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,324 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,324 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,324 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,324 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,324 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,324 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,324 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,325 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,325 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,325 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,325 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,325 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,325 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,325 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,325 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,325 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,325 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,325 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,326 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,326 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,326 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,326 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,326 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,326 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,326 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,326 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,326 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,326 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,326 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,326 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,327 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,327 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,327 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,327 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,327 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,327 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,327 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,327 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,327 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,327 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,327 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,328 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,328 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,328 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,328 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,328 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,328 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,328 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,328 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,328 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,328 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,329 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,329 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,329 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,329 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,329 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,329 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,329 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,329 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,329 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,329 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,329 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,330 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,330 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,330 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,330 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,330 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,330 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,330 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,330 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,331 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,331 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,331 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,331 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,331 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,331 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,331 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,331 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,331 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,331 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,332 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,332 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,332 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,332 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,332 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,332 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,332 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,332 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,332 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,332 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,332 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,332 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,332 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,333 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,333 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,333 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,333 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,333 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,333 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,333 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,333 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,333 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,333 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,333 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,333 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,333 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,334 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,334 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,334 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,334 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,334 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,334 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,334 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,334 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,334 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,334 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,334 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,334 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,334 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,334 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,335 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,335 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,335 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,335 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,335 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,335 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,335 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,335 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,335 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,335 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,335 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,335 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,336 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,336 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,336 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,336 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,336 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,336 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,336 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,336 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,336 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,336 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,336 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,337 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,337 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,337 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,337 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,337 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,337 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,337 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,337 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,338 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,338 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,338 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,338 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,338 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,338 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,338 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,338 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,338 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,339 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,339 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,339 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,339 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,339 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,340 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,340 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,340 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,340 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,340 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,340 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,340 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,340 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,340 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,340 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,340 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,340 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,341 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,341 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,341 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,341 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,341 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,341 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,341 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,341 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,341 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,341 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,341 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,341 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,342 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,342 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,342 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,342 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,342 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,342 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,342 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,342 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,342 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,342 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,342 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,342 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,342 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,343 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,343 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,343 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,343 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,343 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,343 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,343 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,343 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,343 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,343 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,343 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,343 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,343 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,344 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,344 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,344 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,344 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,344 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,344 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,344 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,344 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,344 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,345 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,345 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,345 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,345 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,345 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,345 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,345 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,345 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,345 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,345 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,345 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,345 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,346 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,346 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,346 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,346 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,346 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,346 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,346 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,346 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,346 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,346 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,346 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,346 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,347 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,347 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,347 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,347 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,347 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,347 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,347 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,348 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,348 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,348 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,348 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,348 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,348 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,348 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,348 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,348 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,348 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,349 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,349 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,349 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,349 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,349 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,349 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,349 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,349 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,349 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,349 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,349 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,349 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,350 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,350 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,350 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,350 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,350 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,350 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,350 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,350 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,350 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,350 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,350 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,350 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,350 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,351 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,351 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,351 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,351 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,351 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,351 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,351 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,351 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,351 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,351 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,351 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,351 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,352 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,352 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses
+2023-01-09 12:23:41,352 - iteration3.Models.Advisor - INFO - courseAvailability method is called and advisor check the course availability.
+2023-01-09 12:23:41,352 - iteration3.Models.Student - INFO - Checked if the course is completed before and it is not completed. Added to selected courses

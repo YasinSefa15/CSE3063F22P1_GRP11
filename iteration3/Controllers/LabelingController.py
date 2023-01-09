@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 
 from iteration3.Controllers.Controller import Controller
@@ -14,6 +15,18 @@ from iteration3.Models.RegistrationError import RegistrationError
 
 
 class LabelingController(Controller):
+    logger = logging.getLogger(__name__)
+    file_handler = logging.FileHandler("RegistrationError.log")
+    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
+
+    def custom_log(self, is_error, message):
+        if is_error:
+            self.logger.info(message)
+        else:
+            self.logger.warning(message)
+
     def __init__(self):
         super().__init__()
         self.__advisors = []
@@ -45,6 +58,7 @@ class LabelingController(Controller):
                 read_advisor["students"],
                 self.error
             ))
+            self.custom_log(True, "advisor created " + read_advisor["name"] + " " + read_advisor["surname"] + " is created")
         return self.__advisors
 
     def init_curriculums(self):
@@ -56,6 +70,8 @@ class LabelingController(Controller):
                 key[1],
                 self.read_curriculum_json(curriculums[key[1]])
             ))
+            self.custom_log(True,
+                            "" + key[1] + " is created")
 
     def read_curriculum_json(self, curriculum):
         print("--LC-->Reading curriculum json")

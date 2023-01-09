@@ -33,15 +33,15 @@ class Advisor(Person):
             student.add_error(
                 self.__error.report_error(1001, [course.get_name, str(course.semester), str(student.semester_no)]))
             self.custom_log(False,
-                            "Checked semester of students and courses that requested by students and they are declined ")
+                            "Checked semester of " + student.id +" and courses that requested by students and they are declined ")
             return False
         if not self.check_credit(student, course):
             student.add_error(self.__error.report_error(1002, [course.get_name, str(student.transcript.completed_credit)]))
-            self.custom_log(False, "Compared credit of students and required credit of course and it is not enough.")
+            self.custom_log(False, "Compared credit of students" + student.id + " and required credit of course and it is not enough.")
             return False
         if not self.check_quota(course):
             student.add_error(self.__error.report_error(1003, [course.get_name]))
-            self.custom_log(False, "Check quota of course and there is not enough space for student.")
+            self.custom_log(False, "Check quota of course "+ course.get_code  +" and there is not enough space for student.")
             return False
         temp_return = self.check_pre_requisite(student, course)
         if not temp_return[0]:

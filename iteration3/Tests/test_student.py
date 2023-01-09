@@ -2,13 +2,14 @@ import json
 import unittest
 
 from iteration3.Models.Course import Course
+from iteration3.Models.Mandatory import Mandatory
 from iteration3.Models.Person import Person
 from iteration3.Models.Student import Student
 
 class TestStudent(unittest.TestCase):
     def setUp(self):
         self.student = Student("John", "Doe", "123-45-6789", "Male", "1234", False, "01/01/2022", 1, None, None)
-        self.course1 = Course()
+        self.course1 = Mandatory()
         self.course1.set_name("CSE1111")
         self.course1.set_code("1111")
         self.course1.set_credit(4)
@@ -17,7 +18,7 @@ class TestStudent(unittest.TestCase):
         self.course1.set_semester(1)
         self.course1.set_pre_requisite_courses([])
         self.course1.set_weekly_hours([])
-        self.course2 = Course()
+        self.course2 = Mandatory()
         self.course2.set_name("CSE2222")
         self.course2.set_code("2222")
         self.course2.set_credit(5)

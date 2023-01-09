@@ -1,7 +1,7 @@
 import unittest
 
 from iteration3.Models.Curriculum import Curriculum
-from iteration3.Models.Curriculum import Course
+from iteration3.Models.Mandatory import Mandatory
 class CurriculumTest(unittest.TestCase):
     def setUp(self):
         self.curriculum = Curriculum("", None)

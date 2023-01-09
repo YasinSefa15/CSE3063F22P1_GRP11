@@ -59,7 +59,7 @@ class AdvisorTest(unittest.TestCase):
         course2.set_required_credits(180)
         self.assertTrue(self.advisorTest.check_credit(student, course1))
         self.assertFalse(self.advisorTest.check_credit(student, course2))
-"""""
+
     def test_checkCollision(self):
         student = Student("", "", "", 'M', "", False, 2019, 4, None, None)
         course1 = Mandatory("CSE1111", "1111", 4, 0, 100, 2, [], [])
@@ -74,8 +74,8 @@ class AdvisorTest(unittest.TestCase):
 
         student.set_selected_courses = course_of_hash_test
 
-        self.assertEqual(False, self.advisorTest.check_collision(student)[0])
-"""""
+        self.assertTrue(self.advisorTest.check_collision(student))
+
 
 if __name__ == '__main__':
     unittest.main()

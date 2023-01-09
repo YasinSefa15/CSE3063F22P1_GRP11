@@ -59,12 +59,12 @@ class Advisor(Person):
         return True
 
     def check_semester(self, student: Student, course: Course):
-        if course.get_semester() <= student.semester_no:
+        if course.semester <= student.semester_no:
             return True
         return False
 
     def check_credit(self, student: Student, course: Course):
-        if course.get_required_credits() <= student.transcript.get_completed_credit():
+        if course.get_required_credits() <= student.transcript.completed_credit:
             return True
         return False
 

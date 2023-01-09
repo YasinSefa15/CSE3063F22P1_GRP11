@@ -28,12 +28,12 @@ class Transcript(Model):
         gpa = 0
         credit = 0
         for i in range(len(self.__completed_courses)):
-            gpa += self.__completed_courses[i].credit*letter_grade_dict[
+            gpa += self.__completed_courses[i].credit * letter_grade_dict[
                 self.__completed_courses[i].get_letter_grade()
             ]
             credit += self.__completed_courses[i].credit
         for i in range(len(self.__failed_courses)):
-            gpa += self.__failed_courses[i].credit*letter_grade_dict[
+            gpa += self.__failed_courses[i].credit * letter_grade_dict[
                 self.__failed_courses[i].get_letter_grade()]
             credit += self.__failed_courses[i].credit
         self.__gpa = 0 if credit == 0 else gpa / credit

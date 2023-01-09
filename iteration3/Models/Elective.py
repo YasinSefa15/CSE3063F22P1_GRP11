@@ -4,7 +4,7 @@ from iteration3.Models.ElectiveType import ElectiveType
 
 class Elective(Course):
     def __init__(self, name, code, credit, required_credits, quota, semester, pre_requisite_courses, weekly_hours,
-                 type: ElectiveType):
+                 type:ElectiveType):
         super().__init__()
         self.__name = name
         self.__code = code
